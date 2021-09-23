@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quanticon Valley - Zonas Comunes</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="./styles.css">
+	<link rel="stylesheet" type="text/css" href="./simple-calendar.css" />
+
+	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+	<link rel="icon" href="./favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+	<div class="container-fluid">
+	    <div class="row">
+
+			<!----------------------------------------- SIDEBAR ------------------------------------------> 
+	        <div class="col-2">
+						<div id="side_bar_container" data-selected="zonas-comunes"></div>
+	        </div>
+	       	
+	       	<!----------------------------------------- CONTENT ------------------------------------------> 
+	        <div class="col-10 col-lg-7">
+	        	<div id="content">
+		        	<div class="jumbotron jumbo">
+		        		<div class="text-jumbo">
+		        			<h2 class="title-content">Zonas Comunes</h2>
+		        			<p class="subtext">!Espacios para todos¡</p>
+				        	<img class="img-jumbo d-none d-sm-block" src="./imgs/Ilus_Zonas_Comunes.png">
+		        		</div>
+		        	</div>	
+		        	<br> 
+		        	<br> 
+ 
+							<div class="grid">
+								<div class="element">Cafeteria 2pm</div>
+								<div class="element">Cafeteria 4pm</div>
+								<div class="element two-hor">Reuniones</div>
+								<div class="element two-ver">Lobby</div>
+							</div>
+		        	<p class="text">
+		        		Menu donde se presentan algunos de los recursos compartidos por cada estudiante.
+		        	</p>    
+		        	<br>
+		        	<p class="text">
+		        		<ul>
+		        			<li>(Acceso al Lobby (OVAs, PDFs y Recursos de Moodle))</li><br>
+		        			<li>(Acceso a propuestas de proyectos 2-4pm (Link a la Pagina de TPI))</li><br>
+		        			<li>(Acceso a propuestas de proyectos 4-6pm (Link a la Pagina de TPI))</li><br>
+		        			<li>(Acceso a Asesores (FAQs e Informacion de los Asesores???))</li><br>
+		        			<li>(Acceso a Reuniones (Link del canal de youtube donde se presentan los webinar???))</li><br>
+		        			<li>Links para complementar funcionalidades con la pagina de TPI. </li><br>
+		        			<li>Links para complementar funcionalidades con la pagina de Moodle</li><br>
+		        		</ul>
+		        	</p> 
+	        	
+	        	</div>  
+	        </div>
+
+			<!----------------------------------------- RIGHTBAR ------------------------------------------> 
+	        <div class="col-3 d-none d-lg-block no-padding">
+				<div class="right_bar_container"></div>
+	        </div>
+
+	    </div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+		<!-- Load React. -->
+		<!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+		<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+		<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+		<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+		<script src="./components/sideBar.js"></script>
+		<script src="./components/rightBar.js"></script>
+
+		<!--Calendar-->
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="./calendario/jquery.simple-calendar.min.js"></script>
+		<script type="text/javascript" src="./calendario/calendario.js"></script>
+
+</body>
+</html>

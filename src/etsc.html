@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quanticon Valley - ETSC</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="./styles.css">
+	<link rel="stylesheet" type="text/css" href="./simple-calendar.css" />
+
+	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+	<link rel="icon" href="./favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+
+	<div class="container-fluid">
+	    <div class="row">
+
+					<!----------------------------------------- SIDEBAR ------------------------------------------> 
+	        <div class="col-2">
+						<div id="side_bar_container" data-selected="etesc"></div>
+	        </div>
+	       	
+	       	<!----------------------------------------- CONTENT ------------------------------------------> 
+	        <div class="col-10 col-lg-7">
+	        	<div id="content">
+		        	<div class="jumbotron jumbo">
+		        		<div class="text-jumbo">
+		        			<h2 class="title-content">ETESC</h2>
+		        			<p class="subtext">Edificio Tecnológico de Empredimiento Sostenible</p>
+				        	<img class="img-jumbo d-none d-sm-block" src="./imgs/Ilus_ETESC.png">
+		        		</div>
+		        	</div>	
+		        	<br>
+		        	<div id="piso-selector" class="row"> 
+        				<div class="col-2 piso-col">
+        					<a href=""> <span id="piso-selected" class="piso-select">Piso 1</span> </a>
+        				</div>
+        				<div class="col-2 piso-col">
+        					<a href=""> <span class="piso-select">Piso 2</span> </a> 
+        				</div>
+        				<div class="col-2 piso-col">
+        					<a href=""> <span class="piso-select">Piso 3</span> </a>
+        				</div>
+        				<div class="col-2 piso-col">
+        					<a href=""> <span class="piso-select">Piso 4</span> </a> 
+        				</div>
+        				<div class="col-2 piso-col">
+        					<a href=""> <span class="piso-select">Piso 5</span> </a> 
+        				</div>
+        				<div class="col-2 piso-col">
+        					<a href=""> <span class="piso-select">Piso 6</span> </a> 
+        				</div>	
+	        		</div>
+
+	        		<div>
+	        			<br>
+	        			<h2 class="title-content">
+	        				Piso 1
+	        			</h2>
+	        			<p class="text">
+	        				Informacion sobre el entregable a realizar para subir del Piso 1 al Piso 2 y diferentes recursos que apoyan esta entrega.
+	        			</p>
+	        			<p class="text">
+
+		        		<ul>
+		        			<li>
+		        				Instrucciones claras sobre el entregable.
+		        			</li>
+		        			<br>
+		        			<li>
+		        				Instrucciones sobre el pitch a realizar y el horario en el que se presentaria. 
+		        			</li>
+		        			<br>
+		        			<li>
+		        				Link a Moodle donde se realiza la entrega e instrucciones para realizarlo.
+		        			</li>
+		        			<br>
+		        			<li>
+		        				Explicar como la entrega hace parte del funcionamiento del juego.
+		        			</li>
+		        			<br>
+		        			<li>
+		        				En que fechas se debe realizar esta entrega.
+		        			</li>
+		        		</ul>
+		        	</p> 
+	
+	        		</div>   
+	        	</div>  
+	        </div>
+
+			<!----------------------------------------- RIGHTBAR ------------------------------------------> 
+	        <div class="col-3 d-none d-lg-block no-padding">
+						<div class="right_bar_container"></div>
+	        </div>
+
+	    </div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+		<!-- Load React. -->
+		<!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+		<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+		<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+		<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+		<script src="./components/sideBar.js"></script>
+		<script src="./components/rightBar.js"></script>
+
+		<!--Calendar-->
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="./calendario/jquery.simple-calendar.min.js"></script>
+		<script type="text/javascript" src="./calendario/calendario.js"></script>
+
+</body>
+</html>
