@@ -33,61 +33,10 @@
 		        		</div>
 		        	</div>	
 		        	<br>
-		        	<div id="piso-selector" class="row"> 
-        				<div class="col-2 piso-col">
-        					<a href=""> <span id="piso-selected" class="piso-select">Piso 1</span> </a>
-        				</div>
-        				<div class="col-2 piso-col">
-        					<a href=""> <span class="piso-select">Piso 2</span> </a> 
-        				</div>
-        				<div class="col-2 piso-col">
-        					<a href=""> <span class="piso-select">Piso 3</span> </a>
-        				</div>
-        				<div class="col-2 piso-col">
-        					<a href=""> <span class="piso-select">Piso 4</span> </a> 
-        				</div>
-        				<div class="col-2 piso-col">
-        					<a href=""> <span class="piso-select">Piso 5</span> </a> 
-        				</div>
-        				<div class="col-2 piso-col">
-        					<a href=""> <span class="piso-select">Piso 6</span> </a> 
-        				</div>	
-	        		</div>
 
-	        		<div>
-	        			<br>
-	        			<h2 class="title-content">
-	        				Piso 1
-	        			</h2>
-	        			<p class="text">
-	        				Informacion sobre el entregable a realizar para subir del Piso 1 al Piso 2 y diferentes recursos que apoyan esta entrega.
-	        			</p>
-	        			<p class="text">
-
-		        		<ul>
-		        			<li>
-		        				Instrucciones claras sobre el entregable.
-		        			</li>
-		        			<br>
-		        			<li>
-		        				Instrucciones sobre el pitch a realizar y el horario en el que se presentaria. 
-		        			</li>
-		        			<br>
-		        			<li>
-		        				Link a Moodle donde se realiza la entrega e instrucciones para realizarlo.
-		        			</li>
-		        			<br>
-		        			<li>
-		        				Explicar como la entrega hace parte del funcionamiento del juego.
-		        			</li>
-		        			<br>
-		        			<li>
-		        				En que fechas se debe realizar esta entrega.
-		        			</li>
-		        		</ul>
-		        	</p> 
-	
-	        		</div>   
+					<div id="pisos_selector"></div> 
+					<div id="pisos_container"></div> 
+					  
 	        	</div>  
 	        </div>
 
@@ -103,12 +52,14 @@
 
 		<!-- Load React. -->
 		<!-- Note: when deploying, replace "development.js" with "production.min.js". -->
-		<script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
-		<script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
+		<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+		<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
 		<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 
 		<script src="./components/sideBar.js"></script>
 		<script src="./components/rightBar.js"></script>
+		<script src="./components/pisos.js"></script>
+		<script src="./components/pisoCont.js"></script>
 
 		<!--Calendar-->
 		<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>

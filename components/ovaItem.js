@@ -3,52 +3,29 @@ var containers = document.querySelectorAll('.ova-item');
 // ovas, pdf, videos, herramientas, entregables
 var styles = {
 	text: {
-		marginLeft: 20
+		marginLeft: 10,
+		fontSize: 12
 	},
 	icon: {
-		fontSize: 60,
-		color: '#ffc024'
-	},
-	div: {
-		display: 'flex',
-		color: '#303CFE',
-		alignItems: 'center',
-		padding: 20,
-		paddingBottom: 5,
-		paddingTop: 5,
-		marginBottom: 10,
-		marginTop: 10,
-		width: '75%',
-		borderRadius: 20,
-		boxShadow: "rgba(0, 0, 0, 0.2) 0px 2px 4px, rgba(0, 0, 0, 0.1) 0px 5px 8px"
+		fontSize: 20
 	}
 };
 var types = [{
 	type: "ova",
-	name: 'layers',
-	color: '#ffc024'
+	src: './imgs/sources/ova.png'
 }, {
 	type: "pdf",
-	name: 'picture_as_pdf',
-	color: '#ffc024'
+	src: './imgs/sources/pdf.png'
 }, {
 	type: "video",
-	name: 'smart_display',
-	color: '#ffc024'
+	src: './imgs/sources/video.png'
 }, {
 	type: "tools",
-	name: 'plumbing',
-	color: '#ffc024'
-}, {
-	type: "entrega",
-	name: 'text_snippet',
-	color: '#ffc024'
+	src: './imgs/sources/tool.png'
 }];
 
 var OvaItem = function OvaItem(_ref) {
 	var dataset = _ref.dataset;
-
-	console.log(dataset);
 	var sourceType = dataset.sourceType,
 	    text = dataset.text,
 	    link = dataset.link;
@@ -61,16 +38,9 @@ var OvaItem = function OvaItem(_ref) {
 			{ href: link, target: '_blank' },
 			React.createElement(
 				'div',
-				{ style: styles.div },
+				{ 'class': 'div-src' },
 				types.map(function (item) {
-					return item.type === sourceType ? React.createElement(
-						'span',
-						{
-							key: item.name,
-							style: Object.assign({}, styles.icon, { color: item.color }),
-							'class': 'material-icons' },
-						item.name
-					) : null;
+					return item.type === sourceType ? React.createElement('img', { key: item.type, style: styles.icon, src: item.src }) : null;
 				}),
 				React.createElement(
 					'span',

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Quanticon Valley - Zonas Comunes</title>
+	<title>Quanticon Valley - Asesores</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
@@ -10,66 +10,30 @@
 
 	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
 	<link rel="icon" href="./favicon.ico" type="image/x-icon">
+
 </head>
 <body>
 
 	<div class="container-fluid">
 	    <div class="row">
 
-			<!----------------------------------------- SIDEBAR ------------------------------------------> 
+					<!----------------------------------------- SIDEBAR ------------------------------------------> 
 	        <div class="col-2">
 						<div id="side_bar_container" data-selected="zonas-comunes"></div>
 	        </div>
 	       	
 	       	<!----------------------------------------- CONTENT ------------------------------------------> 
 	        <div class="col-10 col-lg-7">
-	        	<div id="content">
-		        	<div class="jumbotron jumbo">
-		        		<div class="text-jumbo">
-		        			<h2 class="title-content">Zonas Comunes</h2>
-		        			<p class="subtext">!Espacios para todos¡</p>
-				        	<img class="img-jumbo d-none d-sm-block" src="./imgs/Ilus_Zonas_Comunes.png">
-		        		</div>
-		        	</div>	
-		        	<br> 
-		        	<br> 
- 
-							<div class="grid-zc">
-								<a class="element-zc" href=""><div>
-										<img class="img-zc" src="./imgs/subsection/cafe.png" />
-										<div style="display: flex; flex-direction: column;">
-											<span class="title-zc">CAFETERIA</span>
-											<span class="desc-zc">Conformacion de equipos</span>
-										</div>
-								</div></a>
-								<a class="element-zc" href=""><div>
-										<img class="img-zc" src="./imgs/subsection/cafe.png" />
-										<div style="display: flex; flex-direction: column;">
-											<span class="title-zc">REUNIONES</span>
-											<span class="desc-zc">Conoce mas</span>
-										</div>
-								</div></a>
-								<a class="element-zc two-ver-zc" href="lobby.html"><div>
-										<img class="img-zc" src="./imgs/subsection/lobby.png" />
-										<div style="display: flex; flex-direction: column;">
-											<span class="title-zc">LOBBY</span>
-											<span class="desc-zc">Tus Tareas inician aqui</span>
-										</div>
-								</div></a>
-								<a class="element-zc two-hor-zc" href="asesores.html"><div>
-										<img class="img-zc" src="./imgs/subsection/asesor.png" />
-										<div style="display: flex; flex-direction: column;">
-											<span class="title-zc">ASESORES</span></span>
-											<span class="desc-zc">Aqui podras resolver todas tus dudas</span>
-										</div>
-								</div></a>
-							</div>
+						<div id="content">
+							<div class="title-subsection" data-title="ASESORES"></div>
+		        	<br>
+							<div id="pisos_selector"></div> 
 	        	</div>  
 	        </div>
 
 			<!----------------------------------------- RIGHTBAR ------------------------------------------> 
 	        <div class="col-3 d-none d-lg-block no-padding">
-				<div class="right_bar_container"></div>
+						<div class="right_bar_container"></div>
 	        </div>
 
 	    </div>
@@ -85,6 +49,8 @@
 
 		<script src="./components/sideBar.js"></script>
 		<script src="./components/rightBar.js"></script>
+		<script src="./components/pisos.js"></script>
+		<script src="./components/titleSubS.js"></script>
 
 		<!--Calendar-->
 		<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
