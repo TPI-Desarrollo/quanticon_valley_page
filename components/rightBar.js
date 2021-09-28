@@ -12,24 +12,16 @@ var RightBar = function RightBar() {
 	return React.createElement(
 		'div',
 		{ id: 'rightbar' },
+		React.createElement('div', { id: 'calendario' }),
 		React.createElement(
 			'div',
-			{ 'class': 'row no-margin' },
-			React.createElement('div', { id: 'calendario' })
-		),
-		React.createElement(
-			'div',
-			{ 'class': 'row no-margin' },
+			{ 'class': 'right-jumbo' },
 			React.createElement(
-				'div',
-				{ 'class': 'jumbotron right-jumbo' },
-				React.createElement(
-					'p',
-					{ 'class': 'subtext' },
-					'Ultimas Noticias'
-				),
-				React.createElement('iframe', { 'class': 'noti-video', src: 'https://www.youtube.com/embed/8ZrauuMpRD8', title: 'Noticias', frameBorder: '0', allow: 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture', allowFullScreen: true })
-			)
+				'p',
+				{ 'class': 'subtext' },
+				'Ultimas Noticias'
+			),
+			React.createElement('iframe', { 'class': 'noti-video', src: 'https://www.youtube.com/embed/8ZrauuMpRD8', title: 'Noticias', frameBorder: '0', allow: 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture', allowFullScreen: true })
 		)
 	);
 };

@@ -18,43 +18,39 @@ var Pisos = function Pisos() {
 	};
 	return React.createElement(
 		"div",
-		null,
-		React.createElement(
-			"div",
-			{ id: "piso-selector", "class": "row" },
-			[1, 2, 3, 4, 5, 6].map(function (item) {
-				return piso == item ? React.createElement(
-					"div",
-					{ "class": "col-2 piso-col", "data-piso": item },
+		{ id: "piso-selector" },
+		[1, 2, 3, 4, 5, 6].map(function (item) {
+			return piso == item ? React.createElement(
+				"div",
+				{ "class": "col-2 piso-col", "data-piso": item },
+				React.createElement(
+					"a",
+					null,
 					React.createElement(
-						"a",
-						null,
-						React.createElement(
-							"span",
-							{ id: "piso-selected", "class": "piso-select" },
-							"Piso ",
-							item
-						)
+						"span",
+						{ id: "piso-selected", "class": "piso-select" },
+						"Piso ",
+						item
 					)
-				) : React.createElement(
-					"div",
-					{ "class": "col-2 piso-col", "data-piso": item,
-						onClick: function onClick() {
-							return selectorF(item);
-						} },
+				)
+			) : React.createElement(
+				"div",
+				{ "class": "col-2 piso-col", "data-piso": item,
+					onClick: function onClick() {
+						return selectorF(item);
+					} },
+				React.createElement(
+					"a",
+					null,
 					React.createElement(
-						"a",
-						null,
-						React.createElement(
-							"span",
-							{ "class": "piso-select" },
-							"Piso ",
-							item
-						)
+						"span",
+						{ "class": "piso-select" },
+						"Piso ",
+						item
 					)
-				);
-			})
-		)
+				)
+			);
+		})
 	);
 };
 

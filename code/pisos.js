@@ -10,8 +10,7 @@ const Pisos = () => {
 		location.reload();
 	}
 	return (
-		<div>
-			<div id="piso-selector" class="row"> 
+			<div id="piso-selector"> 
 				{[1,2,3,4,5,6].map((item) => 
 					(piso == item)
 						? <div class="col-2 piso-col" data-piso={item}>
@@ -27,7 +26,6 @@ const Pisos = () => {
 							</div> 
 				)}
 			</div>
-		</div>
 	);
 }
 

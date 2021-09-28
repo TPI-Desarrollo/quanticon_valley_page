@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Quanticon Valley - Asesores</title>
+	<title>Quanticon Valley - Prueba</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="./styles.css">
+	<link rel="stylesheet" type="text/css" href="./stylesB.css">
 	<link rel="stylesheet" type="text/css" href="./simple-calendar.css" />
 
 	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
@@ -13,33 +12,22 @@
 
 </head>
 <body>
-
-	<div class="container-fluid">
-	    <div class="row">
-
-					<!----------------------------------------- SIDEBAR ------------------------------------------> 
-	        <div class="col-2">
-						<div id="side_bar_container" data-selected="zonas-comunes"></div>
-	        </div>
-	       	
-	       	<!----------------------------------------- CONTENT ------------------------------------------> 
-	        <div class="col-10 col-lg-7">
-						<div id="content">
-							<div class="title-subsection" data-title="ASESORES"></div>
-		        	<br>
-							<div id="pisos_selector"></div> 
-	        	</div>  
-	        </div>
-
-			<!----------------------------------------- RIGHTBAR ------------------------------------------> 
-	        <div class="col-3 d-none d-lg-block no-padding">
-						<div class="right_bar_container"></div>
-	        </div>
-
-	    </div>
-	</div>
-
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<!----------------------Side Bar------------------------>
+	<section class="side-bar">
+		<div id="side_bar_container" data-selected="zonas-comunes"></div>
+	</section>
+	<!----------------------Header------------------------>
+	<header class="header">
+		<div class="title-subsection" data-title="ASESORES"></div>
+	</header>
+	<!----------------------Content------------------------>
+	<section class="content">
+		<div id="pisos_selector"></div> 
+	</section>
+	<!----------------------Right Bar------------------------>
+	<section class="right-bar">
+		<div class="right_bar_container"></div>
+	</section>
 
 		<!-- Load React. -->
 		<!-- Note: when deploying, replace "development.js" with "production.min.js". -->
@@ -49,6 +37,7 @@
 
 		<script src="./components/sideBar.js"></script>
 		<script src="./components/rightBar.js"></script>
+		<script src="./components/ovaItem.js"></script>
 		<script src="./components/pisos.js"></script>
 		<script src="./components/titleSubS.js"></script>
 
