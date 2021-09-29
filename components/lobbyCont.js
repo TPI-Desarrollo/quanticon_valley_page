@@ -1,9 +1,9 @@
-var pisoCont = document.querySelector('#pisos_container');
+var container = document.querySelector('.lobby-content');
 
 var data = {
 	dos: {
 		1: {
-			ova: [['ACTA DE COMPROMISO', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=700189']],
+			ova: [['Juego SALA DE ESCAPE', 'https://campus.virtual.unal.edu.co/mod/lesson/view.php?id=700603'], ['Cronograma Interactivo', 'https://campus.virtual.unal.edu.co/mod/page/view.php?id=701298'], ['SYLLABUS - Libro Interactivo', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700372'], ['Decalogo Del Mentor', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700168'], ['Comunicacion Eficaz', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700320']],
 			pdf: [],
 			video: [],
 			tool: []
@@ -17,7 +17,7 @@ var data = {
 	},
 	cuatro: {
 		1: {
-			ova: [],
+			ova: [['Juego SALA DE ESCAPE', 'https://campus.virtual.unal.edu.co/mod/lesson/view.php?id=700603'], ['Cronograma Interactivo', 'https://campus.virtual.unal.edu.co/mod/page/view.php?id=701299'], ['SYLLABUS - Libro Interactivo', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700601'], ['Decalogo Del Mentor', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700405'], ['Comunicacion Eficaz', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700552']],
 			pdf: [],
 			video: [],
 			tool: []
@@ -30,108 +30,8 @@ var data = {
 		}
 	}
 };
-var pisoContentSwitch = function pisoContentSwitch(piso) {
-	switch (piso) {
-		case '1':
-			return React.createElement(
-				'div',
-				null,
-				React.createElement(
-					'h2',
-					{ 'class': 'title-content' },
-					'Piso 1: Ambientaci\xF3n'
-				)
-			);
-		case '2':
-			return React.createElement(
-				'div',
-				null,
-				React.createElement(
-					'h2',
-					{ 'class': 'title-content' },
-					'Piso 2: Conceptualizaci\xF3n'
-				)
-			);
-		case '3':
-			return React.createElement(
-				'div',
-				null,
-				React.createElement(
-					'h2',
-					{ 'class': 'title-content' },
-					'Piso 3: Ideaci\xF3n'
-				)
-			);
-		case '4':
-			return React.createElement(
-				'div',
-				null,
-				React.createElement(
-					'h2',
-					{ 'class': 'title-content' },
-					'Piso 4: Dise\xF1o + Innovaci\xF3n'
-				)
-			);
-		case '5':
-			return React.createElement(
-				'div',
-				null,
-				React.createElement(
-					'h2',
-					{ 'class': 'title-content' },
-					'Piso 5: Prototipado'
-				)
-			);
-		case '6':
-			return React.createElement(
-				'div',
-				null,
-				React.createElement(
-					'h2',
-					{ 'class': 'title-content' },
-					'Piso 6: Sala de Juntas'
-				),
-				React.createElement(
-					'p',
-					{ 'class': 'text' },
-					'Informacion sobre el entregable a realizar la entrega final del piso 6 y diferentes recursos que apoyan esta entrega.'
-				),
-				React.createElement(
-					'ul',
-					{ 'class': 'text' },
-					React.createElement(
-						'li',
-						null,
-						'Instrucciones claras sobre el entregable.'
-					),
-					React.createElement(
-						'li',
-						null,
-						'Instrucciones sobre el pitch a realizar y el horario en el que se presentaria.'
-					),
-					React.createElement(
-						'li',
-						null,
-						'Link a Moodle donde se realiza la entrega e instrucciones para realizarlo.'
-					),
-					React.createElement(
-						'li',
-						null,
-						'Explicar como la entrega hace parte del funcionamiento del juego.'
-					),
-					React.createElement(
-						'li',
-						null,
-						'En que fechas se debe realizar esta entrega.'
-					)
-				)
-			);
-		default:
-			return null;
-	}
-};
 
-var PisosContainer = function PisosContainer() {
+var LobbyCont = function LobbyCont() {
 	var str = localStorage.getItem("data-piso-sel");
 	var selector = str ? str : 1;
 	var gr = localStorage.getItem("data-grupo-sel");
@@ -143,13 +43,6 @@ var PisosContainer = function PisosContainer() {
 	return React.createElement(
 		'div',
 		null,
-		React.createElement('br', null),
-		selector ? pisoContentSwitch(selector) : React.createElement(
-			'p',
-			null,
-			'Seleccione un piso porfavor'
-		),
-		React.createElement('br', null),
 		React.createElement(
 			'div',
 			{ 'class': 'grp-sel-cont' },
@@ -231,4 +124,4 @@ var PisosContainer = function PisosContainer() {
 	);
 };
 
-ReactDOM.render(React.createElement(PisosContainer, null), pisoCont);
+ReactDOM.render(React.createElement(LobbyCont, null), container);

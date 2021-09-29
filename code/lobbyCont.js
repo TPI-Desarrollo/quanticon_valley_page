@@ -1,10 +1,14 @@
-const pisoCont = document.querySelector('#pisos_container')
+const container = document.querySelector('.lobby-content')
 
 const data = {
 	dos: {
 		1 : {
 			ova: [
-				['ACTA DE COMPROMISO', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=700189'],
+				['Juego SALA DE ESCAPE', 'https://campus.virtual.unal.edu.co/mod/lesson/view.php?id=700603'],
+				['Cronograma Interactivo', 'https://campus.virtual.unal.edu.co/mod/page/view.php?id=701298'],
+				['SYLLABUS - Libro Interactivo', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700372'],
+				['Decalogo Del Mentor', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700168'],
+				['Comunicacion Eficaz', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700320'],
 			],
 			pdf: [],
 			video: [],
@@ -19,7 +23,13 @@ const data = {
 	},
 	cuatro: {
 		1 : {
-			ova: [],
+			ova: [
+				['Juego SALA DE ESCAPE', 'https://campus.virtual.unal.edu.co/mod/lesson/view.php?id=700603'],
+				['Cronograma Interactivo', 'https://campus.virtual.unal.edu.co/mod/page/view.php?id=701299'],
+				['SYLLABUS - Libro Interactivo', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700601'],
+				['Decalogo Del Mentor', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700405'],
+				['Comunicacion Eficaz', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700552'],
+			],
 			pdf: [],
 			video: [],
 			tool: [],
@@ -32,72 +42,8 @@ const data = {
 		},
 	}
 }
-const pisoContentSwitch = (piso) => { 
-	switch(piso){
-		case '1':
-			return	(<div>
-						<h2 class="title-content">
-							Piso 1: Ambientación
-						</h2>
-					</div>);
-		case '2':
-			return	(<div>
-						<h2 class="title-content">
-							Piso 2: Conceptualización
-						</h2>
-					</div>);
-		case '3':
-			return	(<div>
-						<h2 class="title-content">
-							Piso 3: Ideación
-						</h2>
-					</div>);
-		case '4':
-			return	(<div>
-						<h2 class="title-content">
-							Piso 4: Diseño + Innovación
-						</h2>
-					</div>);
-		case '5':
-			return	(<div>
-						<h2 class="title-content">
-							Piso 5: Prototipado
-						</h2>
-					</div>);
-		case '6':
-			return	(<div>
-						<h2 class="title-content">
-							Piso 6: Sala de Juntas
-						</h2>
-						<p class="text">
-							Informacion sobre el entregable a realizar la entrega final del piso 6 y diferentes recursos que apoyan esta entrega.
-						</p>
-						<ul class="text">
-							<li>
-								Instrucciones claras sobre el entregable.
-							</li>
-							<li>
-								Instrucciones sobre el pitch a realizar y el horario en el que se presentaria. 
-							</li>
-							<li>
-								Link a Moodle donde se realiza la entrega e instrucciones para realizarlo.
-							</li>
-							<li>
-								Explicar como la entrega hace parte del funcionamiento del juego.
-							</li>
-							<li>
-								En que fechas se debe realizar esta entrega.
-							</li>
-						</ul>
-					</div>);
-		default:
-			return	null;
-	}	
-}
 
-
-
-const PisosContainer = () => {
+const LobbyCont = () => {
 	const str = localStorage.getItem("data-piso-sel")
 	const selector = str ? str : 1
 	const gr = localStorage.getItem("data-grupo-sel")
@@ -108,12 +54,6 @@ const PisosContainer = () => {
 	}
 	return (
 		<div>
-			<br></br>
-			{selector 
-				? pisoContentSwitch(selector)
-				: <p>Seleccione un piso porfavor</p>
-			}
-			<br></br>
 			<div class="grp-sel-cont">
 				{group === 'dos'
 					? <div class="grupo-sel grp-selected">
@@ -169,8 +109,8 @@ const PisosContainer = () => {
 			</div>
 			: null}
 		</div>
-	</div>
+		</div>
 	);
 }
 
-ReactDOM.render(<PisosContainer/>, pisoCont)
+ReactDOM.render(<LobbyCont/>, container)

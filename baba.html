@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quanticon Valley - Principal</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="./styles.css">
+	<link rel="stylesheet" type="text/css" href="./simple-calendar.css" />
+
+	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+	<link rel="icon" href="./favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+
+	<div class="container-fluid">
+	    <div class="row">
+
+					<!----------------------------------------- SIDEBAR ------------------------------------------> 
+	        <div class="col-2">
+						<div id="side_bar_container" data-selected="principal"></div>
+	        </div>
+	       	
+	       	<!----------------------------------------- CONTENT ------------------------------------------> 
+	        <div class="col-10 col-lg-7">
+	        	<div id="content">
+		        	<p class="subtext">Hola, Bienvenido a Quanticon Valley</p>
+		        	<h2 class="title-content">Informacion General del Juego</h2>   
+		        	<p class="text">
+		        		Quanticon Valley es una plataforma web gamificada en desarrollo que busca enseñar conceptos de innovacion y emprendimiento a traves de una metodologia virtual e innovadora. <br>
+						Para una mejor comprension de los lineamientos, mecanicas y propositos de este juego por favor leer el siguiente documento:	
+		        	</p>
+					<p class="text">
+						<ul style="list-style-type: none">
+							<div class="ova-item" data-source-type="pdf" data-text="Documento prueba para pdf en drive" data-link="https://drive.google.com/file/d/1iPCJC0pUGlyMvXwqjoUvMJ4u6DHyQnpR/view?usp=sharing&authuser=1"></div>
+						</ul>
+						<embed src="./content/guia.pdf" type="application/pdf" width="100%" height="900px" view="Fit">
+					</p> 
+		        	<p class="text">
+					Esta plataforma se encuentra en construccion y los contenidos de esta pagina se cambiaran conforme se desarrollen nuevas funcionalidades,
+					por el momento en el menu de tu izquierda podras encontrar las siguientes opciones: 
+		        	</p> 
+					<p class="text"> 
+						<ul>
+		        			<li>
+		        				<strong>Principal -</strong> En esta pagina podras encontrar esta guia y otros recursos sobre el funcionamiento del juego y sus mecanicas asi como futuras funcionalidades que se planean implementar.
+		        			</li><br>
+		        			<li>
+		        				<strong>ETESC -</strong> Aqui encontraras los lineamientos e intrucciones de los entregables que te permitiran subir de piso asi como herramientas y recursos que te ayudaran a desarrollar tu idea.
+		        			</li><br>
+		        			<li>
+		        				<strong>Zonas Comunes -</strong> Este menu te permitira explorar diferentes recursos disponibles para todos los jugadores que te ayudaran en el desarrollo del juego.
+								<ul>
+									<br><li>
+										<strong>Lobby -</strong> Informacion y recursos que se actualizara en el transcurso del juego.
+									</li>
+									<br><li>
+										<strong>Reuniones -</strong> En esta pagina se desarrollaran los webinars.
+									</li>
+								</ul>
+							</li>
+		        		</ul>
+					</p>
+
+					<p class="text">
+					En el menu a tu derecha podras encontrar:<br>
+					<br><ul>
+						<li>
+							<strong>Calendario -</strong> Fechas ideales en las que se desarrollara el juego, no es una camisa de fuerza puedes realizar las actividades a tu propio ritmo.
+						</li><br>
+						<li>
+							<strong>Noticiero -</strong> Estos noticieros nos presentaran el estado del juego en general para todos y como este afecta el ecosistema colombiano de emprendimiento en el que se desarrollo.
+						</li><br>
+					</ul>
+
+					Esta palataforma es un propotipo del juego que buscamos implementar a futuro, se acepta retroalimentacion por parte de jugadores y mentores que permita mejorar su desarrollo y apoyar las diferentes funcionalidades que se iran agregando, removiendo y mejorando en el transcurso del curso.
+
+					</p>
+	        	</div>
+	        </div>
+
+			<!----------------------------------------- RIGHTBAR ------------------------------------------> 
+	        <div class="col-3 d-none d-lg-block no-padding">
+				<div class="right_bar_container"></div>
+	        </div>
+
+	    </div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+		<!-- Load React. -->
+		<!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+		<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+		<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+		<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+		<script src="./components/sideBar.js"></script>
+		<script src="./components/rightBar.js"></script>
+		<script src="./components/ovaItem.js"></script>
+
+		<!--Calendar-->
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="./calendario/jquery.simple-calendar.min.js"></script>
+		<script type="text/javascript" src="./calendario/calendario.js"></script>
+
+</body>
+</html>

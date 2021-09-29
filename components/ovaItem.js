@@ -31,22 +31,18 @@ var OvaItem = function OvaItem(_ref) {
 	    link = dataset.link;
 
 	return React.createElement(
-		'li',
-		null,
+		'div',
+		{ style: { paddingLeft: 30 } },
 		React.createElement(
 			'a',
-			{ href: link, target: '_blank' },
+			{ href: link, target: '_blank', 'class': 'div-src' },
+			types.map(function (item) {
+				return item.type === sourceType ? React.createElement('img', { key: item.type, style: styles.icon, src: item.src }) : null;
+			}),
 			React.createElement(
-				'div',
-				{ 'class': 'div-src' },
-				types.map(function (item) {
-					return item.type === sourceType ? React.createElement('img', { key: item.type, style: styles.icon, src: item.src }) : null;
-				}),
-				React.createElement(
-					'span',
-					{ style: styles.text },
-					text
-				)
+				'span',
+				{ style: styles.text },
+				text
 			)
 		)
 	);

@@ -22,7 +22,7 @@ var Pisos = function Pisos() {
 		[1, 2, 3, 4, 5, 6].map(function (item) {
 			return piso == item ? React.createElement(
 				"div",
-				{ "class": "col-2 piso-col", "data-piso": item },
+				{ "class": "col-2 piso-col", "data-piso": item, key: item },
 				React.createElement(
 					"a",
 					null,
@@ -35,7 +35,7 @@ var Pisos = function Pisos() {
 				)
 			) : React.createElement(
 				"div",
-				{ "class": "col-2 piso-col", "data-piso": item,
+				{ "class": "col-2 piso-col", "data-piso": item, key: item,
 					onClick: function onClick() {
 						return selectorF(item);
 					} },
