@@ -385,7 +385,7 @@ a{
 @media screen and (min-width: 1000px) {
 	body {
 		grid-template-columns: 1fr 4fr 1.4fr;
-		grid-template-rows: 180px auto;
+		grid-template-rows: auto auto;
 		grid-template-areas: 
 			"sb  hd  rb"
 			"sb  ct  rb";
