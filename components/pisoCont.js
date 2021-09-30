@@ -185,7 +185,7 @@ var PisosContainer = function PisosContainer() {
 				React.createElement(
 					'span',
 					null,
-					'_OVAS'
+					'_ENTREGABLES'
 				),
 				data[group][selector] ? data[group][selector].ova.map(function (item) {
 					return React.createElement('div', { key: item[0], 'class': 'ova-item', 'data-source-type': 'ova', 'data-text': item[0], 'data-link': item[1] });
@@ -194,11 +194,6 @@ var PisosContainer = function PisosContainer() {
 			data[group][selector].pdf[0] ? React.createElement(
 				'div',
 				{ 'class': 'src-element' },
-				React.createElement(
-					'span',
-					null,
-					'_PDFs'
-				),
 				data[group][selector] ? data[group][selector].pdf.map(function (item) {
 					return React.createElement('div', { key: item[0], 'class': 'ova-item', 'data-source-type': 'pdf', 'data-text': item[0], 'data-link': item[1] });
 				}) : null
@@ -206,11 +201,6 @@ var PisosContainer = function PisosContainer() {
 			data[group][selector].video[0] ? React.createElement(
 				'div',
 				{ 'class': 'src-element' },
-				React.createElement(
-					'span',
-					null,
-					'_VIDEOS'
-				),
 				data[group][selector] ? data[group][selector].video.map(function (item) {
 					return React.createElement('div', { key: item[0], 'class': 'ova-item', 'data-source-type': 'video', 'data-text': item[0], 'data-link': item[1] });
 				}) : null
@@ -218,11 +208,6 @@ var PisosContainer = function PisosContainer() {
 			data[group][selector].tool[0] ? React.createElement(
 				'div',
 				{ 'class': 'src-element' },
-				React.createElement(
-					'span',
-					null,
-					'_HERRAMIENTAS'
-				),
 				data[group][selector] ? data[group][selector].tool.map(function (item) {
 					return React.createElement('div', { key: item[0], 'class': 'ova-item', 'data-source-type': 'tools', 'data-text': item[0], 'data-link': item[1] });
 				}) : null
