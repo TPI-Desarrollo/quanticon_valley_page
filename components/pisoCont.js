@@ -3,129 +3,72 @@ var pisoCont = document.querySelector('#pisos_container');
 var data = {
 	dos: {
 		1: {
-			ova: [['ACTA DE COMPROMISO', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=700189']],
-			pdf: [],
-			video: [],
-			tool: []
+			entrega: [['ACTA DE COMPROMISO', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=700189'], ['PITCH PISO 1', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=701324']],
+			guia: [['Rubrica Entregable - Piso 1', ''], ['Rubrica Pitch - Piso 1', '']]
 		},
 		2: {
-			ova: [],
-			pdf: [],
-			video: [],
-			tool: []
+			entrega: [['PROBLEMA CONTEXTUALIZADO', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=701073'], ['PITCH PISO 2', '']],
+			guia: []
+		},
+		3: {
+			entrega: [['POSIBLES SOLUCIONES / INFOGRAFIA', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=700231'], ['PITCH PISO 3', '']],
+			guia: []
+		},
+		4: {
+			entrega: [['PROBLEMA / Diseño y Prototipo', ''], ['PITCH PISO 4', ''], ['Avance del trabajo Escrito', ''], ['Evaluacion de Desempeños', '']],
+			guia: []
+		},
+		5: {
+			entrega: [['PROTOTIPO FINAL, Campaña Publicitaria y Estrategia de Mercado', ''], ['PITCH PISO 3', ''], ['Trabajo en Equipo', '']],
+			guia: []
+		},
+		6: {
+			entrega: [['Validación de la Solucion', ''], ['PITCH FINAL', ''], ['Pagina Web', ''], ['Entrega Final: Trabajo Escrito', ''], ['Evaluacion de Desempeños II', '']],
+			guia: []
 		}
 	},
 	cuatro: {
 		1: {
-			ova: [],
-			pdf: [],
-			video: [],
-			tool: []
+			entrega: [['ACTA DE COMPROMISO', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=700426'], ['PITCH PISO 1', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=701325']],
+			guia: [['Rubrica Entregable - Piso 1', ''], ['Rubrica Pitch - Piso 1', '']]
 		},
 		2: {
-			ova: [],
-			pdf: [],
-			video: [],
-			tool: []
+			entrega: [['PROBLEMA CONTEXTUALIZADO', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=701074'], ['PITCH PISO 2', '']],
+			guia: []
+		},
+		3: {
+			entrega: [['POSIBLES SOLUCIONES / INFOGRAFIA', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=700465'], ['PITCH PISO 3', '']],
+			guia: []
+		},
+		4: {
+			entrega: [['PROBLEMA / Diseño y Prototipo', ''], ['PITCH PISO 4', ''], ['Avance del trabajo Escrito', ''], ['Evaluacion de Desempeños', '']],
+			guia: []
+		},
+		5: {
+			entrega: [['PROTOTIPO FINAL, Campaña Publicitaria y Estrategia de Mercado', ''], ['PITCH PISO 3', ''], ['Trabajo en Equipo', '']],
+			guia: []
+		},
+		6: {
+			entrega: [['Validación de la Solucion', ''], ['PITCH FINAL', ''], ['Pagina Web', ''], ['Entrega Final: Trabajo Escrito', ''], ['Evaluacion de Desempeños II', '']],
+			guia: []
 		}
 	}
 };
-var pisoContentSwitch = function pisoContentSwitch(piso) {
-	switch (piso) {
+
+var pisoTitle = function pisoTitle(sel) {
+	switch (sel) {
 		case '1':
-			return React.createElement(
-				'div',
-				null,
-				React.createElement(
-					'h2',
-					{ 'class': 'title-content' },
-					'Piso 1: Ambientaci\xF3n'
-				)
-			);
+			return 'Piso 1: Ambientación';
 		case '2':
-			return React.createElement(
-				'div',
-				null,
-				React.createElement(
-					'h2',
-					{ 'class': 'title-content' },
-					'Piso 2: Conceptualizaci\xF3n'
-				)
-			);
+			return 'Piso 2: Conceptualizaciónción';
 		case '3':
-			return React.createElement(
-				'div',
-				null,
-				React.createElement(
-					'h2',
-					{ 'class': 'title-content' },
-					'Piso 3: Ideaci\xF3n'
-				)
-			);
+			return 'Piso 3: Ideación';
 		case '4':
-			return React.createElement(
-				'div',
-				null,
-				React.createElement(
-					'h2',
-					{ 'class': 'title-content' },
-					'Piso 4: Dise\xF1o + Innovaci\xF3n'
-				)
-			);
+			return 'Piso 4: Diseño + Innovación';
 		case '5':
-			return React.createElement(
-				'div',
-				null,
-				React.createElement(
-					'h2',
-					{ 'class': 'title-content' },
-					'Piso 5: Prototipado'
-				)
-			);
+			return 'Piso 5: Prototipado';
 		case '6':
-			return React.createElement(
-				'div',
-				null,
-				React.createElement(
-					'h2',
-					{ 'class': 'title-content' },
-					'Piso 6: Sala de Juntas'
-				),
-				React.createElement(
-					'p',
-					{ 'class': 'text' },
-					'Informacion sobre el entregable a realizar la entrega final del piso 6 y diferentes recursos que apoyan esta entrega.'
-				),
-				React.createElement(
-					'ul',
-					{ 'class': 'text' },
-					React.createElement(
-						'li',
-						null,
-						'Instrucciones claras sobre el entregable.'
-					),
-					React.createElement(
-						'li',
-						null,
-						'Instrucciones sobre el pitch a realizar y el horario en el que se presentaria.'
-					),
-					React.createElement(
-						'li',
-						null,
-						'Link a Moodle donde se realiza la entrega e instrucciones para realizarlo.'
-					),
-					React.createElement(
-						'li',
-						null,
-						'Explicar como la entrega hace parte del funcionamiento del juego.'
-					),
-					React.createElement(
-						'li',
-						null,
-						'En que fechas se debe realizar esta entrega.'
-					)
-				)
-			);
+			return 'Piso 6: Sala de Juntas';
 		default:
 			return null;
 	}
@@ -133,7 +76,7 @@ var pisoContentSwitch = function pisoContentSwitch(piso) {
 
 var PisosContainer = function PisosContainer() {
 	var str = localStorage.getItem("data-piso-sel");
-	var selector = str ? str : 1;
+	var selector = str ? str : '1';
 	var gr = localStorage.getItem("data-grupo-sel");
 	var group = gr ? gr : 'dos';
 	var setGroup = function setGroup(grp) {
@@ -144,10 +87,14 @@ var PisosContainer = function PisosContainer() {
 		'div',
 		null,
 		React.createElement('br', null),
-		selector ? pisoContentSwitch(selector) : React.createElement(
-			'p',
+		React.createElement(
+			'div',
 			null,
-			'Seleccione un piso porfavor'
+			React.createElement(
+				'h2',
+				{ 'class': 'title-content' },
+				pisoTitle(selector)
+			)
 		),
 		React.createElement('br', null),
 		React.createElement(
@@ -176,43 +123,31 @@ var PisosContainer = function PisosContainer() {
 				'Horario 4 - 6 pm'
 			)
 		),
-		React.createElement(
+		data[group][selector].entrega[0] ? React.createElement(
 			'div',
-			{ 'class': 'src-grid' },
-			data[group][selector].ova[0] ? React.createElement(
-				'div',
-				{ 'class': 'src-element' },
-				React.createElement(
-					'span',
-					null,
-					'_ENTREGABLES'
-				),
-				data[group][selector] ? data[group][selector].ova.map(function (item) {
-					return React.createElement('div', { key: item[0], 'class': 'ova-item', 'data-source-type': 'ova', 'data-text': item[0], 'data-link': item[1] });
-				}) : null
-			) : null,
-			data[group][selector].pdf[0] ? React.createElement(
-				'div',
-				{ 'class': 'src-element' },
-				data[group][selector] ? data[group][selector].pdf.map(function (item) {
-					return React.createElement('div', { key: item[0], 'class': 'ova-item', 'data-source-type': 'pdf', 'data-text': item[0], 'data-link': item[1] });
-				}) : null
-			) : null,
-			data[group][selector].video[0] ? React.createElement(
-				'div',
-				{ 'class': 'src-element' },
-				data[group][selector] ? data[group][selector].video.map(function (item) {
-					return React.createElement('div', { key: item[0], 'class': 'ova-item', 'data-source-type': 'video', 'data-text': item[0], 'data-link': item[1] });
-				}) : null
-			) : null,
-			data[group][selector].tool[0] ? React.createElement(
-				'div',
-				{ 'class': 'src-element' },
-				data[group][selector] ? data[group][selector].tool.map(function (item) {
-					return React.createElement('div', { key: item[0], 'class': 'ova-item', 'data-source-type': 'tools', 'data-text': item[0], 'data-link': item[1] });
-				}) : null
-			) : null
-		)
+			{ 'class': 'src-element' },
+			React.createElement(
+				'span',
+				{ 'class': 'piso-subtitle' },
+				'ENTREGABLES'
+			),
+			data[group][selector] ? data[group][selector].entrega.map(function (item) {
+				return React.createElement('div', { key: item[0], 'class': 'ova-item', 'data-source-type': 'ova', 'data-text': item[0], 'data-link': item[1] });
+			}) : null
+		) : null,
+		React.createElement('br', null),
+		data[group][selector].guia[0] ? React.createElement(
+			'div',
+			{ 'class': 'src-element' },
+			React.createElement(
+				'span',
+				{ 'class': 'piso-subtitle' },
+				'GUIAS'
+			),
+			data[group][selector] ? data[group][selector].guia.map(function (item) {
+				return React.createElement('div', { key: item[0], 'class': 'ova-item', 'data-source-type': 'pdf', 'data-text': item[0], 'data-link': item[1] });
+			}) : null
+		) : null
 	);
 };
 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Quanticon Valley - Zonas Comunes</title>
+	<title>Quanticon Valley - Bienvenido/a</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 	<link rel="stylesheet" type="text/css" href="./stylesB.css">
@@ -14,49 +14,24 @@
 <body>
 	<!----------------------Side Bar------------------------>
 	<section class="side-bar">
-		<div id="side_bar_container" data-selected="zonas-comunes"></div>
+		<div id="side_bar_container" data-selected="principal"></div>
 	</section>
 	<!----------------------Content------------------------>
 	<section class="content">
-			<div class="jumbotron jumbo">
+			<div class="jumbotron jumbo jumbo-principal">
 				<div class="text-jumbo">
-					<h2 class="title-content">Zonas Comunes</h2>
-					<p class="subtext">!Espacios para todos¡</p>
-					<img class="img-jumbo d-none d-sm-block" src="./imgs/Ilus_Zonas_Comunes.png">
+					<p class="subtext pr-sbt">Bienvenidos/as a</p>
+					<h2 class="title-content pr-title">Quanticon Valley</h2>
+					<img class="img-jumbo img-jumbo-principal d-none d-sm-block" 
+						src="./imgs/Principal-Ilust.png">
 				</div>
 			</div>	
-			<br> 
-			<br> 
-							<div class="grid-zc">
-								<a class="element-zc" href="https://ingenieria.unal.edu.co/tpi/index.php/24propuestas"><div>
-										<img class="img-zc" src="./imgs/subsection/cafe.png" />
-										<div style="display: flex; flex-direction: column;">
-											<span class="title-zc">CAFETERIA</span>
-											<span class="desc-zc">Conformacion de equipos</span>
-										</div>
-								</div></a>
-								<a class="element-zc" href=""><div>
-										<img class="img-zc" src="./imgs/subsection/reun.png" />
-										<div style="display: flex; flex-direction: column;">
-											<span class="title-zc">REUNIONES</span>
-											<span class="desc-zc">Webinars para todos</span>
-										</div>
-								</div></a>
-								<a class="element-zc two-ver-zc" href="lobby.html"><div>
-										<img class="img-zc" src="./imgs/subsection/lobby.png" />
-											<div class="title-zc">LOBBY</div>
-											<div class="desc-zc">Tus Tareas inician aqui</div>
-								</div></a>
-								<a class="element-zc two-hor-zc" href="asesores.html"><div>
-										<img class="img-zc" src="./imgs/subsection/asesor.png" />
-										<div style="display: flex; flex-direction: column;">
-											<span class="title-zc">ASESORES</span></span>
-											<span class="desc-zc">Aqui podras resolver todas tus dudas</span>
-										</div>
-								</div></a>
-							</div>
-	        	</div>  
-	        </div>
+		<br>
+		<br>
+		<!--
+		<div class="ova-item" data-source-type="pdf" data-text="Documento prueba para pdf en drive" data-link="https://drive.google.com/file/d/1iPCJC0pUGlyMvXwqjoUvMJ4u6DHyQnpR/view?usp=sharing&authuser=1"></div>
+		-->
+		<embed src="./content/guia.pdf" type="application/pdf" width="100%" height="900px" view="Fit">
 	</section>
 	<!----------------------Right Bar------------------------>
 	<section class="right-bar">
@@ -76,9 +51,6 @@
 
 		<script src="./components/sideBar.js"></script>
 		<script src="./components/rightBar.js"></script>
-		<script src="./components/ovaItem.js"></script>
-		<script src="./components/pisos.js"></script>
-		<script src="./components/titleSubS.js"></script>
 
 		<!--Calendar-->
 		<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>

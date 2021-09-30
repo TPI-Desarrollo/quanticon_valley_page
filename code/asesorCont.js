@@ -14,6 +14,75 @@ const data = {
 			tool: [
 			],
 		},
+		2 : {
+			ova: [
+				['Video Conservatorios 20 de Octubre', ''],
+				['Metodologia Vester', ''],
+				['Como hacer un Pestal', ''],
+				['Arbol de Problemas', ''],
+				['Mapa de Empatia', ''],
+				['Actores', ''],
+			],
+			pdf: [
+			],
+			video: [
+			],
+			tool: [
+			],
+		},
+		3 : {
+			ova: [
+				['Infografia Interactiva de Ejemplo', ''],
+				['Videos Conversatorios 17 de Noviembre', ''],
+			],
+			pdf: [
+			],
+			video: [
+			],
+			tool: [
+			],
+		},
+		4 : {
+			ova: [
+				['Videos Conversatorios 6 de Diciembre', ''],
+				['"METODOLOGIA GENERAL PARA EL DESARROLLO DE UN PROYECTO"', ''],
+				['DISEÑO DE EXPERIMENTOS', ''],
+				['VARIABLES CRITICAS EN EL DESARROLLO DE UN PROYECTO', ''],
+				['MODELO DE NEGOCIO', ''],
+				['PROPUESTA DE VALOR', ''],
+				['ASPECTOS DE VIABILIDAD', ''],
+				['EVALUACIÓN DEL IMPACTO', ''],
+			],
+			pdf: [
+			],
+			video: [
+			],
+			tool: [
+			],
+		},
+		5 : {
+			ova: [
+				['ANALISIS DE IMPACTO AMBIENTAL', ''],
+				['MODELO DE NEGOCIO', ''],
+				['PROPUESTA DE VALOR', ''],
+			],
+			pdf: [
+			],
+			video: [
+			],
+			tool: [
+			],
+		},
+		6 : {
+			ova: [
+			],
+			pdf: [
+			],
+			video: [
+			],
+			tool: [
+			],
+		},
 	},
 	cuatro: {
 		1 : {
@@ -27,11 +96,80 @@ const data = {
 			],
 			tool: [
 			],
-		}
+		},
+		2 : {
+			ova: [
+				['Video Conservatorios 20 de Octubre', ''],
+				['Metodologia Vester', ''],
+				['Como hacer un Pestal', ''],
+				['Arbol de Problemas', ''],
+				['Mapa de Empatia', ''],
+				['Actores', ''],
+			],
+			pdf: [
+			],
+			video: [
+			],
+			tool: [
+			],
+		},
+		3 : {
+			ova: [
+				['Infografia Interactiva de Ejemplo', ''],
+				['Videos Conversatorios 17 de Noviembre', ''],
+			],
+			pdf: [
+			],
+			video: [
+			],
+			tool: [
+			],
+		},
+		4 : {
+			ova: [
+				['Videos Conversatorios 6 de Diciembre', ''],
+				['"METODOLOGIA GENERAL PARA EL DESARROLLO DE UN PROYECTO"', ''],
+				['DISEÑO DE EXPERIMENTOS', ''],
+				['VARIABLES CRITICAS EN EL DESARROLLO DE UN PROYECTO', ''],
+				['MODELO DE NEGOCIO', ''],
+				['PROPUESTA DE VALOR', ''],
+				['ASPECTOS DE VIABILIDAD', ''],
+				['EVALUACIÓN DEL IMPACTO', ''],
+			],
+			pdf: [
+			],
+			video: [
+			],
+			tool: [
+			],
+		},
+		5 : {
+			ova: [
+				['ANALISIS DE IMPACTO AMBIENTAL', ''],
+				['MODELO DE NEGOCIO', ''],
+				['PROPUESTA DE VALOR', ''],
+			],
+			pdf: [
+			],
+			video: [
+			],
+			tool: [
+			],
+		},
+		6 : {
+			ova: [
+			],
+			pdf: [
+			],
+			video: [
+			],
+			tool: [
+			],
+		},
 	}
 }
 
-const LobbyCont = () => {
+const AsesorCont = () => {
 	const str = localStorage.getItem("data-piso-sel")
 	const selector = str ? str : 1
 	const gr = localStorage.getItem("data-grupo-sel")
@@ -101,4 +239,4 @@ const LobbyCont = () => {
 	);
 }
 
-ReactDOM.render(<LobbyCont/>, container)
+ReactDOM.render(<AsesorCont/>, container)

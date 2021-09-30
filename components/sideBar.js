@@ -5,7 +5,7 @@ var data = [{
 	sel: 'principal',
 	src: './imgs/Icon_principal.svg',
 	title: 'Principal',
-	link: './index.html',
+	link: './principal.html',
 	icon: './imags/Icon_principal.svg'
 }, {
 	sel: 'etesc',

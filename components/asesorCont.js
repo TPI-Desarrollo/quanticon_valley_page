@@ -7,6 +7,36 @@ var data = {
 			pdf: [],
 			video: [['Como Hacer un Pitch', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700302'], ['Pregunta Escencial', 'https://campus.virtual.unal.edu.co/mod/page/view.php?id=701245']],
 			tool: []
+		},
+		2: {
+			ova: [['Video Conservatorios 20 de Octubre', ''], ['Metodologia Vester', ''], ['Como hacer un Pestal', ''], ['Arbol de Problemas', ''], ['Mapa de Empatia', ''], ['Actores', '']],
+			pdf: [],
+			video: [],
+			tool: []
+		},
+		3: {
+			ova: [['Infografia Interactiva de Ejemplo', ''], ['Videos Conversatorios 17 de Noviembre', '']],
+			pdf: [],
+			video: [],
+			tool: []
+		},
+		4: {
+			ova: [['Videos Conversatorios 6 de Diciembre', ''], ['"METODOLOGIA GENERAL PARA EL DESARROLLO DE UN PROYECTO"', ''], ['DISEÑO DE EXPERIMENTOS', ''], ['VARIABLES CRITICAS EN EL DESARROLLO DE UN PROYECTO', ''], ['MODELO DE NEGOCIO', ''], ['PROPUESTA DE VALOR', ''], ['ASPECTOS DE VIABILIDAD', ''], ['EVALUACIÓN DEL IMPACTO', '']],
+			pdf: [],
+			video: [],
+			tool: []
+		},
+		5: {
+			ova: [['ANALISIS DE IMPACTO AMBIENTAL', ''], ['MODELO DE NEGOCIO', ''], ['PROPUESTA DE VALOR', '']],
+			pdf: [],
+			video: [],
+			tool: []
+		},
+		6: {
+			ova: [],
+			pdf: [],
+			video: [],
+			tool: []
 		}
 	},
 	cuatro: {
@@ -15,11 +45,41 @@ var data = {
 			pdf: [],
 			video: [['Como Hacer un Pitch', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700534'], ['Pregunta Escencial', 'https://campus.virtual.unal.edu.co/mod/page/view.php?id=701209']],
 			tool: []
+		},
+		2: {
+			ova: [['Video Conservatorios 20 de Octubre', ''], ['Metodologia Vester', ''], ['Como hacer un Pestal', ''], ['Arbol de Problemas', ''], ['Mapa de Empatia', ''], ['Actores', '']],
+			pdf: [],
+			video: [],
+			tool: []
+		},
+		3: {
+			ova: [['Infografia Interactiva de Ejemplo', ''], ['Videos Conversatorios 17 de Noviembre', '']],
+			pdf: [],
+			video: [],
+			tool: []
+		},
+		4: {
+			ova: [['Videos Conversatorios 6 de Diciembre', ''], ['"METODOLOGIA GENERAL PARA EL DESARROLLO DE UN PROYECTO"', ''], ['DISEÑO DE EXPERIMENTOS', ''], ['VARIABLES CRITICAS EN EL DESARROLLO DE UN PROYECTO', ''], ['MODELO DE NEGOCIO', ''], ['PROPUESTA DE VALOR', ''], ['ASPECTOS DE VIABILIDAD', ''], ['EVALUACIÓN DEL IMPACTO', '']],
+			pdf: [],
+			video: [],
+			tool: []
+		},
+		5: {
+			ova: [['ANALISIS DE IMPACTO AMBIENTAL', ''], ['MODELO DE NEGOCIO', ''], ['PROPUESTA DE VALOR', '']],
+			pdf: [],
+			video: [],
+			tool: []
+		},
+		6: {
+			ova: [],
+			pdf: [],
+			video: [],
+			tool: []
 		}
 	}
 };
 
-var LobbyCont = function LobbyCont() {
+var AsesorCont = function AsesorCont() {
 	var str = localStorage.getItem("data-piso-sel");
 	var selector = str ? str : 1;
 	var gr = localStorage.getItem("data-grupo-sel");
@@ -112,4 +172,4 @@ var LobbyCont = function LobbyCont() {
 	);
 };
 
-ReactDOM.render(React.createElement(LobbyCont, null), container);
+ReactDOM.render(React.createElement(AsesorCont, null), container);

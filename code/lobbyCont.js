@@ -14,8 +14,22 @@ const data = {
 			video: [],
 			tool: [],
 		},
-		2 : {
-			ova: [],
+		3 : {
+			ova: [
+				['GUIA METODOLOGICA INFOGRAFIA', ''],
+				['GUIA DE TRABAJO ESCRITO', ''],
+			],
+			pdf: [],
+			video: [],
+			tool: [],
+		},
+		6 : {
+			ova: [
+				['GUIA PRE SELECCION DE MEJORES', ''],
+				['GUIA PARTICIPACION DE PROFESORES', ''],
+				['GUIA PARTICIPACION DE ESTUDIANTE', ''],
+				['GUIA DE PRESENTACION FINAL PITCH Y PROTOTIPO', ''],
+			],
 			pdf: [],
 			video: [],
 			tool: [],
@@ -34,8 +48,22 @@ const data = {
 			video: [],
 			tool: [],
 		},
-		2 : {
-			ova: [],
+		3 : {
+			ova: [
+				['GUIA METODOLOGICA INFOGRAFIA', ''],
+				['GUIA DE TRABAJO ESCRITO', ''],
+			],
+			pdf: [],
+			video: [],
+			tool: [],
+		},
+		6 : {
+			ova: [
+				['GUIA PRE SELECCION DE MEJORES', ''],
+				['GUIA PARTICIPACION DE PROFESORES', ''],
+				['GUIA PARTICIPACION DE ESTUDIANTE', ''],
+				['GUIA DE PRESENTACION FINAL PITCH Y PROTOTIPO', ''],
+			],
 			pdf: [],
 			video: [],
 			tool: [],
