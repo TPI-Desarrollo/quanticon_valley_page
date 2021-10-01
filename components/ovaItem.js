@@ -22,6 +22,9 @@ var types = [{
 }, {
 	type: "tools",
 	src: './imgs/sources/tool.png'
+}, {
+	type: "form",
+	src: './imgs/sources/form.png'
 }];
 
 var OvaItem = function OvaItem(_ref) {
@@ -32,7 +35,7 @@ var OvaItem = function OvaItem(_ref) {
 
 	return React.createElement(
 		'div',
-		{ style: { paddingLeft: 30 } },
+		{ style: { paddingLeft: 20 } },
 		React.createElement(
 			'a',
 			{ href: link, target: '_blank', 'class': 'div-src' },

@@ -97,6 +97,23 @@ a{
 	color: #272835;
 	margin: 0px;
 }
+
+.etesc-subtitle {
+	font-weight: 600;
+	font-size: 18px;
+	padding-left: 15px;
+}
+
+.content-cont-p{
+	padding: 10px;
+	background-color: #ddd;
+}
+.content-principal{
+	width: 100%;
+	margin: 0;
+}
+
+
 /*-----------Sidebar-----------*/
 #side_bar_container{
 	position: sticky;
@@ -405,7 +422,7 @@ a{
 .src-element{
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: flex-start;
 	color: blue;
 }

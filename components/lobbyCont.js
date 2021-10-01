@@ -3,41 +3,41 @@ var container = document.querySelector('.lobby-content');
 var data = {
 	dos: {
 		1: {
-			ova: [['Juego SALA DE ESCAPE', 'https://campus.virtual.unal.edu.co/mod/lesson/view.php?id=700603'], ['Cronograma Interactivo', 'https://campus.virtual.unal.edu.co/mod/page/view.php?id=701298'], ['SYLLABUS - Libro Interactivo', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700372'], ['Decalogo Del Mentor', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700168'], ['Comunicacion Eficaz', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700320']],
-			pdf: [],
+			ova: [['Juego SALA DE ESCAPE', 'https://campus.virtual.unal.edu.co/mod/lesson/view.php?id=700603'], ['Cronograma Interactivo', 'https://campus.virtual.unal.edu.co/mod/page/view.php?id=701298'], ['Decalogo Del Mentor', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700168'], ['Comunicacion Eficaz', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700320']],
+			pdf: [['SYLLABUS - Libro Interactivo', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700372']],
 			video: [],
 			tool: []
 		},
 		3: {
-			ova: [['GUIA METODOLOGICA INFOGRAFIA', ''], ['GUIA DE TRABAJO ESCRITO', '']],
-			pdf: [],
+			ova: [],
+			pdf: [['GUIA METODOLOGICA INFOGRAFIA', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700225'], ['GUIA DE TRABAJO ESCRITO', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700249']],
 			video: [],
 			tool: []
 		},
 		6: {
-			ova: [['GUIA PRE SELECCION DE MEJORES', ''], ['GUIA PARTICIPACION DE PROFESORES', ''], ['GUIA PARTICIPACION DE ESTUDIANTE', ''], ['GUIA DE PRESENTACION FINAL PITCH Y PROTOTIPO', '']],
-			pdf: [],
-			video: [],
+			ova: [],
+			pdf: [['GUIA PRE SELECCION DE MEJORES', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700321'], ['GUIA PARTICIPACION DE PROFESORES', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700317'], ['GUIA PARTICIPACION DE ESTUDIANTE', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700318'], ['GUIA DE PRESENTACION FINAL PITCH Y PROTOTIPO', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700319']],
+			video: [['CREACIÓN PAGINAS WIX', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700315']],
 			tool: []
 		}
 	},
 	cuatro: {
 		1: {
-			ova: [['Juego SALA DE ESCAPE', 'https://campus.virtual.unal.edu.co/mod/lesson/view.php?id=700603'], ['Cronograma Interactivo', 'https://campus.virtual.unal.edu.co/mod/page/view.php?id=701299'], ['SYLLABUS - Libro Interactivo', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700601'], ['Decalogo Del Mentor', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700405'], ['Comunicacion Eficaz', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700552']],
-			pdf: [],
+			ova: [['Juego SALA DE ESCAPE', 'https://campus.virtual.unal.edu.co/mod/lesson/view.php?id=700603'], ['Cronograma Interactivo', 'https://campus.virtual.unal.edu.co/mod/page/view.php?id=701299'], ['Decalogo Del Mentor', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700405'], ['Comunicacion Eficaz', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700552']],
+			pdf: [['SYLLABUS - Libro Interactivo', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700601']],
 			video: [],
 			tool: []
 		},
 		3: {
-			ova: [['GUIA METODOLOGICA INFOGRAFIA', ''], ['GUIA DE TRABAJO ESCRITO', '']],
-			pdf: [],
+			ova: [],
+			pdf: [['GUIA METODOLOGICA INFOGRAFIA', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700459'], ['GUIA DE TRABAJO ESCRITO', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700483']],
 			video: [],
 			tool: []
 		},
 		6: {
-			ova: [['GUIA PRE SELECCION DE MEJORES', ''], ['GUIA PARTICIPACION DE PROFESORES', ''], ['GUIA PARTICIPACION DE ESTUDIANTE', ''], ['GUIA DE PRESENTACION FINAL PITCH Y PROTOTIPO', '']],
-			pdf: [],
-			video: [],
+			ova: [],
+			pdf: [['GUIA PRE SELECCION DE MEJORES', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700553'], ['GUIA PARTICIPACION DE PROFESORES', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700549'], ['GUIA PARTICIPACION DE ESTUDIANTE', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700550'], ['GUIA DE PRESENTACION FINAL PITCH Y PROTOTIPO', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700551']],
+			video: [['CREACIÓN PAGINAS WIX', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700547']],
 			tool: []
 		}
 	}
