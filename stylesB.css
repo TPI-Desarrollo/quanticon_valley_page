@@ -6,13 +6,13 @@ html {
 body {
 	font-family: 'Poppins';
 	background-color: #F4F7FD;
+	width: 99%;
 	min-height: 100vh;
 	display: grid;
-	grid-template-columns: 0px auto;
-	grid-template-rows: repeat(2, auto);
+	grid-template-columns: 1fr 4fr 1.4fr;
+	grid-template-rows: auto;
 	grid-template-areas: 
-		"sb hd"
-		"sb ct";
+		"sb  ct  rb";
 	margin: 0;
 }
 a{
@@ -21,14 +21,7 @@ a{
 	padding: 0px;
 }
 
-.first-screen{
-	grid-column: span 3;
-	background-image: url('./imgs/Rectangle 1.png');
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
+/* -----Grid Areas Body------- */
 
 .side-bar {
 	grid-area: sb;
@@ -39,17 +32,21 @@ a{
 .content {
 	grid-area: ct;
 	min-height: 600px;
-	padding: 30px 40px 20px 40px;
+	padding: 30px 30px;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
 }
 
-.subtext{
-	font-size: 15px;
-	color: #8F92A1;
-	margin: 0px;
-	z-index: 2;
+
+/* -----First Screen------- */
+.first-screen{
+	grid-column: span 3;
+	background-image: url('./imgs/Rectangle 1.png');
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 .subtext-fscreen{
 	font-size: 18px;
@@ -74,6 +71,17 @@ a{
 }
 .button-fscreen:active {
 	background-color: rgba(255,255,255,0.3);
+}
+
+
+
+/* -----Text------- */
+
+.subtext{
+	font-size: 15px;
+	color: #8F92A1;
+	margin: 0px;
+	z-index: 2;
 }
 
 .text{
@@ -104,6 +112,8 @@ a{
 	padding-left: 15px;
 }
 
+/*-----------Content Principal-----------*/
+
 .content-cont-p{
 	padding: 10px;
 	background-color: #ddd;
@@ -117,15 +127,17 @@ a{
 /*-----------Sidebar-----------*/
 #side_bar_container{
 	position: sticky;
-	top: 0;
+	top: 12px;
 }
+
 #sidebar{
 	background-color:#1920EF;
 	border-radius:20px; 
 	padding:25px 0px 0px 0px;
 	margin: 12px 0px 12px 8px; 
-	height: 96vh; 
+	height: 92vh; 
 	color: #cccccc;
+	box-shadow: -3px 0px 40px rgba(0, 0, 0, 0.15);
 }
 #logo{
 	margin: 10% 0 25% 10%;
@@ -163,7 +175,7 @@ a{
 	margin: 0px;
 	padding: 0px;
 	width: 65%;
-	font-size: 0px;
+	font-size: .8rem;
 }
 .sidebar-button:hover{
 	background-color: #303CFE;
@@ -176,7 +188,7 @@ a{
 	left: 8px;
 }
 
-/*---PisoSelector--*/
+/*-----------PisoSelector-----------*/
 #piso-selector{
 	display: flex;
 	flex-wrap: wrap;
@@ -233,11 +245,6 @@ a{
 	color: white;
 }
 
-/*---Calendario--*/
-#calendario{
-	margin: 1vh 0 1vh 0;
-	padding: 0;
-}
 
 /*-----------RightBar-----------*/
 .no-padding{
@@ -249,15 +256,17 @@ a{
 
 .right_bar_container{
 	position: sticky;
-	top: 0;
+	width: 100%;
+	top: 5px;
 }
 
 #rightbar{
 	background-color: #ffffff;
-	box-shadow: -3px 0px 40px rgba(0, 0, 0, 0.1);
 	padding: 20px;
+	margin: 5px 0px;
 	width: 90%;
-	height: 100vh;
+	height: 91vh;
+	box-shadow: -3px 0px 40px rgba(0, 0, 0, 0.15);
 }
 
 .right-jumbo{
@@ -276,9 +285,21 @@ a{
 }
 
 .noti-video{
-	width: 90%;
+	width: 95%;
 	height: auto;
 	border-radius: 20px;
+}
+/*---Calendario--*/
+#calendario{
+	margin: 1vh 0 1vh 0;
+	padding: 0;
+	width: 100%;
+}
+.subtext-rb{
+	font-size: 15px;
+	color: #8F92A1;
+	margin: 0px;
+	z-index: 2;
 }
 
 /*-----------source ITEMS-----------*/
@@ -295,12 +316,28 @@ a{
 	color: #1920EF;
 }
 
-/*-----------CSS-grid-Zonas-Comunes-----------*/
+.src-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-auto-rows: auto;
+	grid-gap: 20px 40px;
+}
+.src-element{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	color: blue;
+}
+
+
+/*-----------Zonas-Comunes-----------*/
+
 .grid-zc {
 	display: grid;
 	grid-auto-flow: dense;
 	grid-auto-rows: 150px;
-	grid-template-columns: repeat(auto-fit, minmax(min(100%, 150px), 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
 	grid-gap: 1rem;
 }
  
@@ -335,18 +372,6 @@ a{
 	grid-column: span 2;
 }
 
-@media screen and (max-width: 768px) {
-	.two-ver-zc {
-		grid-row: span 1;
-		align-items: flex-start;
-		text-align: start;
-		padding-left: 20px;
-	}
-	.two-hor-zc {
-		grid-column: span 1;
-	}
-}
-
 .img-zc {
 	height: 50%;
 	margin: 0px 0px -5px 10px;
@@ -362,6 +387,21 @@ a{
 	margin-top: -5px;
 }
 
+/*---Responsive Zonas-Comunes-----*/
+
+@media screen and (max-width: 1000px) {
+	.two-ver-zc {
+		grid-row: span 1;
+		align-items: flex-start;
+		text-align: start;
+		padding-left: 20px;
+	}
+	.two-hor-zc {
+		grid-column: span 1;
+	}
+}
+
+/*---Back-button-----*/
 
 .back-button {
 	width: 20px;
@@ -376,13 +416,14 @@ a{
 
 /*---Jumbo--*/
 .jumbo{
-	margin: 30px 0 0 0;
+	margin: 30px 0;
 	border-radius: 20px;
 	background-color: #FFC024;
 	position: relative;
 }
 .jumbo-principal {
-	background-color: #1920EF;
+	background-image: url('./imgs/Rectangle 1.png');
+	border: 3px solid #F4F7FD;
 }
 .text-jumbo{
 	padding: 75px 0 20px 20px;
@@ -405,53 +446,101 @@ a{
 }
 .img-jumbo{
 	position: absolute;
-	width: 0px;
+	width: 320px;
 	bottom: 0;
 	right: 0;
 	z-index: 1;
 	border-radius: 20px;
 }
-
-
-.src-grid {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	grid-auto-rows: auto;
-	grid-gap: 20px 40px;
+.img-jumbo-principal{
+	width: 250px;
+	right: 10%;
+	bottom: -20%;
 }
-.src-element{
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: flex-start;
-	color: blue;
-}
+
 
 /*-----------Responsive-----------*/
-@media screen and (min-width: 760px) {
-	body {
-		grid-template-columns: 50px auto;
-	}
-	.img-jumbo{
-		width: 300px;
-	}
-	.img-jumbo-principal{
-		width: 240px;
-		right: 10%;
-		bottom: -20%;
-	}
-}
-
-@media screen and (min-width: 1000px) {
-	body {
-		grid-template-columns: 1fr 4fr 1.4fr;
+@media screen and (max-width: 1000px) {
+	body{
+		grid-template-columns: 1fr 4fr 0px;
 		grid-template-rows: auto;
 		grid-template-areas: 
 			"sb  ct  rb";
 	}
-	.sidebar-button-text{
-		font-size: .8rem;
+	.noti-video{
+		width: 0%;
+	}
+	#calendario{
+		width: 0%;
+	}
+	.subtext-rb{
+		font-size: 0px;
 	}
 }
+@media screen and (max-width: 760px) {
+	body {
+		grid-template-columns: auto;
+		grid-template-rows: repeat(3, auto);
+		grid-template-areas: 
+			"sb"
+			"ct"
+			"rb";
+	}
+	.content {
+		padding: 10px;
+		width: 90%;
+	}
+	.side-bar {
+		width: 95%;
+	}
+	.right-bar {
+		width: 95%;
+	}
+	.img-jumbo{
+		width: 300px;
+	}
+	#sidebar{
+		display: flex;
+		height: auto;
+		padding: 0;
+		justify-content: space-around;
+		padding: 10px 0px;
+	}
+	.sidebar-button{
+		width: auto;
+		height: 50%;
+		padding: 10px 10px;
+	}
+	.sidebar-button-text{
+		font-size: 0px;
+	}
+	.sidebar-img{
+		width: 0px;
+	}
+	#logo{
+		width: 0px;
+	}
+	.img-jumbo{
+		width: 0px;
+	}
+	.subtext-fscreen{
+		font-size: 12px;
+	}
+	.title-fscreen{
+		font-size: 20px;
+	}
+	.button-fscreen{
+		padding: 25px 80px;
+		margin: 20px;
+	}
+	.noti-video{
+		width: 95%;
+	}
+	#calendario{
+		width: 100%;
+	}
+}
+
+
 
 

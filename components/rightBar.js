@@ -18,7 +18,7 @@ var RightBar = function RightBar() {
 			{ 'class': 'right-jumbo' },
 			React.createElement(
 				'p',
-				{ 'class': 'subtext' },
+				{ 'class': 'subtext-rb' },
 				'Ultimas Noticias'
 			),
 			React.createElement('iframe', { 'class': 'noti-video', src: 'https://www.youtube.com/embed/HnVqU8tOAGg', title: 'Noticias', frameBorder: '0', allow: 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture', allowFullScreen: true })
