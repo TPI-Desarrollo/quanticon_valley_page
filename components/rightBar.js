@@ -12,7 +12,11 @@ var RightBar = function RightBar() {
 	return React.createElement(
 		'div',
 		{ id: 'rightbar' },
-		React.createElement('div', { id: 'calendario' }),
+		React.createElement(
+			'div',
+			null,
+			React.createElement('div', { id: 'calendario' })
+		),
 		React.createElement(
 			'div',
 			{ 'class': 'right-jumbo' },
@@ -22,6 +26,16 @@ var RightBar = function RightBar() {
 				'Ultimas Noticias'
 			),
 			React.createElement('iframe', { 'class': 'noti-video', src: 'https://www.youtube.com/embed/HnVqU8tOAGg', title: 'Noticias', frameBorder: '0', allow: 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture', allowFullScreen: true })
+		),
+		React.createElement(
+			'div',
+			{ 'class': 'right-jumbo' },
+			React.createElement(
+				'p',
+				{ 'class': 'subtext-rb' },
+				'Pildoras'
+			),
+			React.createElement('embed', { 'class': 'pdf', src: './content/pildoras.pdf#toolbar=0&navpanes=0&scrollbar=0', type: 'application/pdf', width: '95%', height: '120px' })
 		)
 	);
 };

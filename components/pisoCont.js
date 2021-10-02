@@ -60,7 +60,7 @@ var pisoTitle = function pisoTitle(sel) {
 		case '1':
 			return 'Piso 1: Ambientación';
 		case '2':
-			return 'Piso 2: Conceptualizaciónción';
+			return 'Piso 2: Conceptualización';
 		case '3':
 			return 'Piso 3: Ideación';
 		case '4':

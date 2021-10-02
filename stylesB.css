@@ -6,7 +6,6 @@ html {
 body {
 	font-family: 'Poppins';
 	background-color: #F4F7FD;
-	width: 99%;
 	min-height: 100vh;
 	display: grid;
 	grid-template-columns: 1fr 4fr 1.4fr;
@@ -117,9 +116,10 @@ a{
 .content-cont-p{
 	padding: 10px;
 	background-color: #ddd;
+	border-radius: 20px;
 }
 .content-principal{
-	width: 100%;
+	width: 0%;
 	margin: 0;
 }
 
@@ -145,8 +145,8 @@ a{
 }
 .sidebar-button{
 	display: flex;
-	justify-content: center;
-	align-items: flex-start;
+	justify-content: space-evenly;
+	align-items: center;
 	padding: 2vh 0px 2vh;
 	font-weight: bold;
 	font-size: 14px;
@@ -166,7 +166,7 @@ a{
 .sidebar-button-icon{
 	padding: 0px;
 	position: relative;
-	width: 40px;
+	width: 20px;
 	height: 20px;
 	display:inline-block
 }
@@ -219,6 +219,7 @@ a{
 	transform: scale(1.03);
 	background-color: #979FF5;
 	color: #ffffff;
+	cursor: pointer;
 }
 .piso-col{
 	padding: 0;
@@ -261,39 +262,37 @@ a{
 }
 
 #rightbar{
-	background-color: #ffffff;
-	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	background-color: #fff;
+	padding: 0px 10px;
 	margin: 5px 0px;
-	width: 90%;
-	height: 91vh;
+	height: auto;
 	box-shadow: -3px 0px 40px rgba(0, 0, 0, 0.15);
 }
 
 .right-jumbo{
+	align-items: center;
 	border-radius: 20px;
-	background-color: #F4F7FD;
+	background-color: #ddd;
 	text-align: center;
-	margin: 2vh 0 12px 0;
-	height: 30vh;
-	width: 100%;
+	margin: 5px;
 }
 
 .center-jumbo{
-	display: flex;
-	align-items: center;
 	justify-content: center;
 }
 
 .noti-video{
-	width: 95%;
-	height: auto;
+	width: 90%;
+	height: 120px;
 	border-radius: 20px;
+	margin: 0px;
 }
 /*---Calendario--*/
 #calendario{
-	margin: 1vh 0 1vh 0;
-	padding: 0;
-	width: 100%;
+	transform: scale(0.9);
 }
 .subtext-rb{
 	font-size: 15px;
@@ -309,6 +308,7 @@ a{
 		align-items: center;
 		margin-bottom: 10px;
 		margin-top: 10px;
+		margin-left: 20px;
 		transition: 0.3s;
 }
 .div-src:hover{
@@ -458,6 +458,9 @@ a{
 	bottom: -20%;
 }
 
+.pdf{
+	border-radius: 20px;
+}
 
 /*-----------Responsive-----------*/
 @media screen and (max-width: 1000px) {
@@ -488,28 +491,31 @@ a{
 	}
 	.content {
 		padding: 10px;
-		width: 90%;
 	}
 	.side-bar {
-		width: 95%;
+		position: sticky;
+		top: 0;
+		left: 0;
 	}
 	.right-bar {
 		width: 95%;
 	}
-	.img-jumbo{
-		width: 300px;
-	}
 	#sidebar{
 		display: flex;
 		height: auto;
-		padding: 0;
+		margin: 0px;
+		padding: 10px 10px;
 		justify-content: space-around;
-		padding: 10px 0px;
+		border-radius: 0px 0px 15px 15px;
 	}
 	.sidebar-button{
 		width: auto;
-		height: 50%;
-		padding: 10px 10px;
+		padding: 12px 12px;
+		border-radius: 24px;
+		transform: scale(1.1);
+	}
+	#sidebar-button-sel{
+		border: 2px solid #FFC024;
 	}
 	.sidebar-button-text{
 		font-size: 0px;
@@ -535,9 +541,17 @@ a{
 	}
 	.noti-video{
 		width: 95%;
+		height: 200px;
 	}
 	#calendario{
 		width: 100%;
+	}
+	.content-principal{
+		width: 100%;
+	}
+	.pdf-phone{
+		width: 0%;
+		height: 0%;
 	}
 }
 

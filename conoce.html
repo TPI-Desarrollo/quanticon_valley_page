@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Quanticon Valley - ETESC</title>
+	<title>Quanticon Valley - Conoce</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 	<link rel="stylesheet" type="text/css" href="./stylesB.css">
@@ -14,16 +14,15 @@
 <body>
 	<!----------------------Content------------------------>
 	<section class="content">
-			<div class="jumbotron jumbo">
+			<div class="jumbotron jumbo jumbo-principal">
 				<div class="text-jumbo">
-					<h2 class="title-content">ETESC</h2>
-					<p class="subtext">Edificio Tecnológico de Empredimiento Sostenible</p>
-					<img class="img-jumbo d-none d-sm-block" src="./imgs/Ilus_ETESC.png">
+					<p class="subtext pr-sbt">Conoce sobre</p>
+					<h2 class="title-content pr-title">Quanticon Valley</h2>
 				</div>
 			</div>	
+		<div class="faqs"></div>
 		<br/>
-		<div id="pisos_selector"></div> 
-		<div id="pisos_container"></div> 
+		<br/>
 	</section>
 	<!----------------------Right Bar------------------------>
 	<section class="right-bar">
@@ -31,7 +30,7 @@
 	</section>
 	<!----------------------Side Bar------------------------>
 	<section class="side-bar">
-		<div id="side_bar_container" data-selected="etesc"></div>
+		<div id="side_bar_container" data-selected="conoce-qv"></div>
 	</section>
 
 		<!-- Load React. -->
@@ -47,8 +46,7 @@
 
 		<script src="./components/sideBar.js"></script>
 		<script src="./components/rightBar.js"></script>
-		<script src="./components/pisos.js"></script>
-		<script src="./components/pisoCont.js"></script>
+		<script src="./components/faq.js"></script>
 		<script src="./components/ovaItem.js"></script>
 
 		<!--Calendar-->

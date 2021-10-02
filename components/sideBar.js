@@ -19,9 +19,9 @@ var data = [{
 	link: './comunes.html'
 }, {
 	sel: 'conoce-qv',
-	src: './imgs/Icon_zonas_comunes.svg',
+	src: './imgs/icon_help.png',
 	title: 'Conoce QV',
-	link: ''
+	link: 'conoce.html'
 }];
 
 var SideBar = function SideBar() {

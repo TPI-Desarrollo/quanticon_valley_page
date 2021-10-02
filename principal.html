@@ -12,10 +12,6 @@
 
 </head>
 <body>
-	<!----------------------Side Bar------------------------>
-	<section class="side-bar">
-		<div id="side_bar_container" data-selected="principal"></div>
-	</section>
 	<!----------------------Content------------------------>
 	<section class="content">
 			<div class="jumbotron jumbo jumbo-principal">
@@ -26,20 +22,21 @@
 						src="./imgs/Principal-Ilust.png">
 				</div>
 			</div>	
-		<br>
-		<br>
-		<!--
-		<div class="ova-item" data-source-type="pdf" data-text="Documento prueba para pdf en drive" data-link="https://drive.google.com/file/d/1iPCJC0pUGlyMvXwqjoUvMJ4u6DHyQnpR/view?usp=sharing&authuser=1"></div>
-		-->
+		<br/>
 		<div class="content-cont-p">
 			<img class="content-principal" src="./content/1.jpg">
 			<img class="content-principal" src="./content/2.jpg">
 			<img class="content-principal" src="./content/3.jpg">
+			<embed class="pdf pdf-phone" src="./content/guia.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="100%" height="580px" />
 		</div>
 	</section>
 	<!----------------------Right Bar------------------------>
 	<section class="right-bar">
 		<div class="right_bar_container"></div>
+	</section>
+	<!----------------------Side Bar------------------------>
+	<section class="side-bar">
+		<div id="side_bar_container" data-selected="principal"></div>
 	</section>
 
 		<!-- Load React. -->
@@ -55,6 +52,7 @@
 
 		<script src="./components/sideBar.js"></script>
 		<script src="./components/rightBar.js"></script>
+		<script src="./components/ovaItem.js"></script>
 
 		<!--Calendar-->
 		<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
