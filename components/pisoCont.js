@@ -4,7 +4,7 @@ var data = {
 	dos: {
 		1: {
 			entrega: [['ACTA DE COMPROMISO', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=700189'], ['PITCH PISO 1', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=701324']],
-			guia: [['Rubrica Entregable - Piso 1', ''], ['Rubrica Pitch - Piso 1', '']]
+			guia: [['Rubrica Pitch - Piso 1', 'https://campus.virtual.unal.edu.co/pluginfile.php/2166880/mod_resource/content/1/Rúbrica_pitch%20piso%201.pdf']]
 		},
 		2: {
 			entrega: [['PROBLEMA CONTEXTUALIZADO', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=701073'], ['PITCH PISO 2', '']],
@@ -30,7 +30,7 @@ var data = {
 	cuatro: {
 		1: {
 			entrega: [['ACTA DE COMPROMISO', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=700426'], ['PITCH PISO 1', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=701325']],
-			guia: [['Rubrica Entregable - Piso 1', ''], ['Rubrica Pitch - Piso 1', '']]
+			guia: [['Rubrica del Pitch - Piso 1', 'https://campus.virtual.unal.edu.co/pluginfile.php/2166881/mod_resource/content/1/Rúbrica_pitch%20piso%201.pdf']]
 		},
 		2: {
 			entrega: [['PROBLEMA CONTEXTUALIZADO', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=701074'], ['PITCH PISO 2', '']],

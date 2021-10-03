@@ -17,11 +17,6 @@ var data = [{
 	src: './imgs/Icon_zonas_comunes.svg',
 	title: 'Zonas Comunes',
 	link: './comunes.html'
-}, {
-	sel: 'conoce-qv',
-	src: './imgs/icon_help.png',
-	title: 'Conoce QV',
-	link: 'conoce.html'
 }];
 
 var SideBar = function SideBar() {
