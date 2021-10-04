@@ -8,7 +8,8 @@ $(document).ready(function(){
         disableEventDetails: false, // disable showing event details
         disableEmptyDetails: false, // disable showing empty date details
         events: [
-            {startDate: "2021-10-04T14:00:00.000Z", endDate: "2021-10-04T18:00:00.000Z", summary: "Clase TPI"}
+            {startDate: "2021-10-04T19:00:00.000Z", endDate: "2021-10-04T24:00:00.000Z", summary: "Primera Clase TPI"},
+            {startDate: "2021-10-15T24:00:00.000Z", endDate: "2021-10-15T24:00:00.000Z", summary: "Entrega - Primer Piso"}
         ],                     // List of events
         onInit: function (calendar) {}, // Callback after first initialization
         onMonthChange: function (month, year) {}, // Callback on month change
