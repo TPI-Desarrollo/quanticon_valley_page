@@ -12,11 +12,13 @@ const data = {
 				['Pregunta Escencial', 'https://campus.virtual.unal.edu.co/mod/page/view.php?id=701245'],
 			],
 			tool: [
+				['Encuesta de persepcion conservatorios: como presentar un pitch', 'https://campus.virtual.unal.edu.co/mod/feedback/view.php?id=700304'],
+				['Encuesta Presentacion de la materia', 'https://campus.virtual.unal.edu.co/mod/feedback/view.php?id=700175'],
+				['Encuesta de Conocimientos Previos', 'https://campus.virtual.unal.edu.co/mod/feedback/view.php?id=700174'],
 			],
 		},
 		2 : {
 			ova: [
-				['Video Conservatorios 20 de Octubre', ''],
 				['Metodologia Vester', ''],
 				['Como hacer un Pestal', ''],
 				['Arbol de Problemas', ''],
@@ -26,25 +28,25 @@ const data = {
 			pdf: [
 			],
 			video: [
+				['Video Conservatorios 20 de Octubre', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700201'],
 			],
 			tool: [
 			],
 		},
 		3 : {
 			ova: [
-				['Infografia Interactiva de Ejemplo', ''],
-				['Videos Conversatorios 17 de Noviembre', ''],
+				['Infografia Interactiva de Ejemplo', 'https://campus.virtual.unal.edu.co/mod/page/view.php?id=700227'],
 			],
 			pdf: [
 			],
 			video: [
+				['Videos Conversatorios 17 de Noviembre', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700214'],
 			],
 			tool: [
 			],
 		},
 		4 : {
 			ova: [
-				['Videos Conversatorios 6 de Diciembre', ''],
 				['"METODOLOGIA GENERAL PARA EL DESARROLLO DE UN PROYECTO"', ''],
 				['DISEÑO DE EXPERIMENTOS', ''],
 				['VARIABLES CRITICAS EN EL DESARROLLO DE UN PROYECTO', ''],
@@ -56,6 +58,9 @@ const data = {
 			pdf: [
 			],
 			video: [
+				['Videos Conversatorios 6 de Diciembre - Prototipado', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700256'],
+				['Videos Conversatorios 6 de Diciembre - Laboratorio', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700286'],
+				['Videos Conversatorios 6 de Diciembre - Mercadeo', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700240'],
 			],
 			tool: [
 			],
@@ -95,11 +100,13 @@ const data = {
 				['Pregunta Escencial', 'https://campus.virtual.unal.edu.co/mod/page/view.php?id=701209'],
 			],
 			tool: [
+				['Encuesta de persepcion conservatorios: como presentar un pitch', 'https://campus.virtual.unal.edu.co/mod/feedback/view.php?id=700536'],
+				['Encuesta Presentacion de la materia', 'https://campus.virtual.unal.edu.co/mod/feedback/view.php?id=700412'],
+				['Encuesta de Conocimientos Previos', 'https://campus.virtual.unal.edu.co/mod/feedback/view.php?id=700411'],
 			],
 		},
 		2 : {
 			ova: [
-				['Video Conservatorios 20 de Octubre', ''],
 				['Metodologia Vester', ''],
 				['Como hacer un Pestal', ''],
 				['Arbol de Problemas', ''],
@@ -109,25 +116,25 @@ const data = {
 			pdf: [
 			],
 			video: [
+				['Video Conservatorios 20 de Octubre', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700435'],
 			],
 			tool: [
 			],
 		},
 		3 : {
 			ova: [
-				['Infografia Interactiva de Ejemplo', ''],
-				['Videos Conversatorios 17 de Noviembre', ''],
+				['Infografia Interactiva de Ejemplo', 'https://campus.virtual.unal.edu.co/mod/page/view.php?id=700461'],
 			],
 			pdf: [
 			],
 			video: [
+				['Videos Conversatorios 17 de Noviembre', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700448'],
 			],
 			tool: [
 			],
 		},
 		4 : {
 			ova: [
-				['Videos Conversatorios 6 de Diciembre', ''],
 				['"METODOLOGIA GENERAL PARA EL DESARROLLO DE UN PROYECTO"', ''],
 				['DISEÑO DE EXPERIMENTOS', ''],
 				['VARIABLES CRITICAS EN EL DESARROLLO DE UN PROYECTO', ''],
@@ -139,6 +146,9 @@ const data = {
 			pdf: [
 			],
 			video: [
+				['Videos Conversatorios 6 de Diciembre - Prototipado', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700490'],
+				['Videos Conversatorios 6 de Diciembre - Laboratorio', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700518'],
+				['Videos Conversatorios 6 de Diciembre - Mercadeo', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700474'],
 			],
 			tool: [
 			],
@@ -228,9 +238,9 @@ const AsesorCont = () => {
 
 			{data[group][selector].tool[0] ? 
 			<div class="src-element">
-				<span>_HERRAMIENTAS</span>
+				<span>_ENCUESTAS</span>
 				{data[group][selector] ? data[group][selector].tool.map(item => 
-					<div key={item[0]} class="ova-item" data-source-type="tools" data-text={item[0]} data-link={item[1]}></div>
+					<div key={item[0]} class="ova-item" data-source-type="form" data-text={item[0]} data-link={item[1]}></div>
 				): null}
 			</div>
 			: null}

@@ -8,8 +8,7 @@ const data = {
 				['PITCH PISO 1', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=701324'],
 			],
 			guia: [
-				['Rubrica Entregable - Piso 1', ''],
-				['Rubrica Pitch - Piso 1', ''],
+				['Rubrica Pitch - Piso 1', 'https://campus.virtual.unal.edu.co/pluginfile.php/2166880/mod_resource/content/1/Rúbrica_pitch%20piso%201.pdf'],
 			],
 		},
 		2 : {
@@ -28,28 +27,28 @@ const data = {
 		},
 		4 : {
 			entrega: [
-				['PROBLEMA / Diseño y Prototipo', ''],
+				['PROBLEMA / Diseño y Prototipo', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=701160'],
 				['PITCH PISO 4', ''],
-				['Avance del trabajo Escrito', ''],
-				['Evaluacion de Desempeños', ''],
+				['Avance del trabajo Escrito', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=700251'],
+				['Evaluacion de Desempeños', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=700274'],
 			],
 			guia: [],
 		},
 		5 : {
 			entrega: [
-				['PROTOTIPO FINAL, Campaña Publicitaria y Estrategia de Mercado', ''],
+				['PROTOTIPO FINAL, Campaña Publicitaria y Estrategia de Mercado', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=701166'],
 				['PITCH PISO 3', ''],
-				['Trabajo en Equipo', ''],
+				['Trabajo en Equipo', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=700299'],
 			],
 			guia: [],
 		},
 		6 : {
 			entrega: [
-				['Validación de la Solucion', ''],
-				['PITCH FINAL', ''],
-				['Pagina Web', ''],
-				['Entrega Final: Trabajo Escrito', ''],
-				['Evaluacion de Desempeños II', ''],
+				['Validación de la Solucion', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=700339'],
+				['PITCH FINAL', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=700336'],
+				['Pagina Web', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=700342'],
+				['Entrega Final: Trabajo Escrito', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=700332'],
+				['Evaluacion de Desempeños II', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=700346'],
 			],
 			guia: [],
 		},
@@ -61,8 +60,7 @@ const data = {
 				['PITCH PISO 1', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=701325'],
 			],
 			guia: [
-				['Rubrica Entregable - Piso 1', ''],
-				['Rubrica Pitch - Piso 1', ''],
+				['Rubrica Pitch - Piso 1', 'https://campus.virtual.unal.edu.co/pluginfile.php/2166881/mod_resource/content/1/Rúbrica_pitch%20piso%201.pdf'],
 			],
 		},
 		2 : {
@@ -81,28 +79,28 @@ const data = {
 		},
 		4 : {
 			entrega: [
-				['PROBLEMA / Diseño y Prototipo', ''],
+				['PROBLEMA / Diseño y Prototipo', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=701161'],
 				['PITCH PISO 4', ''],
-				['Avance del trabajo Escrito', ''],
-				['Evaluacion de Desempeños', ''],
+				['Avance del trabajo Escrito', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=700485'],
+				['Evaluacion de Desempeños', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=700506'],
 			],
 			guia: [],
 		},
 		5 : {
 			entrega: [
-				['PROTOTIPO FINAL, Campaña Publicitaria y Estrategia de Mercado', ''],
+				['PROTOTIPO FINAL, Campaña Publicitaria y Estrategia de Mercado', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=701167'],
 				['PITCH PISO 3', ''],
-				['Trabajo en Equipo', ''],
+				['Trabajo en Equipo', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=700531'],
 			],
 			guia: [],
 		},
 		6 : {
 			entrega: [
-				['Validación de la Solucion', ''],
-				['PITCH FINAL', ''],
-				['Pagina Web', ''],
-				['Entrega Final: Trabajo Escrito', ''],
-				['Evaluacion de Desempeños II', ''],
+				['Validación de la Solucion', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=700571'],
+				['PITCH FINAL', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=700568'],
+				['Pagina Web', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=700574'],
+				['Entrega Final: Trabajo Escrito', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=700564'],
+				['Evaluacion de Desempeños II', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=700578'],
 			],
 			guia: [],
 		},
@@ -114,7 +112,7 @@ const pisoTitle = (sel) => {
 		case '1': 
 			return 'Piso 1: Ambientación'
 		case '2': 
-			return 'Piso 2: Conceptualizaciónción'
+			return 'Piso 2: Conceptualización'
 		case '3': 
 			return 'Piso 3: Ideación'
 		case '4': 
@@ -128,6 +126,7 @@ const pisoTitle = (sel) => {
 	}
 }
 
+const styles = {}
 
 
 const PisosContainer = () => {
@@ -140,7 +139,7 @@ const PisosContainer = () => {
 		location.reload()
 	}
 	return (
-		<div>
+		<div class="pad-content">
 			<br></br>
 			<div>
 				<h2 class="title-content">
@@ -166,11 +165,16 @@ const PisosContainer = () => {
 						</div>
 				}
 			</div>
+			{selector === '1' 
+				? <div>
 			{data[group][selector].entrega[0] ? 
 			<div class="src-element">
 				<span class="piso-subtitle">ENTREGABLES</span>
 				{data[group][selector] ? data[group][selector].entrega.map(item => 
-					<div key={item[0]} class="ova-item" data-source-type="ova" data-text={item[0]} data-link={item[1]}></div>
+					<a href={item[1]} target="_blank"><div className="div-src" key={item[0]} >
+						<img src="./imgs/sources/up-file.png"/>
+						<span className="etesc-subtitle">{item[0]}</span>
+					</div></a>
 				): null}
 			</div>
 			: null}
@@ -179,10 +183,16 @@ const PisosContainer = () => {
 			<div class="src-element">
 				<span class="piso-subtitle">GUIAS</span>
 				{data[group][selector] ? data[group][selector].guia.map(item => 
-					<div key={item[0]} class="ova-item" data-source-type="pdf" data-text={item[0]} data-link={item[1]}></div>
+					<a href={item[1]} target="_blank"><div className="div-src" key={item[0]} >
+						<img src="./imgs/sources/guia-Icon.png"/>
+						<span className="etesc-subtitle">{item[0]}</span>
+					</div></a>
 				): null}
 			</div>
 			: null}
+				</div>
+				:<h3>El piso seleccionado estara disponible una vez se complete la fase del piso anterior</h3>
+			}
 	</div>
 	);
 }

@@ -30,7 +30,7 @@ var data = {
 	cuatro: {
 		1: {
 			entrega: [['ACTA DE COMPROMISO', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=700426'], ['PITCH PISO 1', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=701325']],
-			guia: [['Rubrica del Pitch - Piso 1', 'https://campus.virtual.unal.edu.co/pluginfile.php/2166881/mod_resource/content/1/Rúbrica_pitch%20piso%201.pdf']]
+			guia: [['Rubrica Pitch - Piso 1', 'https://campus.virtual.unal.edu.co/pluginfile.php/2166881/mod_resource/content/1/Rúbrica_pitch%20piso%201.pdf']]
 		},
 		2: {
 			entrega: [['PROBLEMA CONTEXTUALIZADO', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=701074'], ['PITCH PISO 2', '']],
@@ -87,7 +87,7 @@ var PisosContainer = function PisosContainer() {
 	};
 	return React.createElement(
 		'div',
-		null,
+		{ 'class': 'pad-content' },
 		React.createElement('br', null),
 		React.createElement(
 			'div',
@@ -125,57 +125,65 @@ var PisosContainer = function PisosContainer() {
 				'Horario 4 - 6 pm'
 			)
 		),
-		data[group][selector].entrega[0] ? React.createElement(
+		selector === '1' ? React.createElement(
 			'div',
-			{ 'class': 'src-element' },
-			React.createElement(
-				'span',
-				{ 'class': 'piso-subtitle' },
-				'ENTREGABLES'
-			),
-			data[group][selector] ? data[group][selector].entrega.map(function (item) {
-				return React.createElement(
-					'a',
-					{ href: item[1], target: '_blank' },
-					React.createElement(
-						'div',
-						{ className: 'div-src', key: item[0] },
-						React.createElement('img', { src: './imgs/sources/up-file.png' }),
+			null,
+			data[group][selector].entrega[0] ? React.createElement(
+				'div',
+				{ 'class': 'src-element' },
+				React.createElement(
+					'span',
+					{ 'class': 'piso-subtitle' },
+					'ENTREGABLES'
+				),
+				data[group][selector] ? data[group][selector].entrega.map(function (item) {
+					return React.createElement(
+						'a',
+						{ href: item[1], target: '_blank' },
 						React.createElement(
-							'span',
-							{ className: 'etesc-subtitle' },
-							item[0]
+							'div',
+							{ className: 'div-src', key: item[0] },
+							React.createElement('img', { src: './imgs/sources/up-file.png' }),
+							React.createElement(
+								'span',
+								{ className: 'etesc-subtitle' },
+								item[0]
+							)
 						)
-					)
-				);
-			}) : null
-		) : null,
-		React.createElement('br', null),
-		data[group][selector].guia[0] ? React.createElement(
-			'div',
-			{ 'class': 'src-element' },
-			React.createElement(
-				'span',
-				{ 'class': 'piso-subtitle' },
-				'GUIAS'
-			),
-			data[group][selector] ? data[group][selector].guia.map(function (item) {
-				return React.createElement(
-					'a',
-					{ href: item[1], target: '_blank' },
-					React.createElement(
-						'div',
-						{ className: 'div-src', key: item[0] },
-						React.createElement('img', { src: './imgs/sources/guia-Icon.png' }),
+					);
+				}) : null
+			) : null,
+			React.createElement('br', null),
+			data[group][selector].guia[0] ? React.createElement(
+				'div',
+				{ 'class': 'src-element' },
+				React.createElement(
+					'span',
+					{ 'class': 'piso-subtitle' },
+					'GUIAS'
+				),
+				data[group][selector] ? data[group][selector].guia.map(function (item) {
+					return React.createElement(
+						'a',
+						{ href: item[1], target: '_blank' },
 						React.createElement(
-							'span',
-							{ className: 'etesc-subtitle' },
-							item[0]
+							'div',
+							{ className: 'div-src', key: item[0] },
+							React.createElement('img', { src: './imgs/sources/guia-Icon.png' }),
+							React.createElement(
+								'span',
+								{ className: 'etesc-subtitle' },
+								item[0]
+							)
 						)
-					)
-				);
-			}) : null
-		) : null
+					);
+				}) : null
+			) : null
+		) : React.createElement(
+			'h3',
+			null,
+			'El piso seleccionado estara disponible una vez se complete la fase del piso anterior'
+		)
 	);
 };
 

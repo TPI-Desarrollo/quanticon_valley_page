@@ -27,12 +27,16 @@ const types = [
 		type: "tools",
 		src: './imgs/sources/tool.png',
 	},
+	{
+		type: "form",
+		src: './imgs/sources/form.png',
+	},
 ]
 
 const OvaItem = ({dataset}) => {
 	const {sourceType, text, link} = dataset
 	return (
-		<div style={{paddingLeft: 30}}>
+		<div style={{paddingLeft: 20}}>
 				<a href={link} target="_blank" class="div-src">
 					{types.map((item) => {
 						return item.type === sourceType
