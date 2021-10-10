@@ -37,17 +37,17 @@ var Subsection = function Subsection(_ref) {
 				null,
 				React.createElement(
 					'h2',
-					{ 'class': 'title-content' },
+					{ className: 'title-content' },
 					title
 				),
 				React.createElement(
 					'p',
-					{ 'class': 'subtext' },
+					{ className: 'subtext' },
 					data[title][0]
 				)
 			)
 		),
-		React.createElement('img', { 'class': 'back-button', src: './imgs/sources/atras.png', onClick: function onClick() {
+		React.createElement('img', { className: 'back-button', src: './imgs/sources/atras.png', onClick: function onClick() {
 				return goBack();
 			} })
 	);

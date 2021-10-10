@@ -18,14 +18,18 @@ const RightBar = () => {
 				<div>
 					<div id="calendario"></div>
 				</div>
-				<div class="right-jumbo">
-					<p class="subtext-rb">Ultimas Noticias</p>
-					<iframe class="noti-video" src="https://www.youtube.com/embed/HnVqU8tOAGg" title="Noticias" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+				<div className="right-jumbo">
+					<p className="subtext-rb">Ultimas Noticias</p>
+					<iframe className="noti-video" src="https://www.youtube.com/embed/HnVqU8tOAGg" title="Noticias" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 				</div>
-				<div class="right-jumbo">
-					<p class="subtext-rb">Pildoras</p>
-					<embed class="pdf" src="./content/pildoras.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="95%" height="120px" />
-				</div>
+				<a href="https://drive.google.com/file/d/1DsxZt4232mjOLK8-4hVIm0QOPxQJ9JrX/view?usp=sharing" target="_blank"><div className="right-jumbo pildoras">
+                                    <div>
+                                      <img style={{marginRight: 10}} src="./imgs/pil.png" />
+                                    </div>
+                                    <div>
+                                      Conoce las pildoras de esta Semana
+                                    </div>
+				</div></a>
 		</div>
 	);
 }

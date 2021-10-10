@@ -13,14 +13,14 @@ const Pisos = () => {
 			<div id="piso-selector"> 
 				{[1,2,3,4,5,6].map((item) => 
 					(piso == item)
-						? <div class="col-2 piso-col" data-piso={item} key={item}>
-								<a><span id="piso-selected" class="piso-select">
+						? <div className="col-2 piso-col" data-piso={item} key={item}>
+								<a><span id="piso-selected" className="piso-select">
 									Piso {item}
 								</span></a>
 							</div> 
-						: <div class="col-2 piso-col" data-piso={item} key={item}
+						: <div className="col-2 piso-col" data-piso={item} key={item}
 									onClick={() => selectorF(item)}>
-								<a><span class="piso-select">
+								<a><span className="piso-select">
 									Piso {item}
 								</span></a>
 							</div> 

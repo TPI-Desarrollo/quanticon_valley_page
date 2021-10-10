@@ -37,7 +37,7 @@ const OvaItem = ({dataset}) => {
 	const {sourceType, text, link} = dataset
 	return (
 		<div style={{paddingLeft: 20}}>
-				<a href={link} target="_blank" class="div-src">
+				<a href={link} target="_blank" className="div-src">
 					{types.map((item) => {
 						return item.type === sourceType
 							? <img key={item.type} style={styles.icon} src={item.src}/>

@@ -1,5 +1,6 @@
 var container = document.querySelector('.lobby-content');
 
+var extra = [['Conoce a los Mentores, Expertos y Guias en esta Aventura', 'https://ingenieria.unal.edu.co/tpi/index.php/equipotpi/profesores', './imgs/Icon_actores.svg']];
 var data = {
 	dos: {
 		1: {
@@ -57,81 +58,100 @@ var LobbyCont = function LobbyCont() {
 		null,
 		React.createElement(
 			'div',
-			{ 'class': 'grp-sel-cont' },
+			{ className: 'grp-sel-cont' },
 			group === 'dos' ? React.createElement(
 				'div',
-				{ 'class': 'grupo-sel grp-selected' },
+				{ className: 'grupo-sel grp-selected' },
 				'Horario 2 - 4 pm'
 			) : React.createElement(
 				'div',
-				{ 'class': 'grupo-sel', onClick: function onClick() {
+				{ className: 'grupo-sel', onClick: function onClick() {
 						return setGroup('dos');
 					} },
 				'Horario 2 - 4 pm'
 			),
 			group === 'cuatro' ? React.createElement(
 				'div',
-				{ 'class': 'grupo-sel grp-selected' },
+				{ className: 'grupo-sel grp-selected' },
 				'Horario 4 - 6 pm'
 			) : React.createElement(
 				'div',
-				{ 'class': 'grupo-sel', onClick: function onClick() {
+				{ className: 'grupo-sel', onClick: function onClick() {
 						return setGroup('cuatro');
 					} },
 				'Horario 4 - 6 pm'
 			)
 		),
-		React.createElement(
+		selector === '1' ? React.createElement(
 			'div',
-			{ 'class': 'src-grid' },
-			data[group][selector].ova[0] ? React.createElement(
+			null,
+			React.createElement(
+				'h3',
+				{ className: 'title-content', style: { fontSize: '22px' } },
+				'Recursos del Piso'
+			),
+			React.createElement(
 				'div',
-				{ 'class': 'src-element' },
-				React.createElement(
-					'span',
-					null,
-					'_OVAS'
-				),
-				data[group][selector] ? data[group][selector].ova.map(function (item) {
-					return React.createElement('div', { key: item[0], 'class': 'ova-item', 'data-source-type': 'ova', 'data-text': item[0], 'data-link': item[1] });
-				}) : null
-			) : null,
-			data[group][selector].pdf[0] ? React.createElement(
-				'div',
-				{ 'class': 'src-element' },
-				React.createElement(
-					'span',
-					null,
-					'_PDFs'
-				),
-				data[group][selector] ? data[group][selector].pdf.map(function (item) {
-					return React.createElement('div', { key: item[0], 'class': 'ova-item', 'data-source-type': 'pdf', 'data-text': item[0], 'data-link': item[1] });
-				}) : null
-			) : null,
-			data[group][selector].video[0] ? React.createElement(
-				'div',
-				{ 'class': 'src-element' },
-				React.createElement(
-					'span',
-					null,
-					'_VIDEOS'
-				),
-				data[group][selector] ? data[group][selector].video.map(function (item) {
-					return React.createElement('div', { key: item[0], 'class': 'ova-item', 'data-source-type': 'video', 'data-text': item[0], 'data-link': item[1] });
-				}) : null
-			) : null,
-			data[group][selector].tool[0] ? React.createElement(
-				'div',
-				{ 'class': 'src-element' },
-				React.createElement(
-					'span',
-					null,
-					'_HERRAMIENTAS'
-				),
-				data[group][selector] ? data[group][selector].tool.map(function (item) {
-					return React.createElement('div', { key: item[0], 'class': 'ova-item', 'data-source-type': 'tools', 'data-text': item[0], 'data-link': item[1] });
-				}) : null
-			) : null
+				{ className: 'src-grid' },
+				data[group][selector].ova[0] ? React.createElement(
+					'div',
+					{ className: 'src-element' },
+					React.createElement(
+						'span',
+						null,
+						'_OVAS'
+					),
+					data[group][selector] ? data[group][selector].ova.map(function (item) {
+						return React.createElement('div', { key: item[0], className: 'ova-item', 'data-source-type': 'ova', 'data-text': item[0], 'data-link': item[1] });
+					}) : null
+				) : null,
+				data[group][selector].pdf[0] ? React.createElement(
+					'div',
+					{ className: 'src-element' },
+					React.createElement(
+						'span',
+						null,
+						'_PDFs'
+					),
+					data[group][selector] ? data[group][selector].pdf.map(function (item) {
+						return React.createElement('div', { key: item[0], className: 'ova-item', 'data-source-type': 'pdf', 'data-text': item[0], 'data-link': item[1] });
+					}) : null
+				) : null,
+				data[group][selector].video[0] ? React.createElement(
+					'div',
+					{ className: 'src-element' },
+					React.createElement(
+						'span',
+						null,
+						'_VIDEOS'
+					),
+					data[group][selector] ? data[group][selector].video.map(function (item) {
+						return React.createElement('div', { key: item[0], className: 'ova-item', 'data-source-type': 'video', 'data-text': item[0], 'data-link': item[1] });
+					}) : null
+				) : null,
+				data[group][selector].tool[0] ? React.createElement(
+					'div',
+					{ className: 'src-element' },
+					React.createElement(
+						'span',
+						null,
+						'_HERRAMIENTAS'
+					),
+					data[group][selector] ? data[group][selector].tool.map(function (item) {
+						return React.createElement('div', { key: item[0], className: 'ova-item', 'data-source-type': 'tools', 'data-text': item[0], 'data-link': item[1] });
+					}) : null
+				) : null
+			),
+			React.createElement('br', null),
+			React.createElement(
+				'h3',
+				{ className: 'title-content', style: { fontSize: '22px' } },
+				'Retos del Piso'
+			)
+		) : React.createElement(
+			'h3',
+			null,
+			'El piso seleccionado estara disponible una vez se complete la fase del piso anterior'
 		)
 	);
 };

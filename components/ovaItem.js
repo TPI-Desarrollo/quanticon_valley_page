@@ -38,7 +38,7 @@ var OvaItem = function OvaItem(_ref) {
 		{ style: { paddingLeft: 20 } },
 		React.createElement(
 			'a',
-			{ href: link, target: '_blank', 'class': 'div-src' },
+			{ href: link, target: '_blank', className: 'div-src' },
 			types.map(function (item) {
 				return item.type === sourceType ? React.createElement('img', { key: item.type, style: styles.icon, src: item.src }) : null;
 			}),

@@ -190,61 +190,66 @@ const AsesorCont = () => {
 	}
 	return (
 		<div>
-			<div class="grp-sel-cont">
+			<div className="grp-sel-cont">
 				{group === 'dos'
-					? <div class="grupo-sel grp-selected">
+					? <div className="grupo-sel grp-selected">
 							Horario 2 - 4 pm
 						</div>
-					: <div class="grupo-sel" onClick={() => setGroup('dos')}>
+					: <div className="grupo-sel" onClick={() => setGroup('dos')}>
 							Horario 2 - 4 pm
 						</div>
 				}
 				{group === 'cuatro'
-					? <div class="grupo-sel grp-selected">
+					? <div className="grupo-sel grp-selected">
 							Horario 4 - 6 pm
 						</div>
-					: <div class="grupo-sel" onClick={() => setGroup('cuatro')}>
+					: <div className="grupo-sel" onClick={() => setGroup('cuatro')}>
 							Horario 4 - 6 pm
 						</div>
 				}
 			</div>
-		<div class="src-grid">
+		{selector === '1' 
+			? <div>
+		<div className="src-grid">
 			{data[group][selector].ova[0] ? 
-			<div class="src-element">
+			<div className="src-element">
 				<span>_OVAS</span>
 				{data[group][selector] ? data[group][selector].ova.map(item => 
-					<div key={item[0]} class="ova-item" data-source-type="ova" data-text={item[0]} data-link={item[1]}></div>
+					<div key={item[0]} className="ova-item" data-source-type="ova" data-text={item[0]} data-link={item[1]}></div>
 				): null}
 			</div>
 			: null}
 
 			{data[group][selector].pdf[0] ? 
-			<div class="src-element">
+			<div className="src-element">
 				<span>_PDFs</span>
 				{data[group][selector] ? data[group][selector].pdf.map(item => 
-					<div key={item[0]} class="ova-item" data-source-type="pdf" data-text={item[0]} data-link={item[1]}></div>
+					<div key={item[0]} className="ova-item" data-source-type="pdf" data-text={item[0]} data-link={item[1]}></div>
 				): null}
 			</div>
 			: null}
 
 			{data[group][selector].video[0] ? 
-			<div class="src-element">
+			<div className="src-element">
 				<span>_VIDEOS</span>
 				{data[group][selector] ? data[group][selector].video.map(item => 
-					<div key={item[0]} class="ova-item" data-source-type="video" data-text={item[0]} data-link={item[1]}></div>
+					<div key={item[0]} className="ova-item" data-source-type="video" data-text={item[0]} data-link={item[1]}></div>
 				): null}
 			</div>
 			: null}
 
 			{data[group][selector].tool[0] ? 
-			<div class="src-element">
+			<div className="src-element">
 				<span>_ENCUESTAS</span>
 				{data[group][selector] ? data[group][selector].tool.map(item => 
-					<div key={item[0]} class="ova-item" data-source-type="form" data-text={item[0]} data-link={item[1]}></div>
+					<div key={item[0]} className="ova-item" data-source-type="form" data-text={item[0]} data-link={item[1]}></div>
 				): null}
 			</div>
 			: null}
 		</div>
+			</div>
+			:<h3>El piso seleccionado estara disponible una vez se complete la fase del piso anterior</h3>
+		}
 		</div>
 	);
 }

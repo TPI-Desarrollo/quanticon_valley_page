@@ -5,10 +5,9 @@ const data = {
 		1 : {
 			entrega: [
 				['ACTA DE COMPROMISO', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=700189'],
-				['PITCH PISO 1', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=701324'],
 			],
 			guia: [
-				['Rubrica Pitch - Piso 1', 'https://campus.virtual.unal.edu.co/pluginfile.php/2166880/mod_resource/content/1/Rúbrica_pitch%20piso%201.pdf'],
+				['GUIA DE TRABAJO', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700377'],
 			],
 		},
 		2 : {
@@ -57,10 +56,9 @@ const data = {
 		1 : {
 			entrega: [
 				['ACTA DE COMPROMISO', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=700426'],
-				['PITCH PISO 1', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=701325'],
 			],
 			guia: [
-				['Rubrica Pitch - Piso 1', 'https://campus.virtual.unal.edu.co/pluginfile.php/2166881/mod_resource/content/1/Rúbrica_pitch%20piso%201.pdf'],
+				['GUIA DE TRABAJO', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=708500'],
 			],
 		},
 		2 : {
@@ -139,28 +137,28 @@ const PisosContainer = () => {
 		location.reload()
 	}
 	return (
-		<div class="pad-content">
+		<div className="pad-content">
 			<br></br>
 			<div>
-				<h2 class="title-content">
+				<h2 className="title-content">
 					{pisoTitle(selector)}
 				</h2>
 			</div>
 			<br></br>
-			<div class="grp-sel-cont">
+			<div className="grp-sel-cont">
 				{group === 'dos'
-					? <div class="grupo-sel grp-selected">
+					? <div className="grupo-sel grp-selected">
 							Horario 2 - 4 pm
 						</div>
-					: <div class="grupo-sel" onClick={() => setGroup('dos')}>
+					: <div className="grupo-sel" onClick={() => setGroup('dos')}>
 							Horario 2 - 4 pm
 						</div>
 				}
 				{group === 'cuatro'
-					? <div class="grupo-sel grp-selected">
+					? <div className="grupo-sel grp-selected">
 							Horario 4 - 6 pm
 						</div>
-					: <div class="grupo-sel" onClick={() => setGroup('cuatro')}>
+					: <div className="grupo-sel" onClick={() => setGroup('cuatro')}>
 							Horario 4 - 6 pm
 						</div>
 				}
@@ -168,10 +166,10 @@ const PisosContainer = () => {
 			{selector === '1' 
 				? <div>
 			{data[group][selector].entrega[0] ? 
-			<div class="src-element">
-				<span class="piso-subtitle">ENTREGABLES</span>
+			<div className="src-element">
+				<span className="piso-subtitle">ENTREGABLES</span>
 				{data[group][selector] ? data[group][selector].entrega.map(item => 
-					<a href={item[1]} target="_blank"><div className="div-src" key={item[0]} >
+					<a href={item[1]} target="_blank" key={item[0]} ><div className="div-src">
 						<img src="./imgs/sources/up-file.png"/>
 						<span className="etesc-subtitle">{item[0]}</span>
 					</div></a>
@@ -180,14 +178,21 @@ const PisosContainer = () => {
 			: null}
 			<br/>
 			{data[group][selector].guia[0] ? 
-			<div class="src-element">
-				<span class="piso-subtitle">GUIAS</span>
+			<div className="src-element">
+				<span className="piso-subtitle">GUIAS</span>
 				{data[group][selector] ? data[group][selector].guia.map(item => 
-					<a href={item[1]} target="_blank"><div className="div-src" key={item[0]} >
+					<a href={item[1]} target="_blank" key={item[0]} ><div className="div-src" >
 						<img src="./imgs/sources/guia-Icon.png"/>
 						<span className="etesc-subtitle">{item[0]}</span>
 					</div></a>
 				): null}
+                                <h3 style={{marginTop: 40, manginBottom: 0}}>_ Notas Relevantes</h3>
+                                <ul style={{marginTop: 0}}>
+                                  <li style={{color: 'black'}}> 
+                                      Si tienes dudas sobre los roles correspondientes para cada miembro del Equipo, 
+                                      podras revisarlo en la Guia de Trabajo: explicados en el anexo 3.3 (Guia de Trabajo, pagina 29) 
+                                  </li>
+                                </ul>
 			</div>
 			: null}
 				</div>

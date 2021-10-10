@@ -26,7 +26,7 @@ var SideBar = function SideBar() {
 		React.createElement(
 			'a',
 			{ href: 'index.html' },
-			React.createElement('img', { id: 'logo', src: './imgs/QB_blanco_vertical 1.png', 'class': 'd-none d-md-block' })
+			React.createElement('img', { id: 'logo', src: './imgs/QB_blanco_vertical 1.png', className: 'd-none d-md-block' })
 		),
 		data.map(function (item) {
 			return item.sel === selected ? React.createElement(
@@ -34,11 +34,11 @@ var SideBar = function SideBar() {
 				{ href: item.link, key: item.sel },
 				React.createElement(
 					'div',
-					{ id: 'sidebar-button-sel', 'class': 'sidebar-button' },
-					React.createElement('img', { 'class': 'sidebar-button-icon', src: item.src }),
+					{ id: 'sidebar-button-sel', className: 'sidebar-button' },
+					React.createElement('img', { className: 'sidebar-button-icon', src: item.src }),
 					React.createElement(
 						'span',
-						{ 'class': 'sidebar-button-text d-none d-md-block' },
+						{ className: 'sidebar-button-text d-none d-md-block' },
 						item.title
 					)
 				)
@@ -47,17 +47,17 @@ var SideBar = function SideBar() {
 				{ href: item.link, key: item.sel },
 				React.createElement(
 					'div',
-					{ 'class': 'sidebar-button' },
-					React.createElement('img', { 'class': 'sidebar-button-icon', src: item.src }),
+					{ className: 'sidebar-button' },
+					React.createElement('img', { className: 'sidebar-button-icon', src: item.src }),
 					React.createElement(
 						'span',
-						{ 'class': 'sidebar-button-text d-none d-md-block' },
+						{ className: 'sidebar-button-text d-none d-md-block' },
 						item.title
 					)
 				)
 			);
 		}),
-		React.createElement('img', { 'class': 'sidebar-img', src: './imgs/QV_textura 1.png' })
+		React.createElement('img', { className: 'sidebar-img', src: './imgs/QV_textura 1.png' })
 	);
 };
 

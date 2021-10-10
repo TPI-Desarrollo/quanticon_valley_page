@@ -22,20 +22,20 @@ var Pisos = function Pisos() {
 		[1, 2, 3, 4, 5, 6].map(function (item) {
 			return piso == item ? React.createElement(
 				"div",
-				{ "class": "col-2 piso-col", "data-piso": item, key: item },
+				{ className: "col-2 piso-col", "data-piso": item, key: item },
 				React.createElement(
 					"a",
 					null,
 					React.createElement(
 						"span",
-						{ id: "piso-selected", "class": "piso-select" },
+						{ id: "piso-selected", className: "piso-select" },
 						"Piso ",
 						item
 					)
 				)
 			) : React.createElement(
 				"div",
-				{ "class": "col-2 piso-col", "data-piso": item, key: item,
+				{ className: "col-2 piso-col", "data-piso": item, key: item,
 					onClick: function onClick() {
 						return selectorF(item);
 					} },
@@ -44,7 +44,7 @@ var Pisos = function Pisos() {
 					null,
 					React.createElement(
 						"span",
-						{ "class": "piso-select" },
+						{ className: "piso-select" },
 						"Piso ",
 						item
 					)

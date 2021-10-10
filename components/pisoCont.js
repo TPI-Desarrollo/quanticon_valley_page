@@ -3,8 +3,8 @@ var pisoCont = document.querySelector('#pisos_container');
 var data = {
 	dos: {
 		1: {
-			entrega: [['ACTA DE COMPROMISO', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=700189'], ['PITCH PISO 1', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=701324']],
-			guia: [['Rubrica Pitch - Piso 1', 'https://campus.virtual.unal.edu.co/pluginfile.php/2166880/mod_resource/content/1/Rúbrica_pitch%20piso%201.pdf']]
+			entrega: [['ACTA DE COMPROMISO', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=700189']],
+			guia: [['GUIA DE TRABAJO', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700377']]
 		},
 		2: {
 			entrega: [['PROBLEMA CONTEXTUALIZADO', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=701073'], ['PITCH PISO 2', '']],
@@ -29,8 +29,8 @@ var data = {
 	},
 	cuatro: {
 		1: {
-			entrega: [['ACTA DE COMPROMISO', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=700426'], ['PITCH PISO 1', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=701325']],
-			guia: [['Rubrica Pitch - Piso 1', 'https://campus.virtual.unal.edu.co/pluginfile.php/2166881/mod_resource/content/1/Rúbrica_pitch%20piso%201.pdf']]
+			entrega: [['ACTA DE COMPROMISO', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=700426']],
+			guia: [['GUIA DE TRABAJO', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=708500']]
 		},
 		2: {
 			entrega: [['PROBLEMA CONTEXTUALIZADO', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=701074'], ['PITCH PISO 2', '']],
@@ -87,39 +87,39 @@ var PisosContainer = function PisosContainer() {
 	};
 	return React.createElement(
 		'div',
-		{ 'class': 'pad-content' },
+		{ className: 'pad-content' },
 		React.createElement('br', null),
 		React.createElement(
 			'div',
 			null,
 			React.createElement(
 				'h2',
-				{ 'class': 'title-content' },
+				{ className: 'title-content' },
 				pisoTitle(selector)
 			)
 		),
 		React.createElement('br', null),
 		React.createElement(
 			'div',
-			{ 'class': 'grp-sel-cont' },
+			{ className: 'grp-sel-cont' },
 			group === 'dos' ? React.createElement(
 				'div',
-				{ 'class': 'grupo-sel grp-selected' },
+				{ className: 'grupo-sel grp-selected' },
 				'Horario 2 - 4 pm'
 			) : React.createElement(
 				'div',
-				{ 'class': 'grupo-sel', onClick: function onClick() {
+				{ className: 'grupo-sel', onClick: function onClick() {
 						return setGroup('dos');
 					} },
 				'Horario 2 - 4 pm'
 			),
 			group === 'cuatro' ? React.createElement(
 				'div',
-				{ 'class': 'grupo-sel grp-selected' },
+				{ className: 'grupo-sel grp-selected' },
 				'Horario 4 - 6 pm'
 			) : React.createElement(
 				'div',
-				{ 'class': 'grupo-sel', onClick: function onClick() {
+				{ className: 'grupo-sel', onClick: function onClick() {
 						return setGroup('cuatro');
 					} },
 				'Horario 4 - 6 pm'
@@ -130,19 +130,19 @@ var PisosContainer = function PisosContainer() {
 			null,
 			data[group][selector].entrega[0] ? React.createElement(
 				'div',
-				{ 'class': 'src-element' },
+				{ className: 'src-element' },
 				React.createElement(
 					'span',
-					{ 'class': 'piso-subtitle' },
+					{ className: 'piso-subtitle' },
 					'ENTREGABLES'
 				),
 				data[group][selector] ? data[group][selector].entrega.map(function (item) {
 					return React.createElement(
 						'a',
-						{ href: item[1], target: '_blank' },
+						{ href: item[1], target: '_blank', key: item[0] },
 						React.createElement(
 							'div',
-							{ className: 'div-src', key: item[0] },
+							{ className: 'div-src' },
 							React.createElement('img', { src: './imgs/sources/up-file.png' }),
 							React.createElement(
 								'span',
@@ -156,19 +156,19 @@ var PisosContainer = function PisosContainer() {
 			React.createElement('br', null),
 			data[group][selector].guia[0] ? React.createElement(
 				'div',
-				{ 'class': 'src-element' },
+				{ className: 'src-element' },
 				React.createElement(
 					'span',
-					{ 'class': 'piso-subtitle' },
+					{ className: 'piso-subtitle' },
 					'GUIAS'
 				),
 				data[group][selector] ? data[group][selector].guia.map(function (item) {
 					return React.createElement(
 						'a',
-						{ href: item[1], target: '_blank' },
+						{ href: item[1], target: '_blank', key: item[0] },
 						React.createElement(
 							'div',
-							{ className: 'div-src', key: item[0] },
+							{ className: 'div-src' },
 							React.createElement('img', { src: './imgs/sources/guia-Icon.png' }),
 							React.createElement(
 								'span',
@@ -177,7 +177,21 @@ var PisosContainer = function PisosContainer() {
 							)
 						)
 					);
-				}) : null
+				}) : null,
+				React.createElement(
+					'h3',
+					{ style: { marginTop: 40, manginBottom: 0 } },
+					'_ Notas Relevantes'
+				),
+				React.createElement(
+					'ul',
+					{ style: { marginTop: 0 } },
+					React.createElement(
+						'li',
+						{ style: { color: 'black' } },
+						'Si tienes dudas sobre los roles correspondientes para cada miembro del Equipo, podras revisarlo en la Guia de Trabajo: explicados en el anexo 3.3 (Guia de Trabajo, pagina 29)'
+					)
+				)
 			) : null
 		) : React.createElement(
 			'h3',

@@ -29,11 +29,11 @@ const Subsection = ({dataset}) => {
 				<div style={styles.row}>
 					<img style={{...styles.img, height:data[title][2]}} src={data[title][1]} />
 					<div>
-						<h2 class="title-content">{title}</h2>
-						<p class="subtext">{data[title][0]}</p>
+						<h2 className="title-content">{title}</h2>
+						<p className="subtext">{data[title][0]}</p>
 					</div>
 				</div>
-				<img class="back-button" src={'./imgs/sources/atras.png'} onClick={() => goBack()}/>
+				<img className="back-button" src={'./imgs/sources/atras.png'} onClick={() => goBack()}/>
 			</div>
 	);
 }

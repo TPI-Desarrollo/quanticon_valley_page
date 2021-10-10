@@ -8,6 +8,7 @@
 	<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 	<link rel="stylesheet" type="text/css" href="./stylesB.css">
 	<link rel="stylesheet" type="text/css" href="./simple-calendar.css" />
+	<link rel="stylesheet" type="text/css" href="./calendario/progress-css/bootstrap.css">
 
 	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
 	<link rel="icon" href="./favicon.ico" type="image/x-icon">
@@ -18,9 +19,31 @@
 	<section class="content">
 		<div class="title-subsection" data-title="LOBBY"></div>
 		<br/>
+		
+                <div class="src-grid">
+		<a href="https://ingenieria.unal.edu.co/tpi/index.php/equipotpi/profesores" target="_blank">
+			<span class="div-src btn" >
+				<div class="btn-icon">
+						<img src="./imgs/Icon_actores.svg"} />
+				</div>
+				<span class="etesc-subtitle">Conoce a los Mentores</span>
+			</span>
+		</a>
+		<a type="button" class="pointer" data-toggle="modal" data-target="#myModal">
+			<span class="div-src btn" >
+				<div class="btn-icon">
+						<img src="./imgs/trophy.png"} />
+				</div>
+				<span class="etesc-subtitle">Salon de la Fama</span>
+			</span>
+		</a>
+                </div>
+		<br/>
+		
+		
 		<div id="pisos_selector"></div> 
 		<br/>
-		<div class="lobby-content"></div>
+		<div class="lobby-content pad-content"></div>
 	</section>
 	<!----------------------Right Bar------------------------>
 	<section class="right-bar">
@@ -30,6 +53,25 @@
 	<section class="side-bar">
 		<div id="side_bar_container" data-selected="zonas-comunes"></div>
 	</section>
+
+	<!----------------------Pop Up Modal------------------------>
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h4 class="modal-title" id="myModalLabel">Salon de la Fama</h4>
+			</div>
+			<div class="modal-body">
+				<h4>De que trata el Salon de la Fama?</h4>
+				<p>Este es un espacio donde podras conocer los grupos con los mejores puntajes y mayor progreso.</p>
+				<p>Actualmente no tenemos ningun grupo registrado, ya que aun estan en etapa de formacion. Esperamos que tu grupo llegue hasta aqui y se mantenga como uno de los mejores.</p>
+				<p>Exitos a Todxs</p>
+			</div>
+			<div class="modal-footer">
+			</div>
+		  </div>
+		</div>
+	</div>
 
 
 		<!-- Load React. -->
@@ -54,6 +96,8 @@
 		<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 		<script type="text/javascript" src="./calendario/jquery.simple-calendar.min.js"></script>
 		<script type="text/javascript" src="./calendario/calendario.js"></script>
-
+		<script type="text/javascript" src="./calendario/progress-css/bootstrap.js"></script>
+		<script type="text/javascript" src="./calendario/progress-css/modal.js"></script>
+		
 </body>
 </html>

@@ -19,23 +19,31 @@ var RightBar = function RightBar() {
 		),
 		React.createElement(
 			'div',
-			{ 'class': 'right-jumbo' },
+			{ className: 'right-jumbo' },
 			React.createElement(
 				'p',
-				{ 'class': 'subtext-rb' },
+				{ className: 'subtext-rb' },
 				'Ultimas Noticias'
 			),
-			React.createElement('iframe', { 'class': 'noti-video', src: 'https://www.youtube.com/embed/HnVqU8tOAGg', title: 'Noticias', frameBorder: '0', allow: 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture', allowFullScreen: true })
+			React.createElement('iframe', { className: 'noti-video', src: 'https://www.youtube.com/embed/HnVqU8tOAGg', title: 'Noticias', frameBorder: '0', allow: 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture', allowFullScreen: true })
 		),
 		React.createElement(
-			'div',
-			{ 'class': 'right-jumbo' },
+			'a',
+			{ href: 'https://drive.google.com/file/d/1DsxZt4232mjOLK8-4hVIm0QOPxQJ9JrX/view?usp=sharing', target: '_blank' },
 			React.createElement(
-				'p',
-				{ 'class': 'subtext-rb' },
-				'Pildoras'
-			),
-			React.createElement('embed', { 'class': 'pdf', src: './content/pildoras.pdf#toolbar=0&navpanes=0&scrollbar=0', type: 'application/pdf', width: '95%', height: '120px' })
+				'div',
+				{ className: 'right-jumbo pildoras' },
+				React.createElement(
+					'div',
+					null,
+					React.createElement('img', { style: { marginRight: 10 }, src: './imgs/pil.png' })
+				),
+				React.createElement(
+					'div',
+					null,
+					'Conoce las pildoras de esta Semana'
+				)
+			)
 		)
 	);
 };
