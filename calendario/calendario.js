@@ -10,8 +10,10 @@ $(document).ready(function(){
         events: [
             {startDate: "2021-10-04T19:00:00.000Z", endDate: "2021-10-04T24:00:00.000Z", summary: "Primera Clase TPI"},
             {startDate: "2021-10-04T19:00:00.000Z", endDate: "2021-10-04T24:00:00.000Z", summary: "Inicio - Primer Piso"},
-            {startDate: "2021-10-13T24:00:00.000Z", endDate: "2021-10-13T24:00:00.000Z", summary: "Entrega - Primer Piso"},
-            {startDate: "2021-10-18T24:00:00.000Z", endDate: "2021-10-18T24:00:00.000Z", summary: "Inicio - Segundo Piso"}
+            {startDate: "2021-10-13T24:00:00.000Z", endDate: "2021-10-13T24:00:00.000Z", summary: "No hay actividades por Clautros"},
+            {startDate: "2021-10-18T24:00:00.000Z", endDate: "2021-10-18T24:00:00.000Z", summary: "DIA FESTIVO"},
+            {startDate: "2021-10-20T24:00:00.000Z", endDate: "2021-10-20T24:00:00.000Z", summary: "Entrega - Primer Piso"},
+            {startDate: "2021-10-25T24:00:00.000Z", endDate: "2021-10-25T24:00:00.000Z", summary: "Inicio - Segundo Piso"},
         ],                     // List of events
         onInit: function (calendar) {}, // Callback after first initialization
         onMonthChange: function (month, year) {}, // Callback on month change
