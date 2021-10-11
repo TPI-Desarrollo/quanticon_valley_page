@@ -7,7 +7,6 @@ const data = {
 				['ACTA DE COMPROMISO', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=700189'],
 			],
 			guia: [
-				['GUIA DE TRABAJO', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700377'],
 			],
 		},
 		2 : {
@@ -58,7 +57,6 @@ const data = {
 				['ACTA DE COMPROMISO', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=700426'],
 			],
 			guia: [
-				['GUIA DE TRABAJO', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=708500'],
 			],
 		},
 		2 : {

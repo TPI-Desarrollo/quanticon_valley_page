@@ -25,7 +25,7 @@ var RightBar = function RightBar() {
 				{ className: 'subtext-rb' },
 				'Ultimas Noticias'
 			),
-			React.createElement('iframe', { className: 'noti-video', src: 'https://www.youtube.com/embed/HnVqU8tOAGg', title: 'Noticias', frameBorder: '0', allow: 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture', allowFullScreen: true })
+			React.createElement('iframe', { className: 'noti-video', src: 'https://www.youtube.com/embed/KpILuChm-ko', title: 'Noticias', frameBorder: '0', allow: 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture', allowFullScreen: true })
 		),
 		React.createElement(
 			'a',
