@@ -4,7 +4,7 @@ var data = {
 	dos: {
 		1: {
 			entrega: [['ACTA DE COMPROMISO', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=700189']],
-			guia: [['GUIA DE TRABAJO', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700377']]
+			guia: []
 		},
 		2: {
 			entrega: [['PROBLEMA CONTEXTUALIZADO', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=701073'], ['PITCH PISO 2', '']],
@@ -30,7 +30,7 @@ var data = {
 	cuatro: {
 		1: {
 			entrega: [['ACTA DE COMPROMISO', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=700426']],
-			guia: [['GUIA DE TRABAJO', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=708500']]
+			guia: []
 		},
 		2: {
 			entrega: [['PROBLEMA CONTEXTUALIZADO', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=701074'], ['PITCH PISO 2', '']],
@@ -177,21 +177,7 @@ var PisosContainer = function PisosContainer() {
 							)
 						)
 					);
-				}) : null,
-				React.createElement(
-					'h3',
-					{ style: { marginTop: 40, manginBottom: 0 } },
-					'_ Notas Relevantes'
-				),
-				React.createElement(
-					'ul',
-					{ style: { marginTop: 0 } },
-					React.createElement(
-						'li',
-						{ style: { color: 'black' } },
-						'Si tienes dudas sobre los roles correspondientes para cada miembro del Equipo, podras revisarlo en la Guia de Trabajo: explicados en el anexo 3.3 (Guia de Trabajo, pagina 29)'
-					)
-				)
+				}) : null
 			) : null
 		) : React.createElement(
 			'h3',
