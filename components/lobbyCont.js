@@ -9,6 +9,12 @@ var data = {
 			video: [],
 			tool: []
 		},
+		2: {
+			ova: [],
+			pdf: [],
+			video: [],
+			tool: []
+		},
 		3: {
 			ova: [],
 			pdf: [['GUIA METODOLOGICA INFOGRAFIA', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700225'], ['GUIA DE TRABAJO ESCRITO', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700249']],
@@ -26,6 +32,12 @@ var data = {
 		1: {
 			ova: [['Juego SALA DE ESCAPE', 'https://campus.virtual.unal.edu.co/mod/lesson/view.php?id=700603'], ['Cronograma Interactivo', 'https://campus.virtual.unal.edu.co/mod/page/view.php?id=701299'], ['Decalogo Del Mentor', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700405'], ['Comunicacion Eficaz', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700552']],
 			pdf: [['SYLLABUS - Libro Interactivo', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700601']],
+			video: [],
+			tool: []
+		},
+		2: {
+			ova: [],
+			pdf: [],
 			video: [],
 			tool: []
 		},
@@ -82,7 +94,7 @@ var LobbyCont = function LobbyCont() {
 				'Horario 4 - 6 pm'
 			)
 		),
-		selector === '1' ? React.createElement(
+		selector === '1' || selector === '2' ? React.createElement(
 			'div',
 			null,
 			React.createElement(

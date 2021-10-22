@@ -12,7 +12,6 @@
 
 	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
 	<link rel="icon" href="./favicon.ico" type="image/x-icon">
-
 </head>
 <body>
 	<!----------------------Content------------------------>
@@ -56,16 +55,22 @@
 
 	<!----------------------Pop Up Modal------------------------>
 	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-		<div class="modal-dialog" role="document">
+		<div class="modal-dialog modal-lg" role="document">
 		  <div class="modal-content">
 			<div class="modal-header">
-			  <h4 class="modal-title" id="myModalLabel">Salon de la Fama</h4>
+				<a type="button" class="close pointer" data-dismiss="modal" aria-label="Close"><img src="./imgs/exit.png"></a>
+			  	<h4 class="modal-title" id="myModalLabel">Salon de la Fama</h4>
 			</div>
 			<div class="modal-body">
+				<!--
 				<h4>De que trata el Salon de la Fama?</h4>
 				<p>Este es un espacio donde podras conocer los grupos con los mejores puntajes y mayor progreso.</p>
 				<p>Actualmente no tenemos ningun grupo registrado, ya que aun estan en etapa de formacion. Esperamos que tu grupo llegue hasta aqui y se mantenga como uno de los mejores.</p>
 				<p>Exitos a Todxs</p>
+				-->
+				<br/>
+				<span class="lead-title">Tabla de Clasificacion</span>
+				<div class="salonDeFama"></div>
 			</div>
 			<div class="modal-footer">
 			</div>
@@ -76,13 +81,13 @@
 
 		<!-- Load React. -->
 		<!-- Note: when deploying, replace "development.js" with "production.min.js". 
-		-->
 		<script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
 		<script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
+		-->
 		<!-- Note: when developing; "development.js". 
+		-->
 		<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
 		<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
-		-->
 		<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 
 		<script src="./components/sideBar.js"></script>
@@ -91,13 +96,12 @@
 		<script src="./components/ovaItem.js"></script>
 		<script src="./components/pisos.js"></script>
 		<script src="./components/titleSubS.js"></script>
-
+		<script src="./components/salonDeFama.js"></script>
 		<!--Calendar-->
 		<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 		<script type="text/javascript" src="./calendario/jquery.simple-calendar.min.js"></script>
 		<script type="text/javascript" src="./calendario/calendario.js"></script>
 		<script type="text/javascript" src="./calendario/progress-css/bootstrap.js"></script>
-		<script type="text/javascript" src="./calendario/progress-css/modal.js"></script>
-		
+		<script type="text/javascript" src="./calendario/progress-css/modal.js"></script>	
 </body>
 </html>

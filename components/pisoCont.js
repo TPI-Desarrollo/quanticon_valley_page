@@ -7,7 +7,7 @@ var data = {
 			guia: []
 		},
 		2: {
-			entrega: [['PROBLEMA CONTEXTUALIZADO', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=701073'], ['PITCH PISO 2', '']],
+			entrega: [['PROBLEMA CONTEXTUALIZADO', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=701073']],
 			guia: []
 		},
 		3: {
@@ -33,7 +33,7 @@ var data = {
 			guia: []
 		},
 		2: {
-			entrega: [['PROBLEMA CONTEXTUALIZADO', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=701074'], ['PITCH PISO 2', '']],
+			entrega: [['PROBLEMA CONTEXTUALIZADO', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=701074']],
 			guia: []
 		},
 		3: {
@@ -125,7 +125,7 @@ var PisosContainer = function PisosContainer() {
 				'Horario 4 - 6 pm'
 			)
 		),
-		selector === '1' ? React.createElement(
+		selector === '1' || selector === '2' ? React.createElement(
 			'div',
 			null,
 			data[group][selector].entrega[0] ? React.createElement(

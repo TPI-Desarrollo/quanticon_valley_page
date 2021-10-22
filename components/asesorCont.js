@@ -9,7 +9,7 @@ var data = {
 			tool: [['Encuesta de persepcion conservatorios: como presentar un pitch', 'https://campus.virtual.unal.edu.co/mod/feedback/view.php?id=700304'], ['Encuesta Presentacion de la materia', 'https://campus.virtual.unal.edu.co/mod/feedback/view.php?id=700175'], ['Encuesta de Conocimientos Previos', 'https://campus.virtual.unal.edu.co/mod/feedback/view.php?id=700174']]
 		},
 		2: {
-			ova: [['Metodologia Vester', ''], ['Como hacer un Pestal', ''], ['Arbol de Problemas', ''], ['Mapa de Empatia', ''], ['Actores', '']],
+			ova: [['Metodología Véster y Árbol de Problemas', 'https://campus.virtual.unal.edu.co/mod/page/view.php?id=743427'], ['Cómo hacer un Pestal?', 'https://campus.virtual.unal.edu.co/mod/page/view.php?id=743467'], ['Mapa de Empatía', 'https://campus.virtual.unal.edu.co/mod/page/view.php?id=743476']],
 			pdf: [],
 			video: [['Video Conservatorios 20 de Octubre', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700201']],
 			tool: []
@@ -47,7 +47,7 @@ var data = {
 			tool: [['Encuesta de persepcion conservatorios: como presentar un pitch', 'https://campus.virtual.unal.edu.co/mod/feedback/view.php?id=700536'], ['Encuesta Presentacion de la materia', 'https://campus.virtual.unal.edu.co/mod/feedback/view.php?id=700412'], ['Encuesta de Conocimientos Previos', 'https://campus.virtual.unal.edu.co/mod/feedback/view.php?id=700411']]
 		},
 		2: {
-			ova: [['Metodologia Vester', ''], ['Como hacer un Pestal', ''], ['Arbol de Problemas', ''], ['Mapa de Empatia', ''], ['Actores', '']],
+			ova: [['Metodología Véster y Árbol de Problemas', 'https://campus.virtual.unal.edu.co/mod/page/view.php?id=743429'], ['Cómo hacer un Pestal?', 'https://campus.virtual.unal.edu.co/mod/page/view.php?id=743468'], ['Mapa de Empatía', 'https://campus.virtual.unal.edu.co/mod/page/view.php?id=743477']],
 			pdf: [],
 			video: [['Video Conservatorios 20 de Octubre', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700435']],
 			tool: []
@@ -117,7 +117,7 @@ var AsesorCont = function AsesorCont() {
 				'Horario 4 - 6 pm'
 			)
 		),
-		selector === '1' ? React.createElement(
+		selector === '1' || selector === '2' ? React.createElement(
 			'div',
 			null,
 			React.createElement(

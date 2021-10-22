@@ -4,6 +4,7 @@ const data = {
 	dos: {
 		1 : {
 			ova: [
+				['Roles en el equipo de Trabajo','https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=738780']
 			],
 			pdf: [
 			],
@@ -19,11 +20,9 @@ const data = {
 		},
 		2 : {
 			ova: [
-				['Metodologia Vester', ''],
-				['Como hacer un Pestal', ''],
-				['Arbol de Problemas', ''],
-				['Mapa de Empatia', ''],
-				['Actores', ''],
+				['Metodología Véster y Árbol de Problemas', 'https://campus.virtual.unal.edu.co/mod/page/view.php?id=743427'],
+				['Cómo hacer un Pestal?', 'https://campus.virtual.unal.edu.co/mod/page/view.php?id=743467'],
+				['Mapa de Empatía', 'https://campus.virtual.unal.edu.co/mod/page/view.php?id=743476'],
 			],
 			pdf: [
 			],
@@ -92,6 +91,7 @@ const data = {
 	cuatro: {
 		1 : {
 			ova: [
+				['Roles en el equipo de Trabajo','https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=739513']
 			],
 			pdf: [
 			],
@@ -107,11 +107,9 @@ const data = {
 		},
 		2 : {
 			ova: [
-				['Metodologia Vester', ''],
-				['Como hacer un Pestal', ''],
-				['Arbol de Problemas', ''],
-				['Mapa de Empatia', ''],
-				['Actores', ''],
+				['Metodología Véster y Árbol de Problemas', 'https://campus.virtual.unal.edu.co/mod/page/view.php?id=743429'],
+				['Cómo hacer un Pestal?', 'https://campus.virtual.unal.edu.co/mod/page/view.php?id=743468'],
+				['Mapa de Empatía', 'https://campus.virtual.unal.edu.co/mod/page/view.php?id=743477'],
 			],
 			pdf: [
 			],
@@ -208,7 +206,7 @@ const AsesorCont = () => {
 						</div>
 				}
 			</div>
-		{selector === '1' 
+		{selector === '1' || selector === '2' 
 			? <div>
 		<div className="src-grid">
 			{data[group][selector].ova[0] ? 

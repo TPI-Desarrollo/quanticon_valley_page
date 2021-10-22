@@ -20,6 +20,7 @@ a{
 	padding: 0px;
 }
 
+
 /* -----Grid Areas Body------- */
 
 .side-bar {
@@ -290,15 +291,78 @@ a{
         box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.4);
 }
 
+.right-jumbo-news{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 20px;
+	text-align: center;
+	margin: 5px;
+	padding: 50px 5px 5px 5px;
+	background-image: url("./imgs/news.png");
+	background-size: cover;
+	box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.4);
+}
+
 .center-jumbo{
 	justify-content: center;
 }
 
 .noti-video{
-	width: 90%;
+	width: 100%;
 	height: 120px;
 	border-radius: 20px;
 	margin: 0px;
+}
+.noti-img{
+	float: left;
+	margin: 0 10px 0 0;
+}
+.grid-noti {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-gap: 5px 20px;
+	padding: 0px 30px;
+}
+
+.video-wrapper{
+	position: relative;
+	padding-bottom: 56.25%;
+	/* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.video-wrapper iframe{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.video-title{
+	color: #0000BB;
+}
+.video-banner{
+	width: 100%;
+	height: auto;
+}
+.video-button{
+	width: 100%;
+	height: auto;
+	font-size: 14px;
+	text-align: left;
+	padding: 1.5%;
+	border-width: 0px;
+}
+.video-button:hover{
+	background-color: #D9DEE9;
+}
+.video-button-sel{
+	background-color: #D9DEE9;
+}
+.video-button:hover{
+	cursor: pointer;
 }
 /*---Calendario--*/
 #calendario{
@@ -364,7 +428,7 @@ a{
 
 .src-grid {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 	grid-auto-rows: auto;
 	grid-gap: 20px 40px;
 }
@@ -503,6 +567,9 @@ a{
 	right: 10%;
 	bottom: -20%;
 }
+.img-jumbo-info {
+	width: 280px;
+}
 
 .pdf{
 	border-radius: 20px;
@@ -617,5 +684,245 @@ a{
 	cursor: pointer;
 }
 
+/*-----------Team-Leaderboard-----------*/
+.lead-title{
+	background-color: #FFC024;	
+	border-radius: 15px 15px 0px 0px;
+	font-weight: 600;
+	font-size: 18px;
+	padding: 2%;
+}
+.leaderboard{
+	background-color: #F4F7FD;
+	border-radius: 20px;
+}
+.teams-board{
+	padding: 2%;
+}
+.team-top3{
+	background-color: #FFC024;
+	border-radius: 0  20px 20px 20px;
+	text-align: right;
+}
+.team-horario-select{
+	margin: 10px;
+	padding: 10px;
+	background-color: #C79000;
+	border-radius: 25px;
+}
+.team-horario-button{
+	margin: 10px;
+	padding: 10px;
+	background-color: #C79000;
+	color: #ffffff;
+	border-style: none;
+	border-radius: 25px;
+	font-weight: bold;
+}
+.team-horario-button:hover{
+	background-color: #ffffff;
+	color: #C79000;
+	cursor: pointer;
+}
+.team-horario-button-sel{
+	background-color: #ffffff;
+	color: #C79000;	
+}
+.teams-board table{
+	border-spacing:  0 2vh;
+	width: 100%;
+}
+.teams-board th{
+	color: #797979;
+}
+.teams-board tr{
+	height: 10vh;
+}
+.teams-board td{
+	max-width: 20vw;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.team-leaderboard{
+	background-color: #FFFFFF;
+	text-align: center;
+}
+.team-round-first{
+	border-top-left-radius: 25px;
+	border-bottom-left-radius: 25px;
+}
+.team-round-last{
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;	
+}
+.team-name{
+	padding-left: 1%;
+	text-align: left;
+}
+.team-gold{
+	background-color: #FFC024;
+	border-radius: 25px 50px 50px 25px;
+	height: 10vh;
+}
+.team-silver{
+	background-color: #D8DEF3;
+	border-radius: 25px 50px 50px 25px;	
+	height: 10vh;
+}
+.team-bronze{
+	background-color: #C79000;
+	border-radius: 25px 50px 50px 25px;	
+	height: 10vh;
+}
+.vert{
+	padding-top: 2.5vh;
+}
 
+/* ------------Informacion----------- */
+.page-selector {
+	display: flex;
+	background-color: #e0e5ed;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 25px;
+	margin: 20px 0px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 13px;
+	color: #1920EF;
+	border-radius: 30px;
+	width: 100px;
+}
+.pg-item {
+	transition: 0.3s
+}
+.pg-item:hover {
+	transform: scale(1.03);
+	cursor: pointer;
+}
+.pg-item-sel {
+	border-radius: 20px;
+	padding: 5px 10px;
+	white-space: nowrap;
+	background-color: #172BEF;
+	color: #ffffff;	
+	transition: 0.5s;
+	transform: scale(1.08);
+}
 
+.grid-info-a {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+}
+.grid-info-a p {
+	font-size: 12px;
+	text-align: justify;
+}
+.grid-info-a img {
+	width: 200px;
+	margin: auto;
+}
+
+.grid-info-b {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(min(100%, 150px), 1fr));
+	grid-gap: 20px;
+	align-items: center;
+	margin-left: 20px;
+	margin-bottom: 50px;
+}
+
+.info-title {
+	font-family: 'Poppins';
+	font-size: 20px;
+	font-weight: 700;
+}
+.info-subtitle {
+	font-style:  italic;
+	font-weight: 600;
+	font-size: 14px;
+	color: #0000BB;
+}
+
+.team-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	grid-gap: 20px;
+	justify-content: center;
+}
+.team-ele {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	font-size: 11px;
+	width: 170px;
+}
+.team-grid .photo {
+	border: 3px solid #172BEF;
+	border-radius: 20px;
+	width: 120px;
+	height: 140px;
+	margin: 10px auto;
+}
+.mit-name {
+	font-size: 12px;
+	font-weight: 600;
+}
+
+.ofi-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	grid-auto-rows: auto;
+	grid-gap: 20px;
+	margin: 10px 40px;
+}
+
+.btn-ofi {
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	background-color: #FFF;
+	padding: 10px 40px;
+	box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
+	border-radius: 10px;
+	height: 140px;
+	transition: 0.5s;
+}
+.btn-ofi img {
+	width: 120px;
+	margin: 10px 4px;
+}
+.btn-ofi:hover {
+	transform: scale(1.03)
+}
+.btn-ofi span {
+	font-family: 'Poppins';
+	font-weight: 900;
+	font-size: 22px;
+	color: #172BEF;
+	margin: 0;
+}
+.btn-ofi .sub {
+	font-size: 18px;
+	color: #000;
+	margin-top: -8px;
+}
+.btn-ofi .bol { 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	bottom: 15px;
+	right: 25px;
+	width: 24px;
+	height: 24px;
+	border-radius: 15px;
+	box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
+}
+.btn-ofi .bol img {
+	width: 40%;
+	margin-left: 7px;
+}

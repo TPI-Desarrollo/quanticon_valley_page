@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Quanticon Valley - Prueba</title>
+	<title>Quanticon Valley - Officina</title>
 	<meta charset="UTF-8"><!-- la codificación UTF-8 permite utilizar ñ y tildes en el contenido (nunca en los nombres de archivo o las etiquetas) -->
 	<meta lang="es"><!-- la W3C recomienda definir un idioma al inicio además de la codificación UTF-8 -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,18 +9,40 @@
 	<link rel="stylesheet" type="text/css" href="./stylesB.css">
 	<link rel="stylesheet" type="text/css" href="./simple-calendar.css" />
 	<link rel="stylesheet" type="text/css" href="./calendario/progress-css/bootstrap.css">
+
 	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
 	<link rel="icon" href="./favicon.ico" type="image/x-icon">
-
 </head>
 <body>
 	<!----------------------Content------------------------>
 	<section class="content">
-		<div class="title-subsection" data-title="ASESORES"></div>
-		<br/>
-		<div id="pisos_selector"></div> 
-		<br/>
-		<div class="asesor-content"></div>
+			<div class="jumbotron jumbo">
+				<div class="text-jumbo">
+					<h2 class="title-content">Oficinas</h2>
+					<p class="subtext">Perfil y progreso de los equipos</p>
+					<img class="img-jumbo img-jumbo-info d-none d-sm-block" src="./imgs/oficina.png">
+				</div>
+			</div>	
+		<div class="ofi-grid">
+			<a href="https://docs.google.com/spreadsheets/d/1nLoG42SGWYe4xi7BHpKh6goHHLkImDSj7XKUu0XjFU0/edit#gid=1528342584" target="_blank">
+				<div class="btn-ofi" >
+					<img src="./imgs/ofi-btn.png"/>
+					<span>OFICINAS</span>
+					<span class="sub">2-4 pm</span>
+					<div class="bol"><img src="./imgs/arrow.png"/></div>
+				</div>
+			</a>
+			<a href="https://docs.google.com/spreadsheets/d/1nLoG42SGWYe4xi7BHpKh6goHHLkImDSj7XKUu0XjFU0/edit#gid=23923283" target="_blank">
+				<div class="btn-ofi" >
+					<img src="./imgs/ofi-btn.png"/>
+					<span>OFICINAS</span>
+					<span class="sub">4-6 pm</span>
+					<div class="bol"><img src="./imgs/arrow.png"/></div>
+				</div>
+			</a>
+		</div>
+		
+		
 	</section>
 	<!----------------------Right Bar------------------------>
 	<section class="right-bar">
@@ -28,7 +50,7 @@
 	</section>
 	<!----------------------Side Bar------------------------>
 	<section class="side-bar">
-		<div id="side_bar_container" data-selected="zonas-comunes"></div>
+		<div id="side_bar_container" data-selected="oficina"></div>
 	</section>
 
 		<!-- Load React. -->
@@ -44,17 +66,16 @@
 
 		<script src="./components/sideBar.js"></script>
 		<script src="./components/rightBar.js"></script>
-		<script src="./components/asesorCont.js"></script>
+		<script src="./components/lobbyCont.js"></script>
+		<script src="./components/ovaItem.js"></script>
 		<script src="./components/pisos.js"></script>
 		<script src="./components/titleSubS.js"></script>
-		<script src="./components/ovaItem.js"></script>
-
+		<script src="./components/salonDeFama.js"></script>
 		<!--Calendar-->
 		<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 		<script type="text/javascript" src="./calendario/jquery.simple-calendar.min.js"></script>
 		<script type="text/javascript" src="./calendario/calendario.js"></script>
 		<script type="text/javascript" src="./calendario/progress-css/bootstrap.js"></script>
-		<script type="text/javascript" src="./calendario/progress-css/modal.js"></script>
-
+		<script type="text/javascript" src="./calendario/progress-css/modal.js"></script>	
 </body>
 </html>

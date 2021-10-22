@@ -19,6 +19,12 @@ const data = {
 			video: [],
 			tool: [],
 		},
+		2 : {
+			ova: [],
+			pdf: [],
+			video: [],
+			tool: [],
+		},
 		3 : {
 			ova: [],
 			pdf: [
@@ -54,6 +60,12 @@ const data = {
 			pdf: [
 				['SYLLABUS - Libro Interactivo', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700601'],
 			],
+			video: [],
+			tool: [],
+		},
+		2 : {
+			ova: [],
+			pdf: [],
 			video: [],
 			tool: [],
 		},
@@ -113,7 +125,7 @@ const LobbyCont = () => {
 						</div>
 				}
 			</div>
-		{selector === '1' 
+		{selector === '1' || selector === '2' 
 			? <div>
 				<h3 className="title-content" style={{fontSize: '22px'}}>
 					Recursos del Piso

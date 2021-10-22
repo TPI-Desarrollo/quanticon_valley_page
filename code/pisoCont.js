@@ -12,7 +12,6 @@ const data = {
 		2 : {
 			entrega: [
 				['PROBLEMA CONTEXTUALIZADO', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=701073'],
-				['PITCH PISO 2', ''],
 			],
 			guia: [],
 		},
@@ -62,7 +61,6 @@ const data = {
 		2 : {
 			entrega: [
 				['PROBLEMA CONTEXTUALIZADO', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=701074'],
-				['PITCH PISO 2', ''],
 			],
 			guia: [],
 		},
@@ -161,7 +159,7 @@ const PisosContainer = () => {
 						</div>
 				}
 			</div>
-			{selector === '1' 
+		{selector === '1' || selector === '2' 
 				? <div>
 			{data[group][selector].entrega[0] ? 
 			<div className="src-element">
@@ -184,13 +182,6 @@ const PisosContainer = () => {
 						<span className="etesc-subtitle">{item[0]}</span>
 					</div></a>
 				): null}
-                                <h3 style={{marginTop: 40, manginBottom: 0}}>_ Notas Relevantes</h3>
-                                <ul style={{marginTop: 0}}>
-                                  <li style={{color: 'black'}}> 
-                                      Si tienes dudas sobre los roles correspondientes para cada miembro del Equipo, 
-                                      podras revisarlo en la Guia de Trabajo: explicados en el anexo 3.3 (Guia de Trabajo, pagina 29) 
-                                  </li>
-                                </ul>
 			</div>
 			: null}
 				</div>

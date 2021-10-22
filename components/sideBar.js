@@ -17,6 +17,16 @@ var data = [{
 	src: './imgs/Icon_zonas_comunes.svg',
 	title: 'Zonas Comunes',
 	link: './comunes.html'
+}, {
+	sel: 'oficina',
+	src: './imgs/Icon_Oficina.svg',
+	title: 'Oficina',
+	link: './office.html'
+}, {
+	sel: 'info',
+	src: './imgs/icon_Informacion.svg',
+	title: 'Informacion',
+	link: './info.html'
 }];
 
 var SideBar = function SideBar() {

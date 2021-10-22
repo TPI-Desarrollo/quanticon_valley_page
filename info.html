@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Quanticon Valley - Prueba</title>
+	<title>Quanticon Valley - Conoce</title>
 	<meta charset="UTF-8"><!-- la codificación UTF-8 permite utilizar ñ y tildes en el contenido (nunca en los nombres de archivo o las etiquetas) -->
 	<meta lang="es"><!-- la W3C recomienda definir un idioma al inicio además de la codificación UTF-8 -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,19 +16,24 @@
 <body>
 	<!----------------------Content------------------------>
 	<section class="content">
-		<div class="title-subsection" data-title="ASESORES"></div>
+			<div class="jumbotron jumbo">
+				<div class="text-jumbo">
+					<h2 class="title-content">Informacion</h2>
+					<p class="subtext">Acerca del juego</p>
+					<img class="img-jumbo img-jumbo-info d-none d-sm-block" src="./imgs/Info-ilus.png">
+				</div>
+			</div>	
+		<div class="info-content pad-content"></div>
 		<br/>
-		<div id="pisos_selector"></div> 
 		<br/>
-		<div class="asesor-content"></div>
 	</section>
 	<!----------------------Right Bar------------------------>
 	<section class="right-bar">
-		<div class="right_bar_container"></div>
+		<div class="right_bar_container" data-selected="info"></div>
 	</section>
 	<!----------------------Side Bar------------------------>
 	<section class="side-bar">
-		<div id="side_bar_container" data-selected="zonas-comunes"></div>
+		<div id="side_bar_container" data-selected="info"></div>
 	</section>
 
 		<!-- Load React. -->
@@ -44,9 +49,7 @@
 
 		<script src="./components/sideBar.js"></script>
 		<script src="./components/rightBar.js"></script>
-		<script src="./components/asesorCont.js"></script>
-		<script src="./components/pisos.js"></script>
-		<script src="./components/titleSubS.js"></script>
+		<script src="./components/infoCont.js"></script>
 		<script src="./components/ovaItem.js"></script>
 
 		<!--Calendar-->

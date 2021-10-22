@@ -21,12 +21,18 @@ const data = [
 		title: 'Zonas Comunes',
 		link: './comunes.html',
 	},
-//{
-//	sel: 'conoce-qv',
-//	src: './imgs/icon_help.png',
-//	title: 'Conoce QV',
-//	link: 'conoce.html',
-//},
+	{
+		sel: 'oficina',
+		src: './imgs/Icon_Oficina.svg',
+		title: 'Oficina',
+		link: './office.html',
+	},
+	{
+		sel: 'info',
+		src: './imgs/icon_Informacion.svg',
+		title: 'Informacion',
+		link: './info.html',
+	},
 ]
 
 const SideBar = () => {
