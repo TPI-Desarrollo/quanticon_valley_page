@@ -154,12 +154,7 @@ var LobbyCont = function LobbyCont() {
 					}) : null
 				) : null
 			),
-			React.createElement('br', null),
-			React.createElement(
-				'h3',
-				{ className: 'title-content', style: { fontSize: '22px' } },
-				'Retos del Piso'
-			)
+			React.createElement('br', null)
 		) : React.createElement(
 			'h3',
 			null,
