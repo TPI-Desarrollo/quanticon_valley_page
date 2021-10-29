@@ -40,7 +40,7 @@ var videos = [{
 }, {
 	no: 3,
 	fecha: "29-Octubre 2021",
-	video: "https://youtu.be/TUDKij3AXuc"
+	video: "https://www.youtube.com/embed/TUDKij3AXuc"
 }];
 
 var Modal = function Modal() {
