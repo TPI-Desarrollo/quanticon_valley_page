@@ -1,6 +1,6 @@
 var container = document.querySelector('.right_bar_container');
 
-var selected = 3;
+var selected = 4;
 function changeNoti(e, num) {
 	e.preventDefault();
 	var vid = document.querySelector('#vid');
@@ -41,6 +41,10 @@ var videos = [{
 	no: 3,
 	fecha: "29-Octubre 2021",
 	video: "https://www.youtube.com/embed/TUDKij3AXuc"
+}, {
+	no: 4,
+	fecha: "05-Noviembre 2021",
+	video: "https://www.youtube.com/embed/s1dIgi50Wic"
 }];
 
 var Modal = function Modal() {
