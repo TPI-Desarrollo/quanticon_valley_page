@@ -12,7 +12,6 @@ $(document).ready(function(){
             {startDate: "2021-10-04T19:00:00.000Z", endDate: "2021-10-04T24:00:00.000Z", summary: "Inicio - Primer Piso"},
             {startDate: "2021-10-20T24:00:00.000Z", endDate: "2021-10-20T24:00:00.000Z", summary: "Entrega - Primer Piso"},
             {startDate: "2021-10-25T24:00:00.000Z", endDate: "2021-10-25T24:00:00.000Z", summary: "Inicio - Segundo Piso"},
-            {startDate: "2021-11-08T24:00:00.000Z", endDate: "2021-11-08T24:00:00.000Z", summary: "Entrega - Segundo Piso"}
         ],                     // List of events
         onInit: function (calendar) {}, // Callback after first initialization
         onMonthChange: function (month, year) {}, // Callback on month change

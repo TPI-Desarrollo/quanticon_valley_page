@@ -76,8 +76,8 @@ var asesores = [{
   desc: "Ingeniero de sistemas de la Universidad Nacional de Colombia. Candidato a Doctor en administración de la Universidad San Pablo CEU de Madrid (España). Especialista en Administración y Finanzas. Especialista en Alta Capacidad UNED en Madrid (España). Gerente Financiero y Administrativo Aseo Capital. Gerente Financiero y Administrativo ECSA. Gerente de Sistemas de Laboratorios Chalver Farmacéutica. Director de Sistemas Revista Cromos. Jefe de Auditoría de Sistemas Contraloría de Bogotá. Docente Universidad Nacional: cátedras de Gerencia de Proyectos y Gerencia de Empresa. Docente Universidad EAN: especialización y maestría en pensamiento estratégico. Docente Universidad de San Buenaventura: Cátedra de gestión de la responsabilidad social empresarial.",
   campo: "Ingeniería de Sistemas",
   costo: 500,
-  nombreMon: "Alfonso Herrera",
-  correoMon: ""
+  nombreMon: "Leidy Cardozo",
+  correoMon: "lcardozo@unal.edu.co"
 }];
 
 var Modal = function Modal() {
