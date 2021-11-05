@@ -11,9 +11,7 @@ var data = {
 		},
 		2: {
 			ova: [],
-			pdf: [
-				['PROTOCOLO PITCH PISO 2','https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=749093']
-			],
+			pdf: [['PROTOCOLO PITCH PISO 2', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=749093'], ['RUBRICA PITCH PISO 2', 'https://campus.virtual.unal.edu.co/mod/resource/view.php?id=749453&forceview=1']],
 			video: [],
 			tool: []
 		},
@@ -39,9 +37,7 @@ var data = {
 		},
 		2: {
 			ova: [],
-			pdf: [
-				['PROTOCOLO PITCH PISO 2','https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=749094']
-			],
+			pdf: [['PROTOCOLO PITCH PISO 2', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=749094'], ['RUBRICA PITCH PISO 2', 'https://campus.virtual.unal.edu.co/mod/resource/view.php?id=749452&forceview=1']],
 			video: [],
 			tool: []
 		},
