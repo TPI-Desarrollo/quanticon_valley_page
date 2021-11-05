@@ -19,7 +19,7 @@ var Pisos = function Pisos() {
 	return React.createElement(
 		"div",
 		{ id: "piso-selector" },
-		[1, 2, 3, 4, 5, 6].map(function (item) {
+		['1', '2', '3', '4', '5', '6'].map(function (item) {
 			return piso == item ? React.createElement(
 				"div",
 				{ className: "col-2 piso-col", "data-piso": item, key: item },

@@ -36,7 +36,7 @@ var videos = [{
 }, {
 	no: 2,
 	fecha: "20-Octubre 2021",
-	video: "https://www.youtube.com/embed/TOUmEDldx-c"
+	video: "https://www.youtube.com/embed/toumedldx-c"
 }, {
 	no: 3,
 	fecha: "29-Octubre 2021",

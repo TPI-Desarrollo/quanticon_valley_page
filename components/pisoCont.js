@@ -34,7 +34,7 @@ var data = {
 		},
 		2: {
 			entrega: [['PREGUNTA ESENCIAL', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=701074']],
-			guia: [['TALLER DE ÉTICA', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=745402'], ['PREGUNTAS CONVERSATORIO HABILIDADES BLANDAS', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=745627'], ['PREGUNTAS CONVERSATORIO TECNOLOGÍA Y SOCIEDAD', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=745685'], ['PREGUNTAS CONVERSATORIO ECONOMÍA DEL CONOCIMIENTO', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=745689'], ['PREGUNTAS CONVERSATORIO DISEÑO Y ERGONOMÍA', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=745693']]
+			guia: [['TALLER DE ÉTICA', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=745402'], ['PREGUNTAS CONVERSATORIO HABILIDADES BLANDAS', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=745627'], ['PREGUNTAS CONVERSATORIO TECNOLOGÍA Y SOCIEDAD', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=745627'], ['PREGUNTAS CONVERSATORIO ECONOMÍA DEL CONOCIMIENTO', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=745689'], ['PREGUNTAS CONVERSATORIO DISEÑO Y ERGONOMÍA', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=745693']]
 		},
 		3: {
 			entrega: [['POSIBLES SOLUCIONES / INFOGRAFIA', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=700465'], ['PITCH PISO 3', '']],

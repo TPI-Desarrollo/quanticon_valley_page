@@ -1,3 +1,5 @@
+var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
+
 var container = document.querySelector('.asesor-content');
 
 var data = {
@@ -79,9 +81,63 @@ var data = {
 	}
 };
 
+var Pisos = function Pisos() {
+	var piso = localStorage.getItem("data-piso-sel");
+
+	var _React$useState = React.useState(0),
+	    _React$useState2 = _slicedToArray(_React$useState, 2),
+	    el = _React$useState2[0],
+	    setPiso = _React$useState2[1];
+
+	var selectorF = function selectorF(num) {
+		setPiso(num);
+		container.setAttribute("data-piso-sel", num);
+		localStorage.setItem("data-piso-sel", num);
+		location.reload();
+	};
+	return React.createElement(
+		'div',
+		{ id: 'piso-selector' },
+		[1, 2, 3, 4, 5, 6].map(function (item) {
+			return piso == item ? React.createElement(
+				'div',
+				{ className: 'col-2 piso-col', 'data-piso': item, key: item },
+				React.createElement(
+					'a',
+					null,
+					React.createElement(
+						'span',
+						{ id: 'piso-selected', className: 'piso-select' },
+						'Piso ',
+						item
+					)
+				)
+			) : React.createElement(
+				'div',
+				{ className: 'col-2 piso-col', 'data-piso': item, key: item,
+					onClick: function onClick() {
+						return selectorF(item);
+					} },
+				React.createElement(
+					'a',
+					null,
+					React.createElement(
+						'span',
+						{ className: 'piso-select' },
+						'Piso ',
+						item
+					)
+				)
+			);
+		})
+	);
+};
+
 var AsesorCont = function AsesorCont() {
+	var asr = localStorage.getItem("data-asesor-sel");
+	var asesor = asr ? asr : '1';
 	var str = localStorage.getItem("data-piso-sel");
-	var selector = str ? str : 1;
+	var selector = str ? str : '1';
 	var gr = localStorage.getItem("data-grupo-sel");
 	var group = gr ? gr : 'dos';
 	var setGroup = function setGroup(grp) {
@@ -91,92 +147,97 @@ var AsesorCont = function AsesorCont() {
 	return React.createElement(
 		'div',
 		null,
-		React.createElement(
-			'div',
-			{ className: 'grp-sel-cont' },
-			group === 'dos' ? React.createElement(
-				'div',
-				{ className: 'grupo-sel grp-selected' },
-				'Horario 2 - 4 pm'
-			) : React.createElement(
-				'div',
-				{ className: 'grupo-sel', onClick: function onClick() {
-						return setGroup('dos');
-					} },
-				'Horario 2 - 4 pm'
-			),
-			group === 'cuatro' ? React.createElement(
-				'div',
-				{ className: 'grupo-sel grp-selected' },
-				'Horario 4 - 6 pm'
-			) : React.createElement(
-				'div',
-				{ className: 'grupo-sel', onClick: function onClick() {
-						return setGroup('cuatro');
-					} },
-				'Horario 4 - 6 pm'
-			)
-		),
-		selector === '1' || selector === '2' ? React.createElement(
+		asesor === '1' ? React.createElement(
 			'div',
 			null,
+			React.createElement(Pisos, null),
 			React.createElement(
 				'div',
-				{ className: 'src-grid' },
-				data[group][selector].ova[0] ? React.createElement(
+				{ className: 'grp-sel-cont' },
+				group === 'dos' ? React.createElement(
 					'div',
-					{ className: 'src-element' },
-					React.createElement(
-						'span',
-						null,
-						'_OVAS'
-					),
-					data[group][selector] ? data[group][selector].ova.map(function (item) {
-						return React.createElement('div', { key: item[0], className: 'ova-item', 'data-source-type': 'ova', 'data-text': item[0], 'data-link': item[1] });
-					}) : null
-				) : null,
-				data[group][selector].pdf[0] ? React.createElement(
+					{ className: 'grupo-sel grp-selected' },
+					'Horario 2 - 4 pm'
+				) : React.createElement(
 					'div',
-					{ className: 'src-element' },
-					React.createElement(
-						'span',
-						null,
-						'_PDFs'
-					),
-					data[group][selector] ? data[group][selector].pdf.map(function (item) {
-						return React.createElement('div', { key: item[0], className: 'ova-item', 'data-source-type': 'pdf', 'data-text': item[0], 'data-link': item[1] });
-					}) : null
-				) : null,
-				data[group][selector].video[0] ? React.createElement(
+					{ className: 'grupo-sel', onClick: function onClick() {
+							return setGroup('dos');
+						} },
+					'Horario 2 - 4 pm'
+				),
+				group === 'cuatro' ? React.createElement(
 					'div',
-					{ className: 'src-element' },
-					React.createElement(
-						'span',
-						null,
-						'_VIDEOS'
-					),
-					data[group][selector] ? data[group][selector].video.map(function (item) {
-						return React.createElement('div', { key: item[0], className: 'ova-item', 'data-source-type': 'video', 'data-text': item[0], 'data-link': item[1] });
-					}) : null
-				) : null,
-				data[group][selector].tool[0] ? React.createElement(
+					{ className: 'grupo-sel grp-selected' },
+					'Horario 4 - 6 pm'
+				) : React.createElement(
 					'div',
-					{ className: 'src-element' },
-					React.createElement(
-						'span',
-						null,
-						'_ENCUESTAS'
-					),
-					data[group][selector] ? data[group][selector].tool.map(function (item) {
-						return React.createElement('div', { key: item[0], className: 'ova-item', 'data-source-type': 'form', 'data-text': item[0], 'data-link': item[1] });
-					}) : null
-				) : null
+					{ className: 'grupo-sel', onClick: function onClick() {
+							return setGroup('cuatro');
+						} },
+					'Horario 4 - 6 pm'
+				)
+			),
+			selector === '1' || selector === '2' ? React.createElement(
+				'div',
+				null,
+				React.createElement(
+					'div',
+					{ className: 'src-grid' },
+					data[group][selector].ova[0] ? React.createElement(
+						'div',
+						{ className: 'src-element' },
+						React.createElement(
+							'span',
+							null,
+							'_OVAS'
+						),
+						data[group][selector] ? data[group][selector].ova.map(function (item) {
+							return React.createElement('div', { key: item[0], className: 'ova-item', 'data-source-type': 'ova', 'data-text': item[0], 'data-link': item[1] });
+						}) : null
+					) : null,
+					data[group][selector].pdf[0] ? React.createElement(
+						'div',
+						{ className: 'src-element' },
+						React.createElement(
+							'span',
+							null,
+							'_PDFs'
+						),
+						data[group][selector] ? data[group][selector].pdf.map(function (item) {
+							return React.createElement('div', { key: item[0], className: 'ova-item', 'data-source-type': 'pdf', 'data-text': item[0], 'data-link': item[1] });
+						}) : null
+					) : null,
+					data[group][selector].video[0] ? React.createElement(
+						'div',
+						{ className: 'src-element' },
+						React.createElement(
+							'span',
+							null,
+							'_VIDEOS'
+						),
+						data[group][selector] ? data[group][selector].video.map(function (item) {
+							return React.createElement('div', { key: item[0], className: 'ova-item', 'data-source-type': 'video', 'data-text': item[0], 'data-link': item[1] });
+						}) : null
+					) : null,
+					data[group][selector].tool[0] ? React.createElement(
+						'div',
+						{ className: 'src-element' },
+						React.createElement(
+							'span',
+							null,
+							'_ENCUESTAS'
+						),
+						data[group][selector] ? data[group][selector].tool.map(function (item) {
+							return React.createElement('div', { key: item[0], className: 'ova-item', 'data-source-type': 'form', 'data-text': item[0], 'data-link': item[1] });
+						}) : null
+					) : null
+				)
+			) : React.createElement(
+				'h3',
+				null,
+				'El piso seleccionado estara disponible una vez se complete la fase del piso anterior'
 			)
-		) : React.createElement(
-			'h3',
-			null,
-			'El piso seleccionado estara disponible una vez se complete la fase del piso anterior'
-		)
+		) : null
 	);
 };
 
