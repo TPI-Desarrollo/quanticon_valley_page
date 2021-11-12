@@ -1,6 +1,6 @@
 const container = document.querySelector('.right_bar_container');
 
-var selected = 4;
+var selected = 0;
 function changeNoti(e, num){
     e.preventDefault();
     var vid = document.querySelector('#vid');
@@ -31,19 +31,14 @@ const data = [
 
 const videos = [
 	{
-		no: 0,
-		fecha: "4-Octubre 2021",
-		video: "https://www.youtube.com/embed/HnVqU8tOAGg"
+		no: 5,
+		fecha: "12-Noviembre 2021",
+		video: "https://www.youtube.com/embed/cgKLuTxNsVE"
 	},
 	{
-		no: 1,
-		fecha: "11-Octubre 2021",
-		video: "https://www.youtube.com/embed/KpILuChm-ko"
-	},
-	{
-		no: 2,
-		fecha: "20-Octubre 2021",
-		video: "https://www.youtube.com/embed/toumedldx-c"
+		no: 4,
+		fecha: "05-Noviembre 2021",
+		video: "https://www.youtube.com/embed/s1dIgi50Wic"
 	},
 	{
 		no: 3,
@@ -51,10 +46,20 @@ const videos = [
 		video: "https://www.youtube.com/embed/TUDKij3AXuc"
 	},
 	{
-		no: 4,
-		fecha: "05-Noviembre 2021",
-		video: "https://www.youtube.com/embed/s1dIgi50Wic"
-	}
+		no: 2,
+		fecha: "20-Octubre 2021",
+		video: "https://www.youtube.com/embed/toumedldx-c"
+	},
+	{
+		no: 1,
+		fecha: "11-Octubre 2021",
+		video: "https://www.youtube.com/embed/KpILuChm-ko"
+	},
+	{
+		no: 0,
+		fecha: "4-Octubre 2021",
+		video: "https://www.youtube.com/embed/HnVqU8tOAGg"
+	},
 ]
 
 
