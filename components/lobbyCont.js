@@ -16,8 +16,8 @@ var data = {
 			tool: []
 		},
 		3: {
-			ova: [],
-			pdf: [['GUIA METODOLOGICA INFOGRAFIA', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700225'], ['GUIA DE TRABAJO ESCRITO', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700249']],
+			ova: [['INFOGRAFÍA INTERACTIVA DE EJEMPLO', 'https://campus.virtual.unal.edu.co/mod/page/view.php?id=700227']],
+			pdf: [['GUÍA METODOLÓGICA INFOGRAFÍA', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700225'], ['GUÍA DE TRABAJO ESCRITO', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700249']],
 			video: [],
 			tool: []
 		},
@@ -42,8 +42,8 @@ var data = {
 			tool: []
 		},
 		3: {
-			ova: [],
-			pdf: [['GUIA METODOLOGICA INFOGRAFIA', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700459'], ['GUIA DE TRABAJO ESCRITO', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700483']],
+			ova: [['INFOGRAFÍA INTERACTIVA DE EJEMPLO', 'https://campus.virtual.unal.edu.co/mod/page/view.php?id=700461']],
+			pdf: [['GUÍA METODOLÓGICA INFOGRAFÍA', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700459'], ['GUÍA DE TRABAJO ESCRITO', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700483']],
 			video: [],
 			tool: []
 		},
@@ -94,7 +94,7 @@ var LobbyCont = function LobbyCont() {
 				'Horario 4 - 6 pm'
 			)
 		),
-		selector === '1' || selector === '2' ? React.createElement(
+		selector === '1' || selector === '2' || selector === '3' ? React.createElement(
 			'div',
 			null,
 			React.createElement(

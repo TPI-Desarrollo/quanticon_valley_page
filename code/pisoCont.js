@@ -24,7 +24,6 @@ const data = {
 		3 : {
 			entrega: [
 				['POSIBLES SOLUCIONES / INFOGRAFIA', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=700231'],
-				['PITCH PISO 3', ''],
 			],
 			guia: [],
 		},
@@ -79,7 +78,6 @@ const data = {
 		3 : {
 			entrega: [
 				['POSIBLES SOLUCIONES / INFOGRAFIA', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=700465'],
-				['PITCH PISO 3', ''],
 			],
 			guia: [],
 		},
@@ -171,7 +169,7 @@ const PisosContainer = () => {
 						</div>
 				}
 			</div>
-		{selector === '1' || selector === '2' 
+		{selector === '1' || selector === '2' || selector === '3' 
 				? <div>
 			{data[group][selector].entrega[0] ? 
 			<div className="src-element">

@@ -11,7 +11,7 @@ var data = {
 			guia: [['TALLER DE ÉTICA', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=745401'], ['PREGUNTAS CONVERSATORIO HABILIDADES BLANDAS', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=745626'], ['PREGUNTAS CONVERSATORIO TECNOLOGÍA Y SOCIEDAD', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=745684'], ['PREGUNTAS CONVERSATORIO ECONOMÍA DEL CONOCIMIENTO', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=745688'], ['PREGUNTAS CONVERSATORIO DISEÑO Y ERGONOMÍA', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=745692']]
 		},
 		3: {
-			entrega: [['POSIBLES SOLUCIONES / INFOGRAFIA', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=700231'], ['PITCH PISO 3', '']],
+			entrega: [['POSIBLES SOLUCIONES / INFOGRAFIA', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=700231']],
 			guia: []
 		},
 		4: {
@@ -37,7 +37,7 @@ var data = {
 			guia: [['TALLER DE ÉTICA', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=745402'], ['PREGUNTAS CONVERSATORIO HABILIDADES BLANDAS', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=745627'], ['PREGUNTAS CONVERSATORIO TECNOLOGÍA Y SOCIEDAD', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=745627'], ['PREGUNTAS CONVERSATORIO ECONOMÍA DEL CONOCIMIENTO', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=745689'], ['PREGUNTAS CONVERSATORIO DISEÑO Y ERGONOMÍA', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=745693']]
 		},
 		3: {
-			entrega: [['POSIBLES SOLUCIONES / INFOGRAFIA', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=700465'], ['PITCH PISO 3', '']],
+			entrega: [['POSIBLES SOLUCIONES / INFOGRAFIA', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=700465']],
 			guia: []
 		},
 		4: {
@@ -125,7 +125,7 @@ var PisosContainer = function PisosContainer() {
 				'Horario 4 - 6 pm'
 			)
 		),
-		selector === '1' || selector === '2' ? React.createElement(
+		selector === '1' || selector === '2' || selector === '3' ? React.createElement(
 			'div',
 			null,
 			data[group][selector].entrega[0] ? React.createElement(

@@ -17,9 +17,9 @@ var data = {
 			tool: []
 		},
 		3: {
-			ova: [['Infografia Interactiva de Ejemplo', 'https://campus.virtual.unal.edu.co/mod/page/view.php?id=700227']],
+			ova: [],
 			pdf: [],
-			video: [['Videos Conversatorios 17 de Noviembre', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700214']],
+			video: [],
 			tool: []
 		},
 		4: {
@@ -55,9 +55,9 @@ var data = {
 			tool: []
 		},
 		3: {
-			ova: [['Infografia Interactiva de Ejemplo', 'https://campus.virtual.unal.edu.co/mod/page/view.php?id=700461']],
+			ova: [],
 			pdf: [],
-			video: [['Videos Conversatorios 17 de Noviembre', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700448']],
+			video: [],
 			tool: []
 		},
 		4: {
@@ -177,7 +177,7 @@ var AsesorCont = function AsesorCont() {
 					'Horario 4 - 6 pm'
 				)
 			),
-			selector === '1' || selector === '2' ? React.createElement(
+			selector === '1' || selector === '2' || selector === '3' ? React.createElement(
 				'div',
 				null,
 				React.createElement(
