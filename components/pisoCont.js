@@ -12,7 +12,7 @@ var data = {
 		},
 		3: {
 			entrega: [['POSIBLES SOLUCIONES / INFOGRAFIA', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=700231']],
-			guia: []
+			guia: [['ENTREGABLE ASUNTOS DE GÉNERO', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=755593']]
 		},
 		4: {
 			entrega: [['PROBLEMA / Diseño y Prototipo', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=701160'], ['PITCH PISO 4', ''], ['Avance del trabajo Escrito', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=700251'], ['Evaluacion de Desempeños', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=700274']],
@@ -38,7 +38,7 @@ var data = {
 		},
 		3: {
 			entrega: [['POSIBLES SOLUCIONES / INFOGRAFIA', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=700465']],
-			guia: []
+			guia: [['ENTREGABLE ASUNTOS DE GÉNERO', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=755594']]
 		},
 		4: {
 			entrega: [['PROBLEMA / Diseño y Prototipo', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=701161'], ['PITCH PISO 4', ''], ['Avance del trabajo Escrito', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=700485'], ['Evaluacion de Desempeños', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=700506']],
