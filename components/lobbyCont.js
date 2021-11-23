@@ -17,7 +17,7 @@ var data = {
 		},
 		3: {
 			ova: [['INFOGRAFÍA INTERACTIVA DE EJEMPLO', 'https://campus.virtual.unal.edu.co/mod/page/view.php?id=700227']],
-			pdf: [['GUÍA METODOLÓGICA INFOGRAFÍA', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700225'], ['GUÍA DE TRABAJO ESCRITO', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700249'], ['RÚBRICA DE INFOGRAFÍA', 'https://campus.virtual.unal.edu.co/mod/resource/view.php?id=700226'], ['RÚBRICA ASUNTOS DE GÉNERO', 'https://campus.virtual.unal.edu.co/mod/resource/view.php?id=700460']],
+			pdf: [['GUÍA METODOLÓGICA INFOGRAFÍA', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700225'], ['GUÍA DE TRABAJO ESCRITO', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700249'], ['RÚBRICA DE INFOGRAFÍA', 'https://campus.virtual.unal.edu.co/mod/resource/view.php?id=700226'], ['RÚBRICA ASUNTOS DE GÉNERO', 'https://campus.virtual.unal.edu.co/mod/resource/view.php?id=755622']],
 			video: [],
 			tool: []
 		},
