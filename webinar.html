@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Quanticon Valley - Zonas Comunes</title>
+	<title>Quanticon Valley - Reuniones</title>
 	<meta charset="UTF-8"><!-- la codificación UTF-8 permite utilizar ñ y tildes en el contenido (nunca en los nombres de archivo o las etiquetas) -->
 	<meta lang="es"><!-- la W3C recomienda definir un idioma al inicio además de la codificación UTF-8 -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,50 +9,20 @@
 	<link rel="stylesheet" type="text/css" href="./stylesB.css">
 	<link rel="stylesheet" type="text/css" href="./simple-calendar.css" />
 	<link rel="stylesheet" type="text/css" href="./calendario/progress-css/bootstrap.css">
+
 	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
 	<link rel="icon" href="./favicon.ico" type="image/x-icon">
-
 </head>
 <body>
 	<!----------------------Content------------------------>
 	<section class="content">
-			<div class="jumbotron jumbo">
-				<div class="text-jumbo">
-					<h2 class="title-content">Zonas Comunes</h2>
-					<p class="subtext">!Espacios para todos¡</p>
-					<img class="img-jumbo d-none d-sm-block" src="./imgs/Ilus_Zonas_Comunes.png">
-				</div>
-			</div>	
-							<div class="grid-zc">
-								<a class="element-zc" href="https://ingenieria.unal.edu.co/tpi/index.php/24propuestas" target="_blank"><div>
-										<img class="img-zc" src="./imgs/subsection/cafe.png" />
-										<div style="display: flex; flex-direction: column;">
-											<span class="title-zc">CAFETERIA</span>
-											<span class="desc-zc">Conformacion de equipos</span>
-										</div>
-								</div></a>
-								<a class="element-zc" href="webinar.html"><div>
-										<img class="img-zc" src="./imgs/subsection/reun.png" />
-										<div style="display: flex; flex-direction: column;">
-											<span class="title-zc">REUNIONES</span>
-											<span class="desc-zc">Webinars para todos</span>
-										</div>
-								</div></a>
-								<a class="element-zc two-ver-zc" href="lobby.html"><div>
-										<img class="img-zc" src="./imgs/subsection/lobby.png" />
-											<div class="title-zc">LOBBY</div>
-											<div class="desc-zc">Tus Tareas inician aqui</div>
-								</div></a>
-								<a class="element-zc two-hor-zc" href="asesores.html"><div>
-										<img class="img-zc" src="./imgs/subsection/asesor.png" />
-										<div style="display: flex; flex-direction: column;">
-											<span class="title-zc">ASESORES</span></span>
-											<span class="desc-zc">Aqui podras resolver todas tus dudas</span>
-										</div>
-								</div></a>
-							</div>
-	        	</div>  
-	        </div>
+		<div class="title-subsection" data-title="REUNIONES"></div>
+		<div class="webinar-carousel"></div>
+		<div class="webinar-anteriores">
+			<p class="webinar-desc webinar-header2">Mira los <span class="webinar-resalt">Webinars</span> de versiones anteriores</p>
+			<a href="https://www.youtube.com/watch?v=rBoyRR4KGaE&list=PLvLMsmXmVy6LHh1oouUSUtIebNmtJdleH&ab_channel=Facultaddeingenier%C3%ADa-UniversidadNacionaldeColombia" target="_blank"><img src="imgs/webinarAntes.png"/></a>
+		</div>
+		
 	</section>
 	<!----------------------Right Bar------------------------>
 	<section class="right-bar">
@@ -62,6 +32,8 @@
 	<section class="side-bar">
 		<div id="side_bar_container" data-selected="zonas-comunes"></div>
 	</section>
+
+
 
 		<!-- Load React. -->
 		<!-- Note: when deploying, replace "development.js" with "production.min.js". 
@@ -76,14 +48,14 @@
 
 		<script src="./components/sideBar.js"></script>
 		<script src="./components/rightBar.js"></script>
-		<script src="./components/ovaItem.js"></script>
-
+		<script src="./components/titleSubS.js"></script>
+		<script src="./components/webCarousel.js"></script>
+		 
 		<!--Calendar-->
 		<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 		<script type="text/javascript" src="./calendario/jquery.simple-calendar.min.js"></script>
 		<script type="text/javascript" src="./calendario/calendario.js"></script>
 		<script type="text/javascript" src="./calendario/progress-css/bootstrap.js"></script>
-		<script type="text/javascript" src="./calendario/progress-css/modal.js"></script>
-
+		<script type="text/javascript" src="./calendario/progress-css/modal.js"></script>	
 </body>
 </html>

@@ -15,7 +15,8 @@ var styles = {
 };
 var data = {
 	LOBBY: ['Tus Tareas inician aqui', './imgs/subsection/lobby.png', 100],
-	ASESORES: ['Aqui Resuelves todas tus dudas', './imgs/subsection/asesor.png', 55]
+	ASESORES: ['Aqui Resuelves todas tus dudas', './imgs/subsection/asesor.png', 55],
+	REUNIONES: ['Webinars para todos', './imgs/subsection/reun.png', 55]
 };
 
 var Subsection = function Subsection(_ref) {
@@ -47,9 +48,11 @@ var Subsection = function Subsection(_ref) {
 				)
 			)
 		),
-		React.createElement('img', { className: 'back-button', src: './imgs/sources/atras.png', onClick: function onClick() {
-				return goBack();
-			} })
+		React.createElement(
+			'a',
+			{ href: 'comunes.html' },
+			React.createElement('img', { className: 'back-button', src: './imgs/sources/atras.png' })
+		)
 	);
 };
 
