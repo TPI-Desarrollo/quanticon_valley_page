@@ -18,6 +18,16 @@ $(document).ready(function(){
             {startDate: "2021-11-17T24:00:00.000Z", endDate: "2021-11-17T24:00:00.000Z", summary: "Conversatorio (Habilidades blandas, Tecnología y sociedad, Economía del conocimiento)"},
             {startDate: "2021-11-22T24:00:00.000Z", endDate: "2021-11-22T24:00:00.000Z", summary: "Charla de Género"},
             {startDate: "2021-11-24T24:00:00.000Z", endDate: "2021-11-24T24:00:00.000Z", summary: "Mentoria"},
+            {startDate: "2021-11-29T24:00:00.000Z", endDate: "2021-11-29T24:00:00.000Z", summary: "Mentoría"},
+            {startDate: "2021-12-01T24:00:00.000Z", endDate: "2021-12-01T24:00:00.000Z", summary: "Presentación de infografía"},
+            {startDate: "2021-12-03T24:00:00.000Z", endDate: "2021-12-03T24:00:00.000Z", summary: "Entrega reto de piso"},
+            {startDate: "2021-12-03T24:00:00.000Z", endDate: "2021-12-03T24:00:00.000Z", summary: "Pieza gráfica asuntos de género"},
+            {startDate: "2021-12-10T24:00:00.000Z", endDate: "2021-12-10T24:00:00.000Z", summary: "Primera entrega trabajo escrito"},
+            {startDate: "2021-12-06T24:00:00.000Z", endDate: "2021-12-06T24:00:00.000Z", summary: "Mentoria"},
+            {startDate: "2021-12-13T24:00:00.000Z", endDate: "2021-12-13T24:00:00.000Z", summary: "Mentoria"},
+            {startDate: "2021-12-15T24:00:00.000Z", endDate: "2021-12-15T24:00:00.000Z", summary: "Conversatorio (laboratorio y prototipado)"},
+            {startDate: "2022-01-12T24:00:00.000Z", endDate: "2022-01-12T24:00:00.000Z", summary: "Mentoría formativa (entrega de piso)"},
+
         ],                     // List of events
         onInit: function (calendar) {}, // Callback after first initialization
         onMonthChange: function (month, year) {}, // Callback on month change
