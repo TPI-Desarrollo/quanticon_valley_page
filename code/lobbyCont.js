@@ -138,7 +138,7 @@ const LobbyCont = () => {
 						</div>
 				}
 			</div>
-		{selector === '1' || selector === '2' || selector === '3' 
+		{selector === '1' || selector === '2'  || selector === '3' || selector === '4' 
 			? <div>
 				<h3 className="title-content" style={{fontSize: '22px'}}>
 					Recursos del Piso

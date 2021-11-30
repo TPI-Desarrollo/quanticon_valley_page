@@ -23,7 +23,7 @@ var data = {
 			tool: [['ENCUESTA DE PERCEPCIÓN CONVERSATORIOS PISO 3', 'https://campus.virtual.unal.edu.co/mod/feedback/view.php?id=700210']]
 		},
 		4: {
-			ova: [['"METODOLOGIA GENERAL PARA EL DESARROLLO DE UN PROYECTO"', ''], ['DISEÑO DE EXPERIMENTOS', ''], ['VARIABLES CRITICAS EN EL DESARROLLO DE UN PROYECTO', ''], ['MODELO DE NEGOCIO', ''], ['PROPUESTA DE VALOR', ''], ['ASPECTOS DE VIABILIDAD', ''], ['EVALUACIÓN DEL IMPACTO', '']],
+			ova: [],
 			pdf: [],
 			video: [['Videos Conversatorios 6 de Diciembre - Prototipado', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700256'], ['Videos Conversatorios 6 de Diciembre - Laboratorio', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700286'], ['Videos Conversatorios 6 de Diciembre - Mercadeo', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700240']],
 			tool: []
@@ -61,7 +61,7 @@ var data = {
 			tool: [['ENCUESTA DE PERCEPCIÓN CONVERSATORIOS PISO 3', 'https://campus.virtual.unal.edu.co/mod/feedback/view.php?id=700444']]
 		},
 		4: {
-			ova: [['"METODOLOGIA GENERAL PARA EL DESARROLLO DE UN PROYECTO"', ''], ['DISEÑO DE EXPERIMENTOS', ''], ['VARIABLES CRITICAS EN EL DESARROLLO DE UN PROYECTO', ''], ['MODELO DE NEGOCIO', ''], ['PROPUESTA DE VALOR', ''], ['ASPECTOS DE VIABILIDAD', ''], ['EVALUACIÓN DEL IMPACTO', '']],
+			ova: [],
 			pdf: [],
 			video: [['Videos Conversatorios 6 de Diciembre - Prototipado', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700490'], ['Videos Conversatorios 6 de Diciembre - Laboratorio', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700518'], ['Videos Conversatorios 6 de Diciembre - Mercadeo', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700474']],
 			tool: []
@@ -177,7 +177,7 @@ var AsesorCont = function AsesorCont() {
 					'Horario 4 - 6 pm'
 				)
 			),
-			selector === '1' || selector === '2' || selector === '3' ? React.createElement(
+			selector === '1' || selector === '2' || selector === '3' || selector === '4' ? React.createElement(
 				'div',
 				null,
 				React.createElement(

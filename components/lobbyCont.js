@@ -94,7 +94,7 @@ var LobbyCont = function LobbyCont() {
 				'Horario 4 - 6 pm'
 			)
 		),
-		selector === '1' || selector === '2' || selector === '3' ? React.createElement(
+		selector === '1' || selector === '2' || selector === '3' || selector === '4' ? React.createElement(
 			'div',
 			null,
 			React.createElement(

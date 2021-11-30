@@ -27,10 +27,10 @@ var data = [[{
 	expo: 'Luis Felipe Botero',
 	date: '24 Noviembre 2021',
 	link: {
-		dos: 'https://forms.gle/VqqMmdLCB2wJF2oLA',
-		cuatro: 'https://forms.gle/VqqMmdLCB2wJF2oLA'
+		dos: 'https://campus.virtual.unal.edu.co/mod/url/view.php?id=700383',
+		cuatro: 'https://campus.virtual.unal.edu.co/mod/url/view.php?id=700612'
 	},
-	state: 'prox'
+	state: 'pass'
 }, {
 	n: 1,
 	name: 'Innovación en iluminacion y alumbrado',

@@ -46,13 +46,6 @@ const data = {
 		},
 		4 : {
 			ova: [
-				['"METODOLOGIA GENERAL PARA EL DESARROLLO DE UN PROYECTO"', ''],
-				['DISEÑO DE EXPERIMENTOS', ''],
-				['VARIABLES CRITICAS EN EL DESARROLLO DE UN PROYECTO', ''],
-				['MODELO DE NEGOCIO', ''],
-				['PROPUESTA DE VALOR', ''],
-				['ASPECTOS DE VIABILIDAD', ''],
-				['EVALUACIÓN DEL IMPACTO', ''],
 			],
 			pdf: [
 			],
@@ -133,13 +126,6 @@ const data = {
 		},
 		4 : {
 			ova: [
-				['"METODOLOGIA GENERAL PARA EL DESARROLLO DE UN PROYECTO"', ''],
-				['DISEÑO DE EXPERIMENTOS', ''],
-				['VARIABLES CRITICAS EN EL DESARROLLO DE UN PROYECTO', ''],
-				['MODELO DE NEGOCIO', ''],
-				['PROPUESTA DE VALOR', ''],
-				['ASPECTOS DE VIABILIDAD', ''],
-				['EVALUACIÓN DEL IMPACTO', ''],
 			],
 			pdf: [
 			],
@@ -240,7 +226,7 @@ const AsesorCont = () => {
 					    </div>
 			    }
 		    </div>
-	    {selector === '1' || selector === '2' || selector === '3' 
+	    {selector === '1' || selector === '2' || selector === '3'  || selector === '4' 
 		    ? <div>
 	    <div className="src-grid">
 		    {data[group][selector].ova[0] ? 
