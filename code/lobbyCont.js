@@ -36,7 +36,8 @@ const data = {
 				['GUÍA METODOLÓGICA INFOGRAFÍA', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700225'],
 				['GUÍA DE TRABAJO ESCRITO', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700249'],
 				['RÚBRICA DE INFOGRAFÍA','https://campus.virtual.unal.edu.co/mod/resource/view.php?id=700226'],
-				['RÚBRICA ASUNTOS DE GÉNERO','https://campus.virtual.unal.edu.co/mod/resource/view.php?id=755622']
+				['RÚBRICA ASUNTOS DE GÉNERO','https://campus.virtual.unal.edu.co/mod/resource/view.php?id=755622'],
+				['RÚBRICA AVANCE DE TRABAJO ESCRITO','https://campus.virtual.unal.edu.co/mod/resource/view.php?id=700250']
 			],
 			video: [],
 			tool: [],
@@ -87,7 +88,8 @@ const data = {
 				['GUÍA METODOLÓGICA INFOGRAFÍA', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700459'],
 				['GUÍA DE TRABAJO ESCRITO', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700483'],
 				['RÚBRICA DE INFOGRAFÍA','https://campus.virtual.unal.edu.co/mod/resource/view.php?id=700460'],
-				['RÚBRICA ASUNTOS DE GÉNERO','https://campus.virtual.unal.edu.co/mod/resource/view.php?id=755623']
+				['RÚBRICA ASUNTOS DE GÉNERO','https://campus.virtual.unal.edu.co/mod/resource/view.php?id=755623'],
+				['RÚBRICA AVANCE DE TRABAJO ESCRITO','https://campus.virtual.unal.edu.co/mod/resource/view.php?id=700484']
 			],
 			video: [],
 			tool: [],
