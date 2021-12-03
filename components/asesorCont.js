@@ -17,9 +17,9 @@ var data = {
 			tool: []
 		},
 		3: {
-			ova: [['GRABACIONES CONVERSATORIOS PISO 3', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700214']],
+			ova: [],
 			pdf: [],
-			video: [],
+			video: [['GRABACIONES CONVERSATORIOS PISO 3', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700214'], ['GRABACIONES PRESENTACIONES PITCH PISO 3', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=759888']],
 			tool: [['ENCUESTA DE PERCEPCIÓN CONVERSATORIOS PISO 3', 'https://campus.virtual.unal.edu.co/mod/feedback/view.php?id=700210']]
 		},
 		4: {
@@ -55,9 +55,9 @@ var data = {
 			tool: []
 		},
 		3: {
-			ova: [['GRABACIONES CONVERSATORIOS PISO 3', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700448']],
+			ova: [],
 			pdf: [],
-			video: [],
+			video: [['GRABACIONES CONVERSATORIOS PISO 3', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=700448'], ['GRABACIONES PRESENTACIONES PITCH PISO 3', 'https://campus.virtual.unal.edu.co/mod/hvp/view.php?id=759889']],
 			tool: [['ENCUESTA DE PERCEPCIÓN CONVERSATORIOS PISO 3', 'https://campus.virtual.unal.edu.co/mod/feedback/view.php?id=700444']]
 		},
 		4: {
