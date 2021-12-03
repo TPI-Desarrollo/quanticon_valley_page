@@ -86,6 +86,76 @@ const asesores = [
     costo: 500,
     nombreMon: "Leidy Cardozo",
     correoMon: "lcardozo@unal.edu.co"
+  },
+  {
+    img: "1-aea.jpg",
+    nombre: "Alfonso Esteban Alarcón",
+    rol: "",
+    desc: "Ingeniero biológico, M.Sc. Ingeniería química, con experiencia en el área de bioprocesos, he realizado actividades de docencia en el área de la biotecnología y seminarios de proyectos, he sido evaluador de proyectos en el área de biotecnología para diferentes convocatorias de Colciencias, entre ellas la convocatoria para el fortalecimiento de CTeI en instituciones de educación superior y la convocatoria para la innovación y desarrollo tecnológico en empresas. Actualmente me encuentro desarrollando el doctorado en ingeniería y soy asesor en calidad e inocuidad en la industria alimentaria.",
+    campo: "Ingeniería Biologica",
+    costo: 500,
+    nombreMon: "",
+    correoMon: ""
+  },
+  {
+    img: "1-lrr.jpeg",
+    nombre: "Lina Rocío Ramos Pachón",
+    rol: "",
+    desc: "Ingeniera Química de la Universidad Industrial de Santander y estudiante de la Maestría en Ingeniería Química de la Universidad Nacional de Colombia. Durante su vida profesional se ha desempeñado principalmente en el manejo integrado del recurso hídrico, así como en su análisis fisicoquímico y microbiológico. Posee amplia experiencia en investigación científica, gestión de proyectos y en el desarrollo operacional de prácticas de laboratorio, además de un gran conocimiento en el tratamiento de agua potable y residual. Le apasiona la ciencia y en el futuro desea desempeñarse en gestión y dirección de proyectos ambientales que aporten en la preservación del ecosistema colombiano.",
+    campo: "Ingeniería Quimica",
+    costo: 500,
+    nombreMon: "",
+    correoMon: ""
+  },
+  {
+    img: "1-efl.jpg",
+    nombre: "Fernando Lizarazo Barrero",
+    rol: "",
+    desc: "Ingeniero Industrial, con un Magister en Administración de Negocios MBA y una Maestría en Contabilidad y Finanzas con énfasis en Investigación. Candidato a Doctor en Ingeniería, Industria y Organizaciones. Experiencia laboral de más de veinte años en áreas de Contabilidad y Finanzas, Logística, Producción, Administrativa y Comercio Exterior en empresas de sectores de Telecomunicaciones, Autopartes, Plástico y Agroindustrial. Experiencia de 25 años como docente de posgrado y pregrado en áreas de Negocios, Finanzas, Logística, Administración y Emprendimiento. Investigador asociado Grupo de Investigación Biogestión.",
+    campo: "Finanzas",
+    costo: 500,
+    nombreMon: "",
+    correoMon: ""
+  },
+  {
+    img: "1-lcg.jpeg",
+    nombre: "Luis Carlos Gonzalez S",
+    rol: "",
+    desc: "Docente y administrativo, con amplia experiencia, apasionado por los resultados y metas a través de un trabajo en equipo, con calidad y responsabilidad. Formación Ingeniero mecánico, Especialización en Diseño Mecánico y Máster en Ingeniería Agrícola. Experiencia en el área de Sistemas de Gestión de Calidad y Gestión de Proyectos en la Universidad Nacional de Colombia en el área administrativa. Experiencia como consultor para empresas del sector privado en el diseño de plantas, traslados y automatización. Experiencia en área de Diseño y Construcción de Equipos para sector educativo como Universidad de los Andes y Universidad Pontificia Javeriana, Universidad de Tolima entre otras. Docente de TPI taller de Proyectos Interdisciplinarios y control en biosistemas por más de tres años en la Universidad Nacional, docente en área de Automatización y Diseño de Sistema Eléctrico y otras materias en el área de ingeniería en Universidades privadas.",
+    campo: "Gestion de Proyectos",
+    costo: 500,
+    nombreMon: "",
+    correoMon: ""
+  },
+  {
+    img: "1-icf.jpg",
+    nombre: "Ismael Castañeda",
+    rol: "Profesor Facultad de Ingenieria",
+    desc: "Ingeniero Mecanico, Maestria en Ingeniería de Sistemas. Profesor de Bases de Datos, Mentor en cursos de TPI y Director de Proyectos.",
+    campo: "Ingeniería de Sistemas",
+    costo: 500,
+    nombreMon: "",
+    correoMon: ""
+  },
+  {
+    img: "1-rgc.jpg",
+    nombre: "Rosario Guerrero C.",
+    rol: "",
+    desc: "Diseñadora industrial Magister en Salud y Seguridad en el Trabajo egresada de la Universidad Nacional de Colombia y ergónoma de la Universidad Politécnica de Cataluña con experiencia en desarrollo de investigaciones en condiciones de trabajo de trabajadores del sector de la salud. Con trayectoria en asesoría y consultoría a empresas y administradoras de riesgos profesionales en el campo de la ergonomía y de la prevención de riesgos laborales. Experiencia en coordinación de trabajo de campo en proyectos de salud laboral y en el campo docente en programas de pregrado y postgrado que dentro de su plan curricular tengan relación con el área de factores humanos. Interés en proyectos de desarrollo vinculados a políticas de inclusión social orientadas al diseño aplicado como una herramienta útil de reflexión sobre la necesidad, la responsabilidad y el compromiso con la sociedad de potenciar la creación de entornos, servicios, herramientas y productos de fácil uso para la mayoría de las personas con el objetivo claro de contribuir con el mejoramiento de calidad de vida de las personas que, por una u otra razón, edad, estado físico o mental, cultura, habilidades, etc.…son a menudo excluidas a la hora de generar productos y/o servicios. Interés en proyectos de diseño que tengan dentro de sus metas la reducción del impacto negativo en el medio ambiente y el aumento de la calidad de vida de las personas dentro y fuera del trabajo. Con experiencia en gestión de proyectos con miras al fortalecimiento e innovación de las organizaciones, con una orientación sistémica, sostenible y con responsabilidad social.",
+    campo: "Diseño Industrial",
+    costo: 500,
+    nombreMon: "",
+    correoMon: ""
+  },
+  {
+    img: "1-abt.jpg",
+    nombre: "Alfonso Bohórquez Torres",
+    rol: "",
+    desc: "Profesor Asociado de la Escuela de Diseño Industrial Líneas de investigación: Innovación impulsada por diseño - la dimensión cultural. Diseño de producto y proceso. Manufactura de prototipos. Acciones de diseño que impulsan el cambio [o la resignificación] en las culturas organizacionales (Investigación en curso en la Maestría en Diseño de la Facultad de Artes UNAL). Consultor en áreas de comunicación de mercadotecnia.",
+    campo: "Diseño Industrial",
+    costo: 500,
+    nombreMon: "",
+    correoMon: ""
   }
 ]
 

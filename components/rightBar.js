@@ -1,6 +1,6 @@
 var container = document.querySelector('.right_bar_container');
 
-var selected = 7;
+var selected = 0;
 function changeNoti(e, num) {
 	e.preventDefault();
 	var vid = document.querySelector('#vid');
@@ -27,36 +27,50 @@ var data = [{
 
 var videos = [{
 	no: 0,
-	fecha: "4-Octubre 2021",
-	video: "https://www.youtube.com/embed/HnVqU8tOAGg"
+	nombre: "La Pasion: el mapa de los innovadores",
+	fecha: "03-Diciembre 2021",
+	img: "./imgs/noti/9.jpg",
+	video: "https://www.youtube.com/embed/xjHP8tPvBsY"
 }, {
 	no: 1,
-	fecha: "11-Octubre 2021",
-	video: "https://www.youtube.com/embed/KpILuChm-ko"
+	fecha: "26-Noviembre 2021",
+	img: "./imgs/news_logo.png",
+	video: "https://www.youtube.com/embed/tl6AaqqyrSQ"
 }, {
 	no: 2,
-	fecha: "20-Octubre 2021",
-	video: "https://www.youtube.com/embed/toumedldx-c"
+	fecha: "19-Noviembre 2021",
+	img: "./imgs/news_logo.png",
+	video: "https://www.youtube.com/embed/Mtz92lwd9Gs"
 }, {
 	no: 3,
-	fecha: "29-Octubre 2021",
-	video: "https://www.youtube.com/embed/TUDKij3AXuc"
+	fecha: "12-Noviembre 2021",
+	img: "./imgs/news_logo.png",
+	video: "https://www.youtube.com/embed/cgKLuTxNsVE"
 }, {
 	no: 4,
 	fecha: "05-Noviembre 2021",
+	img: "./imgs/news_logo.png",
 	video: "https://www.youtube.com/embed/s1dIgi50Wic"
 }, {
 	no: 5,
-	fecha: "12-Noviembre 2021",
-	video: "https://www.youtube.com/embed/cgKLuTxNsVE"
+	fecha: "29-Octubre 2021",
+	img: "./imgs/news_logo.png",
+	video: "https://www.youtube.com/embed/TUDKij3AXuc"
 }, {
 	no: 6,
-	fecha: "19-Noviembre 2021",
-	video: "https://www.youtube.com/embed/Mtz92lwd9Gs"
+	fecha: "20-Octubre 2021",
+	img: "./imgs/news_logo.png",
+	video: "https://www.youtube.com/embed/toumedldx-c"
 }, {
 	no: 7,
-	fecha: "26-Noviembre 2021",
-	video: "https://www.youtube.com/embed/tl6AaqqyrSQ"
+	fecha: "11-Octubre 2021",
+	img: "./imgs/news_logo.png",
+	video: "https://www.youtube.com/embed/KpILuChm-ko"
+}, {
+	no: 8,
+	fecha: "4-Octubre 2021",
+	img: "./imgs/news_logo.png",
+	video: "https://www.youtube.com/embed/HnVqU8tOAGg"
 }];
 
 var Modal = function Modal() {
@@ -135,7 +149,10 @@ var Modal = function Modal() {
 										React.createElement(
 											'p',
 											{ className: 'noti-img' },
-											React.createElement('img', { src: './imgs/news_logo.png' })
+											React.createElement('img', {
+												src: vid.img,
+												width: '100px'
+											})
 										),
 										React.createElement(
 											'p',
@@ -143,10 +160,10 @@ var Modal = function Modal() {
 											React.createElement(
 												'strong',
 												null,
-												vid.no + 1 + ') ' + vid.fecha
+												vid.nombre
 											),
 											React.createElement('br', null),
-											' Noticiero'
+											vid.fecha
 										)
 									)
 								);
