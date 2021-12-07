@@ -197,7 +197,7 @@ var RightBar = function RightBar() {
 		),
 		React.createElement(
 			'a',
-			{ href: 'https://drive.google.com/file/d/1DsxZt4232mjOLK8-4hVIm0QOPxQJ9JrX/view?usp=sharing', target: '_blank' },
+			{ href: 'https://drive.google.com/file/d/1xRTV1yWZlF3viIvIS8vgQjLpMZy9AP51/view?usp=sharing', target: '_blank' },
 			React.createElement(
 				'div',
 				{ className: 'right-jumbo pildoras' },

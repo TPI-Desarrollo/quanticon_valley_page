@@ -159,7 +159,7 @@ const RightBar = () => {
 					<iframe className="noti-video" src={videos[selected].video} title="Noticias" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 				</div>
 				</a>
-				<a href="https://drive.google.com/file/d/1DsxZt4232mjOLK8-4hVIm0QOPxQJ9JrX/view?usp=sharing" target="_blank"><div className="right-jumbo pildoras">
+				<a href="https://drive.google.com/file/d/1xRTV1yWZlF3viIvIS8vgQjLpMZy9AP51/view?usp=sharing" target="_blank"><div className="right-jumbo pildoras">
 					<div>
 						<img style={{marginRight: 10}} src="./imgs/pil.png" />
 					</div>
