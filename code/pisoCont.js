@@ -35,7 +35,12 @@ const data = {
 				['Avance del trabajo Escrito', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=700251'],
 				['Evaluacion de Desempeños', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=700274'],
 			],
-			guia: [],
+			guia: [
+				['PREGUNTAS CONVERSATORIO TECNOLOGÍAS TRL','https://campus.virtual.unal.edu.co/mod/assign/view.php?id=760436'],
+				['PREGUNTAS CONVERSATORIO INNOVACIÓN PARA EL SECTOR RURAL','https://campus.virtual.unal.edu.co/mod/assign/view.php?id=760440'],
+				['PREGUNTAS CONVERSATORIO DISEÑO','https://campus.virtual.unal.edu.co/mod/assign/view.php?id=760444'],
+				['PREGUNTAS CONVERSATORIO ERGONOMÍA','https://campus.virtual.unal.edu.co/mod/assign/view.php?id=760449']
+			],
 		},
 		5 : {
 			entrega: [
@@ -90,7 +95,12 @@ const data = {
 				['Avance del trabajo Escrito', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=700485'],
 				['Evaluacion de Desempeños', 'https://campus.virtual.unal.edu.co/mod/assign/view.php?id=700506'],
 			],
-			guia: [],
+			guia: [
+				['PREGUNTAS CONVERSATORIO TECNOLOGÍAS TRL','https://campus.virtual.unal.edu.co/mod/assign/view.php?id=760437'],
+				['PREGUNTAS CONVERSATORIO INNOVACIÓN PARA EL SECTOR RURAL','https://campus.virtual.unal.edu.co/mod/assign/view.php?id=760441'],
+				['PREGUNTAS CONVERSATORIO DISEÑO','https://campus.virtual.unal.edu.co/mod/assign/view.php?id=760445'],
+				['PREGUNTAS CONVERSATORIO ERGONOMÍA','https://campus.virtual.unal.edu.co/mod/assign/view.php?id=760450']
+			],
 		},
 		5 : {
 			entrega: [
