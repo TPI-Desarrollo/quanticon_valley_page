@@ -1251,3 +1251,23 @@ a{
 	color: blue;
 	margin: 0;
 }
+
+.btn-newpage {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-image: url('./imgs/Rectangle 1.png');
+	font-weight: bold;
+	color: white;
+	padding: 10px;
+	margin: auto;
+	max-width: 400px;
+	border: none;
+	border-radius: 1em;
+	transition: .3s ease;
+}
+
+.btn-newpage:hover {
+	transform: scale(1.03) rotate(.2deg);
+}
